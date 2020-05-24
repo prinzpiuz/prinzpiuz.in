@@ -1,0 +1,61 @@
+baseURL = "http://example.org/"
+languageCode = "en-us"
+title = "prinzpiuz"
+theme = "devise"
+relativeURLs = true
+enableEmoji = true
+googleAnalytics = ""
+enableRobotsTXT = true
+copyright = "&copy; Copyright 2020, prinzpiuz"
+# Main menu items
+[menu]
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    title = "About"
+    url = "/about/"
+    weight = -110
+  [[menu.main]]
+    identifier = "posts"
+    name = "Posts"
+    title = "Posts"
+    url = "/post/"
+    weight = -100
+  [[menu.main]]
+    identifier = "categories"
+    name = "Categories"
+    title = "Categories"
+    url = "/categories/"
+    weight = -90
+  [[menu.main]]
+    identifier = "projects"
+    name = "Projects"
+    title = "Projects"
+    url = "/projects/my-projects/index.html"
+    weight = -80
+
+# Configuration Features
+[params]
+  header_title = "prinzpiuz"                 # Your header title
+  header_subtitle = "Software Engineer | Nuventure | Cochin" # Your header subtitle
+  home_image = "/images/avatar.jpg"          # Path to header image starting from the static directory
+  recent_posts = 5                           # Max amount of recent posts to show
+  mainSections = ["posts", "post", "blog"]   # Main sections to include in recent posts
+  [[params.social]]
+    fa_icon = "fab fa-github fa-1x"          # Font Awesome icon class
+    href = "http://github.com/prinzpiuz"      # Link to associate with icon (http://, https://, mailto:) 4
+  [[params.social]]
+    fa_icon = "fab fa-twitter fa-1x"
+    href = "https://twitter.com/prinzpiuz/"
+  [[params.social]]
+    fa_icon = "fab fa-mastodon"
+    href = "https://mastodon.technology/@prinzpiuz"
+  [[params.social]]
+    fa_icon = "fab fa-telegram"
+    href = "https://pixelfed.social/prinzpiuz"
+  [[params.social]]
+    fa_icon = "fas fa-images"
+    href = "https://pixelfed.social/prinzpiuz"
+  [[params.social]]
+    fa_icon = "fas fa-at fa-1x"
+    href = "mailto:prinzpiuz@gmail.com"
