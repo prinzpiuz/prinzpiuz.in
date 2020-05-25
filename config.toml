@@ -1,4 +1,4 @@
-baseURL = "http://example.org/"
+baseURL = "https://prinzpiuz.github.io"
 languageCode = "en-us"
 title = "prinzpiuz"
 theme = "devise"
