@@ -4,7 +4,7 @@ title = "prinzpiuz"
 theme = "devise"
 relativeURLs = true
 enableEmoji = true
-googleAnalytics = ""
+googleAnalytics = "UA-167547056-1"
 enableRobotsTXT = true
 copyright = "&copy; Copyright 2020, prinzpiuz"
 # Main menu items
