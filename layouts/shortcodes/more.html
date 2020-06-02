@@ -1,0 +1,10 @@
+<div class="highlight-wrapper">
+    {{ if len .Params | eq 1 }}
+        {{ highlight (trim .Inner "\n\r") (.Get 0) (.Get 1) }}
+    {{ else }}
+        <details>
+            <summary>{{(.Get 1)}}</summary>
+            {{ highlight (trim .Inner "\n\r") (.Get 0) "" }}
+        </details>
+    {{ end }}
+</div>
