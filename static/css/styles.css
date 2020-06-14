@@ -1,9 +1,9 @@
 .highlight-wrapper {
-    position: relative;
+  position: relative;
 }
 
 .highlight-link {
-    position: absolute;
-    bottom: 0;
-    right: 0;
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }

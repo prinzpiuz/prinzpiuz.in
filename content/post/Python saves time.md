@@ -66,5 +66,5 @@ for string in file:
   os.system("sudo rm "+ string.split(" ")[1])
 ```
 
-This python snippet do the thing for me and save a lot of time.  
+This python snippet do the thing for me and saves a lot of time.  
 Read more about [os.system](https://docs.python.org/3/library/os.html#os.system)
