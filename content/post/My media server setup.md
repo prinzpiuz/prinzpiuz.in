@@ -1,7 +1,7 @@
 ---
 title: "My Media Server Set-up"
 date: 2020-06-13T14:58:35+05:30
-draft: true
+draft: false
 categories: ["server", "linux", "flutter"]
 ---
 
