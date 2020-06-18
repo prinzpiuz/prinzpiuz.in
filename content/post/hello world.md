@@ -5,6 +5,6 @@ draft: false
 categories: ["helloworld"]
 ---
 
-welcome,സ്വാഗതം :pray: to my blog.  
+welcome,കേറി വാടാ മക്കളെ, :pray: to my blog.  
 This is my first blog, This is kinda test publishing :sunglasses:  
 thank you... :sparkling_heart:

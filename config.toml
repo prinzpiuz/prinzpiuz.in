@@ -36,7 +36,7 @@ copyright = "&copy; Copyright 2020, prinzpiuz"
 
 # Configuration Features
 [params]
-  header_title = "prinzpiuz"                 # Your header title
+  header_title = "PrinzPiuz"                 # Your header title
   header_subtitle = "Software Engineer | Nuventure | Cochin" # Your header subtitle
   home_image = "/images/avatar.jpg"          # Path to header image starting from the static directory
   recent_posts = 5                           # Max amount of recent posts to show
