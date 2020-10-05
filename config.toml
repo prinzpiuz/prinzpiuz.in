@@ -52,10 +52,13 @@ copyright = "&copy; Copyright 2020, prinzpiuz"
     href = "https://mastodon.technology/@prinzpiuz"
   [[params.social]]
     fa_icon = "fab fa-telegram"
-    href = "https://pixelfed.social/prinzpiuz"
+    href = "https://t.me/princepiuz"
   [[params.social]]
     fa_icon = "fas fa-images"
     href = "https://pixelfed.social/prinzpiuz"
+  [[params.social]]
+    fa_icon = "fab fa-strava"
+    href = "https://www.strava.com/athletes/68470966"
   [[params.social]]
     fa_icon = "fas fa-at fa-1x"
     href = "mailto:prinzpiuz@gmail.com"
