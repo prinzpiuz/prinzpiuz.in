@@ -1,11 +1,12 @@
 ---
 title: "Errors and Exceptions In Python"
 date: 2020-10-03T17:46:27+05:30
-draft: true
+draft: false
 categories: ["python"]
 ---
 
-This blog is about How to manage Exceptions in python, this post can be divide like
+This blog is about How to manage Exceptions in python, this is more like notes i took while reading [Dusty Phillips](https://dusty.phillips.codes/)'s [Python 3 Object-oriented Programming](https://www.packtpub.com/product/python-3-object-oriented-programming-third-edition/9781789615852),  
+This post can be divide like
 
 - why raising an exception ?
 - what is happening while an exception is raised ?
@@ -154,10 +155,82 @@ Note how the print statement in the finally clause is executed no matter what
 happens. This is extremely useful when we need to perform certain tasks after
 our code has finished running (even if an exception has occurred). Some common
 examples include:
+
 - Cleaning up an open database connection
 - Closing an open file
-- Sending a closing handshake over the network  
+- Sending a closing handshake over the network
 
 The finally clause is also very important when we execute a return statement
 from inside a try clause. The finally handle will still be executed before the
 value is returned
+
+#### The exception hierarchy
+
+Most of exceptions are subclass of Exception class, but this not fully true. Exception itself actually inherits from a class called
+BaseException . In fact, all exceptions must extend the BaseException class or one of its subclasses.  
+When we use the except: clause without specifying any type of exception, it will
+catch all subclasses of BaseException ; which is to say, it will catch all exceptions,
+including the two special ones. Since we almost always want these to get special
+treatment, it is unwise to use the except: statement without arguments. If you want
+to catch all exceptions other than SystemExit and KeyboardInterrupt , explicitly
+catch Exception .  
+Furthermore, if you do want to catch all exceptions, I suggest using the syntax
+except BaseException: instead of a raw except: . This helps explicitly tell future
+readers of your code that you are intentionally handling the special case exceptions.
+
+#### Defining our own exceptions
+
+All we have to do is inherit from the Exception class. We don't even have to add any
+content to the class! We can, of course, extend BaseException directly, but then it
+will not be caught by generic except Exception clauses.
+Here's a simple exception we might use in a banking application:
+
+```python
+class InvalidWithdrawal(Exception):
+    pass
+raise InvalidWithdrawal("You don't have $50 in your account")
+```
+
+The last line shows how to call that exception  
+The Exception. \_\_init** method is designed to accept any arguments and store them
+as a tuple in an attribute named args . This makes exceptions easier to define without
+needing to override \_\_init** .
+So a more custom version of above exception is like
+
+```python
+class InvalidWithdrawal(Exception):
+    def __init__(self, balance, amount):
+        super().__init__("account doesn't have ${}".format(amount))
+        self.amount = amount
+        self.balance = balance
+    def overage(self):
+        return self.amount - self.balance
+```
+
+Here's how we would handle an InvalidWithdrawal exception if one was raised:
+
+```python
+try:
+    raise InvalidWithdrawal(25, 50)
+except InvalidWithdrawal as e:
+    print("I'm sorry, but your withdrawal is "
+    "more than your balance by "
+    "${}".format(e.overage()))
+```
+
+#### Conclusion
+
+while researching for this, I had a doubt like there is if..else then why try...except, and i got this to [read](https://docs.python.org/3/glossary.html#term-eafp). Python programmers tend to follow a model of Ask forgiveness rather than permission,
+which is to say, they execute code and then deal with anything that goes wrong. The
+alternative, to look before you leap, is generally frowned upon. There are a few reasons
+for this, but the main one is that it shouldn't be necessary to burn CPU cycles looking
+for an unusual situation that is not going to arise in the normal path through the
+code. Therefore, it is wise to use exceptions for exceptional circumstances, even if
+those circumstances are only a little bit exceptional. Taking this argument further,
+we can actually see that the exception syntax is also effective for flow control. Like
+an if statement, exceptions can be used for decision making, branching, and
+message passing
+
+###### **Further reads**
+[Built-in Exceptions in python](https://docs.python.org/3/library/exceptions.html#bltin-exceptions)  
+[User-defined Exceptions](https://docs.python.org/3/tutorial/errors.html#tut-userexceptions)
