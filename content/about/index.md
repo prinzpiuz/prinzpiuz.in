@@ -6,10 +6,7 @@ draft: false
 
 ## Me
 
-Hi, Myself prinzpiuz, I believe in #FreeAsInFreedom.  
-I am against all that questioning my freedom,  
-So I don't have relegion, cast, men, women or politics  
-I stand for human, I am human  
+Hi, Myself prinzpiuz, I believe in [#FreeAsInFreedom]().  
 I'm software engineer, currently working for [Nuventure Connect](https://nuventure.in/).  
 Previosouly I worked for [Tridz](https://tridz.com/)  as a system admin  
 I started this blog for sharing my Tweaks | Hacks | DIYs  
