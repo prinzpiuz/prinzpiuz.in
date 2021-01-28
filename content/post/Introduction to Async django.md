@@ -17,7 +17,13 @@ Now let's have look into how this async django works....
 - **Thread, Task, Process in python**  
   All the terms refereed in this section are same name given to programs that run concurrently.some common things can be seen this three type of execution is that they can be stopped at any point and switch to different one. the state of each is saved and can be started from it stopped  
   - **Threading**  
-  Threading in python is done with the help of [threading](https://docs.python.org/3/library/threading.html) module, Threads are managed by Operating system, Threads are light weight compared to process and they share same resources 
+  Threading in python is done with the help of [threading](https://docs.python.org/3/library/threading.html) module, Threads are managed by Operating system, Threads are light weight compared to process and they share same resources. Even multiple processors available execution take place in a single one. All the control of threads is with operating system, means operating system can decide when to switch the thread, how much resource should allocate...etc.So thread based execution is also called as [Preemptive multitasking](https://en.wikipedia.org/wiki/Preemption_%28computing%29#Preemptive_multitasking)  
+  - **Task**  
+  [AsyncIO](https://docs.python.org/3/library/asyncio.html) module uses Tasks for achieving concurrency.Task are being run in event loop. Task work just opposite of Threads, like all the control is in the hands of program itself, the program itself will give control back to the event loop when the execution get blocked and event loop check for any other program/task/coroutine available in loop so that it can be run in  event loop in the mean time. here also execution happens in single process. and resource sharing will be same as that of threads
+  - **Process**  
+  Process help to achieve multiprocessing in python. and it can be programmed through [multiprocessing  ](https://docs.python.org/3/library/multiprocessing.html) module. In multiprocessing python create new process. its almost same as running copy's of individual program each of them having independent resources. And main advantage of this is that, unlike threads and task, if it's a multicore system, process can run on each core at same time. the ultimate parallelism. but there are some complication in between the communication of process.
+
+so by understanding this you can select the use cases where you need to select Thread, Task, Process. for I/O bound task threading and task are useful. while for task that rely on heavy cpu cycle, Multiprocessing will be good. And Remember wrong choosing can get you into big technical debts later.
 
 
 ##### Notes  
