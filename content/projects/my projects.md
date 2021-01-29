@@ -32,6 +32,7 @@ draft: false
 
   [![GitHub stars](https://img.shields.io/github/stars/prinzpiuz/Stone-Paper-Scissor?style=flat-square)](https://github.com/prinzpiuz/Stone-Paper-Scissor/stargazers)[![GitHub license](https://img.shields.io/github/license/prinzpiuz/Stone-Paper-Scissor?color=blueviolet&style=flat-square)](https://github.com/prinzpiuz/Stone-Paper-Scissor/blob/master/LICENSE)  
 
-  This is a game app built with Vue and [p2p](https://github.com/subins2000/p2pt)   
+  This is a game app built with Vue and [p2p](https://github.com/subins2000/p2pt)  
+  Game can be played [here](https://silly-fermat-36c0e6.netlify.app/#/) 
   No server needed,No storage needed,Just peer to peer
   
