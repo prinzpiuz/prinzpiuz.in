@@ -8,13 +8,15 @@ draft: false
 
 Hi, Myself prinzpiuz, I believe in [#FreeAsInFreedom]().  
 I'm software engineer, currently working for [Nuventure Connect](https://nuventure.in/).  
-Previosouly I worked for [Tridz](https://tridz.com/)  as a system admin  
+Previosouly I worked for [Tridz](https://tridz.com/) as a system admin  
 I started this blog for sharing my Tweaks | Hacks | DIYs  
-I watch Movies in my free time, also i like Football, Badminton, and Cycling
+I like reading very much (mostly science and history books/blogs),  
+also i'll be watching movies/tv shows in my free time  
+also i like 🚴
 
 #### Contact Me
 
-Currently I'm living in Varapuzha | Kochi | Kerala | India
+Currently I'm living in Varapuzha🏝️ | Kochi | Kerala | India
 
 #### Mail
 

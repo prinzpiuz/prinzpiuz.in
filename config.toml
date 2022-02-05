@@ -38,12 +38,12 @@ copyright = "&copy; Copyright 2020, prinzpiuz"
 [params]
   header_title = "PrinzPiuz"                 # Your header title
   header_subtitle = "Software Engineer | Nuventure | Cochin" # Your header subtitle
-  home_image = "/images/avatar.jpg"          # Path to header image starting from the static directory
+  home_image = "/images/avatar.jpeg"          # Path to header image starting from the static directory
   recent_posts = 5                           # Max amount of recent posts to show
   mainSections = ["posts", "post", "blog"]   # Main sections to include in recent posts
   [[params.social]]
     fa_icon = "fab fa-github fa-1x"          # Font Awesome icon class
-    href = "http://github.com/prinzpiuz"      # Link to associate with icon (http://, https://, mailto:) 4
+    href = "https://github.com/prinzpiuz"      # Link to associate with icon (http://, https://, mailto:) 4
   [[params.social]]
     fa_icon = "fab fa-twitter fa-1x"
     href = "https://twitter.com/prinzpiuz/"
@@ -51,14 +51,8 @@ copyright = "&copy; Copyright 2020, prinzpiuz"
     fa_icon = "fab fa-mastodon"
     href = "https://mastodon.technology/@prinzpiuz"
   [[params.social]]
-    fa_icon = "fab fa-telegram"
-    href = "https://t.me/princepiuz"
-  [[params.social]]
     fa_icon = "fas fa-images"
     href = "https://pixelfed.social/prinzpiuz"
   [[params.social]]
     fa_icon = "fab fa-strava"
     href = "https://www.strava.com/athletes/68470966"
-  [[params.social]]
-    fa_icon = "fas fa-at fa-1x"
-    href = "mailto:prinzpiuz@gmail.com"
