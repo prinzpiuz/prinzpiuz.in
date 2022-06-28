@@ -1,0 +1,74 @@
+<svg width="350" height="300" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+    onload="init()">
+    <style>
+        #mouth {
+            animation: dance 1s infinite alternate;
+        }
+
+        @keyframes dance {
+            100% {
+                transform: rotate(2deg);
+            }
+        }
+    </style>
+    <script>
+        var right_hand;
+        var left_leg;
+        var left_hand;
+        var right_leg;
+        function init() {
+             right_hand = document.getElementById('right_hand');     
+             left_leg = document.getElementById('left_leg'); 
+             left_hand = document.getElementById('left_hand'); 
+             right_leg = document.getElementById('right_leg'); 
+            window.requestAnimationFrame(rotate);
+            }
+   
+    function rotate(timestamp) {
+      var milliseconds = timestamp % 1000;
+      var degrees      = milliseconds * .2; // 360 degrees in 1000 ms
+      right_hand.setAttribute('x1', degrees);
+      left_leg.setAttribute('x2', degrees);
+      left_hand.setAttribute('x2', degrees);
+      right_leg.setAttribute('y2', degrees);
+      window.requestAnimationFrame(rotate);
+     
+    }
+    </script>
+    <ellipse ry="31" rx="30.5" id="head" cy="98" cx="92.5" stroke="#000" fill="none">
+        <animate attributeName="stroke" dur="5000ms" to="#3CAA1A" repeatCount="indefinite" />
+    </ellipse>
+    <line stroke="#000" id="center_bone" y2="208" x2="94" y1="130" x1="93" fill="none">
+        <animate attributeName="stroke" dur="5000ms" to="#1AAA54" repeatCount="indefinite" />
+    </line>
+    <line id="right_arm" y2="162" x2="130" y1="163" x1="94" stroke="#000" fill="none">
+        <animate attributeName="stroke" dur="5000ms" to="#1AAA9A" repeatCount="indefinite" />
+    </line>
+    <line stroke="#000" id="left_arm" y2="162" x2="56" y1="163" x1="95" fill="none">
+        <animate attributeName="stroke" dur="5000ms" to="#1A85AA" repeatCount="indefinite" />
+    </line>
+    <line id="left_leg" y2="238" x2="59" y1="207" x1="94" stroke="#000" fill="none">
+        <animate attributeName="stroke" dur="5000ms" to="#0E4EB8" repeatCount="indefinite" />
+    </line>
+    <line id="right_leg" y2="239" x2="128" y1="207" x1="94" stroke="#000" fill="none">
+        <animate attributeName="stroke" dur="5000ms" to="#160EB8" repeatCount="indefinite" />
+    </line>
+    <ellipse ry="2.5" rx="4.5" id="left_eye" cy="92.5" cx="81.5" stroke="#000" fill="none">
+        <animate attributeName="stroke" dur="5000ms" to="#8E0EB8" repeatCount="indefinite" />
+    </ellipse>
+    <ellipse ry="2.5" rx="4.5" id="right_eye" cy="92.5" cx="105" stroke="#000" fill="none">
+        <animate attributeName="stroke" dur="5000ms" to="#B80E9F" repeatCount="indefinite" />
+    </ellipse>
+    <path id="mouth" d="m80,107c12,13 28,0 28,0" opacity="NaN" stroke="#000" fill="none">
+        <animate attributeName="stroke" dur="5000ms" to="#A95881" repeatCount="indefinite" />
+    </path>
+    <line id="left_hand" y2="139" x2="40" y1="161" x1="57" stroke="#000" fill="none">
+        <animate attributeName="stroke" dur="5000ms" to="#7F2A34" repeatCount="indefinite" />
+    </line>
+    <line id="right_hand" y2="163" x2="129" y1="193" x1="155" stroke="#000" fill="none">
+        <animate attributeName="stroke" dur="5000ms" to="#E73F1B" repeatCount="indefinite" />
+    </line>
+    <line id="nose" y2="106" x2="93" y1="93" x1="93" stroke="#000" fill="none">
+        <animate attributeName="stroke" dur="5000ms" to="#18ECEA" repeatCount="indefinite" />
+    </line>
+</svg>
