@@ -5,7 +5,7 @@ draft: false
 categories: ["server", "linux", "flutter"]
 ---
 
-{{< figure src="/images/media_server.jpg" height=300 width=300 class="figure_center" >}}
+{{< figure src="/images/media_server/media_server.jpg" height=300 width=300 class="figure_center" >}}
 
 > _The reason I'm writing this blog because I learned lot of things while setting up my media server to current configuration, so this is kinda experience sharing, may be useful for those who trying one._
 
