@@ -5,22 +5,22 @@ draft: false
 categories: ["python"]
 ---
 
-This blog is about How to manage Exceptions in python, this is more like notes i took while reading [Dusty Phillips](https://dusty.phillips.codes/)'s [Python 3 Object-oriented Programming](https://www.packtpub.com/product/python-3-object-oriented-programming-third-edition/9781789615852),  
-This post can be divide like
+This blog is about How to manage Exceptions in python, this is more like notes I took while reading [Dusty Phillips](https://dusty.phillips.codes/)'s [Python 3 Object-oriented Programming](https://www.packtpub.com/product/python-3-object-oriented-programming-third-edition/9781789615852),  
+This post can be divided into
 
-- why raising an exception ?
-- what is happening while an exception is raised ?
+- why raise an exception?
+- what is happening when an exception is raised?
 - Handling exceptions
 - The exception hierarchy
-- Defining our own exceptions
+- Defining our exceptions
 
-#### Why raising an exception ?
+#### Why raise an exception?
 
-All the programs out there dont always output a valid result always, errors can happen, like it's not possible to
+All the programs out there don't always output a valid result, errors can happen like it's not possible to
 divide by zero, or to access the eighth item in a five-item list.  
-Want to see some error ? Thw easiest way to cause an exception is this.
+Want to see some errors? The easiest way to cause an exception is this.
 
-```python
+```shell
 >>> print "hello world"
 File "<stdin>", line 1
 print "hello world"
@@ -28,16 +28,14 @@ print "hello world"
 SyntaxError: invalid syntax
 ```
 
-This is print statement in python 2, when we try to run this in python 3 interpreter, we get this syntax error.
-So exceptions are indicators of something wrong in our program, You may have noticed all the preceding built-in exceptions end with the name
-Error . In Python, the words error and exception are used almost interchangeably.
-Errors are sometimes considered more dire than exceptions, but they are dealt with
-in exactly the same way. Indeed, all the error classes in the preceding example have
+This is a print statement in python 2, when we try to run this in the python 3 interpreter, we get this syntax error.
+So exceptions are indicators of something wrong in our program, You may have noticed all the preceding built-in exceptions end with the name Error. In Python, the words error and exception are used almost interchangeably.
+Errors are sometimes considered direr than exceptions, but they are dealt with in the same way. Indeed, all the error classes in the preceding example have
 Exception (which extends BaseException ) as their superclass
 
-#### What's happening while an exception is raised ?
+#### What's happening while an exception is raised?
 
-When an exception is raised, the program execution is stopped, everything supposed to run after the exception will not run, if exception is not managed correctly the program will exit with the error message  
+When an exception is raised, the program execution is stopped, and everything supposed to run after the exception will not run, if the exception is not managed correctly the program will exit with the error message  
 Take a look at this simple function:
 
 ```python
@@ -64,7 +62,7 @@ Exception: This is always raised
 
 #### Handling exceptions
 
-Even though if the program raise some exception, we can recover from it, by wrapping the code in try ... except clause, any code block that might throw an exception can be put inside the try block and thing that we want to do while an exception raise can be put inside the except block
+Even though if the program raises some exception, we can recover from it, by wrapping the code in a try ... except clause, any code block that might throw an exception can be put inside the try block and thing that we want to do while an exception raise can be put inside the except block
 
 ```python
 try:
@@ -79,9 +77,7 @@ executed after the exception
 ```
 
 The problem with the preceding code is that it will catch any type of exception.
-What if we were writing some code that could raise both a TypeError and a
-ZeroDivisionError ? We might want to catch the ZeroDivisionError , but
-let the TypeError propagate to the console
+What if we were writing some code that could raise both a TypeError and a ZeroDivisionError? We might want to catch the ZeroDivisionError, but let the TypeError propagate to the console
 
 ```python
 def funny_division(divider):
@@ -103,9 +99,9 @@ return 100 / anumber
 TypeError: unsupported operand type(s) for /: 'int' and 'str'.
 ```
 
-So in the above code the we are avoiding all ZeroDivisionError but catching and printing all TypeError
+So in the above code, we are avoiding all ZeroDivisionError but catching and printing all TypeError
 
-##### keywords, finally and else
+##### keywords, finally, and else
 
 ```python
 import random
@@ -151,7 +147,7 @@ Caught a ValueError
 This cleanup code is always called
 ```
 
-Note how the print statement in the finally clause is executed no matter what
+Note how the print statement in the `finally` clause is executed no matter what
 happens. This is extremely useful when we need to perform certain tasks after
 our code has finished running (even if an exception has occurred). Some common
 examples include:
@@ -160,22 +156,20 @@ examples include:
 - Closing an open file
 - Sending a closing handshake over the network
 
-The finally clause is also very important when we execute a return statement
-from inside a try clause. The finally handle will still be executed before the
+The `finally` clause is also very important when we execute a return statement
+from inside a try clause. The `finally` handle will still be executed before the
 value is returned
 
 #### The exception hierarchy
 
-Most of exceptions are subclass of Exception class, but this not fully true. Exception itself actually inherits from a class called
-BaseException . In fact, all exceptions must extend the BaseException class or one of its subclasses.  
-When we use the except: clause without specifying any type of exception, it will
-catch all subclasses of BaseException ; which is to say, it will catch all exceptions,
+Most exceptions are a subclass of the Exception class, but this is not fully true. The exception itself inherits from a class called BaseException. All exceptions must extend the BaseException class or one of its subclasses.  
+When we use the `except` clause without specifying any type of exception, it will
+catch all subclasses of `BaseException` which is to say, it will catch all exceptions,
 including the two special ones. Since we almost always want these to get special
-treatment, it is unwise to use the except: statement without arguments. If you want
-to catch all exceptions other than SystemExit and KeyboardInterrupt , explicitly
-catch Exception .  
+treatment, it is unwise to use the `except` statement without arguments. If you want
+to catch all exceptions other than SystemExit and KeyboardInterrupt, explicitly catch Exception.  
 Furthermore, if you do want to catch all exceptions, I suggest using the syntax
-except BaseException: instead of a raw except: . This helps explicitly tell future
+except BaseException: instead of a raw `except`. This helps explicitly tell future
 readers of your code that you are intentionally handling the special case exceptions.
 
 #### Defining our own exceptions
@@ -194,8 +188,8 @@ raise InvalidWithdrawal("You don't have $50 in your account")
 The last line shows how to call that exception  
 The Exception. \_\_init** method is designed to accept any arguments and store them
 as a tuple in an attribute named args . This makes exceptions easier to define without
-needing to override \_\_init** .
-So a more custom version of above exception is like
+needing to override init**.
+So a more custom version of the above exception is like
 
 ```python
 class InvalidWithdrawal(Exception):
@@ -220,17 +214,17 @@ except InvalidWithdrawal as e:
 
 #### Conclusion
 
-while researching for this, I had a doubt like there is if..else then why try...except, and i got this to [read](https://docs.python.org/3/glossary.html#term-eafp). Python programmers tend to follow a model of Ask forgiveness rather than permission,
+while researching for this, I doubted like there is if..else then why try...except, and I got this to [read](https://docs.python.org/3/glossary.html#term-eafp). Python programmers tend to follow a model of Ask forgiveness rather than permission,
 which is to say, they execute code and then deal with anything that goes wrong. The
 alternative, to look before you leap, is generally frowned upon. There are a few reasons
 for this, but the main one is that it shouldn't be necessary to burn CPU cycles looking
 for an unusual situation that is not going to arise in the normal path through the
 code. Therefore, it is wise to use exceptions for exceptional circumstances, even if
 those circumstances are only a little bit exceptional. Taking this argument further,
-we can actually see that the exception syntax is also effective for flow control. Like
-an if statement, exceptions can be used for decision making, branching, and
+we can see that the exception syntax is also effective for flow control. Like an, if statement, exceptions can be used for decision making, branching, and
 message passing
 
 ###### **Further reads**
+
 [Built-in Exceptions in python](https://docs.python.org/3/library/exceptions.html#bltin-exceptions)  
 [User-defined Exceptions](https://docs.python.org/3/tutorial/errors.html#tut-userexceptions)
