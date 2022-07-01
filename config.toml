@@ -36,6 +36,7 @@ copyright = "&copy; Copyright 2022, prinzpiuz"
 
 # Configuration Features
 [params]
+  opengraph_io_api_key = "65b682c0-f713-473b-b75a-30e7eda27791"
   header_title = "PrinzPiuz"                 # Your header title
   header_subtitle = "Software Engineer | NetProtect | Cochin" # Your header subtitle
   home_image = "/images/avatar.jpeg"          # Path to header image starting from the static directory

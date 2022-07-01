@@ -37,7 +37,5 @@ jobs:
           personal_token: ${{ secrets.PERSONAL_TOKEN }}
           external_repository: prinzpiuz/prinzpiuz.github.io
           publish_dir: ./public
-          #   keep_files: true
-          user_name: prinzpiuz
-          user_email: prinzpiuz@gmail.com
           publish_branch: master
+          commit_message: ${{ github.event.head_commit.message }}
