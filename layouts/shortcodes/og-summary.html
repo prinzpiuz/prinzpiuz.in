@@ -1,0 +1,39 @@
+{{- $api_key := "" -}}
+{{- $json := "" -}}
+
+{{/* Get API key from config.toml. */}}
+{{- with .Site.Params.opengraph_io_api_key -}}
+  {{ $api_key = . }}
+{{- else -}}
+  {{- errorf "The '%s' shortcode requires an API key for opengraph.io. Please set '[params] opengraph_io_api_key' in config.toml. See %s" .Name .Position -}}
+{{- end -}}
+
+{{/* Get JSON from OpenGraph.io. */}}
+{{- with .Get 0 -}}
+  {{- $url := replace . ":" "%3A" -}}
+  {{- $url = replace $url "/" "%2F" -}}
+  {{- $query := querify "accept_lang" "auto" "app_id" $api_key -}}
+  {{- $request := printf "https://opengraph.io/api/1.1/site/%s?%s" $url $query -}}
+  {{- $json = getJSON $request -}}
+{{- else -}}
+  {{- errorf "The '%s' shortcode requires a single positional parameter, a URL. See %s" .Name .Position -}}
+{{- end -}}
+
+{{/* Check status code returned by OpenGraph.io. */}}
+{{- if ne (string $json.requestInfo.responseCode) "200" -}}
+  {{ $msg1 := "The '%s' shortcode was unable to retrieve Open Graph data for %s." .Name $json.requestInfo.url }}
+  {{ $msg2 := "The opengraph.io server response code was %s." (string $json.requestInfo.responseCode) }}
+  {{ $msg3 := "See %s" .Position }}
+  {{ errorf "%s %s %s" $msg1 $msg2 $msg3 }}
+{{- end -}}
+
+{{/* Output */}}
+
+<a style="text-decoration: none; padding:5px; color:inherit;" href="{{ $json.openGraph.url }}">
+<div style="width: 600px;border:.5px black solid;border-radius: 13px;background-color:#fff;display: flex;flex-direction: row;">
+  <img style="border:2px black solid;border-radius: 10px;flex: 0 0 auto; width:38%;" src="{{ $json.openGraph.image.url }}">
+    <div style="display: flex;flex-direction: column;overflow: hidden;text-overflow: ellipsis;flex: 1 1 auto; padding:10px;">
+        <div>{{ $json.openGraph.title }}</div>
+    </div>
+</div>
+</a>
