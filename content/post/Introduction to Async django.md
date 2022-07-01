@@ -94,7 +94,7 @@ Now let's look into how this async django works...
     [29/Jan/2021 20:36:11] "GET /async/ HTTP/1.1" 200 30
     ```
 
-    First I called sync view and it took about `3 seconds` to execute the view you can see the view executed synchronously and let's see how the async view was executed, it took only `1 second` to execute the async view. the magic lies in the `asyncio.gather()` function its gather/group tasks and send to the event loop. so here when it executes the first `async_count()` function and reaches `await asyncio`.sleep(1)` the execution gets blocked for 1 second, so the event loop goes to the next task and so on... thats why the printing order in both the views are different
+    First I called sync view and it took about `3 seconds` to execute the view you can see the view executed synchronously and let's see how the async view was executed, it took only `1 second` to execute the async view. the magic lies in the `asyncio.gather()` function its gather/group tasks and send to the event loop. so here when it executes the first `async_count()` function and reaches `await asyncio.sleep(1)` the execution gets blocked for 1 second, so the event loop goes to the next task and so on... thats why the printing order in both the views are different
 
 - **Conclusion**  
   From my viewpoint, it's always synchronous views that are safe to write, but you have to pay the performance cost. In async views there is no ordering guarantee or even no guarantee for that piece of code will be executed. also beware of, for what purpose you are writing these async views. async views will slower response if it's processing some CPU-bound task.  
