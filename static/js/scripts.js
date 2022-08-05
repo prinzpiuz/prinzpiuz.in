@@ -44,7 +44,7 @@ function makeCollapsible() {
 
       var html = '<a href="">more&nbsp;</a>';
       e.innerHTML = html;
-      
+
       div.appendChild(e);
     }
   }

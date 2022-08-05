@@ -17,13 +17,13 @@
         var left_hand;
         var right_leg;
         function init() {
-             right_hand = document.getElementById('right_hand');     
-             left_leg = document.getElementById('left_leg'); 
-             left_hand = document.getElementById('left_hand'); 
-             right_leg = document.getElementById('right_leg'); 
+             right_hand = document.getElementById('right_hand');
+             left_leg = document.getElementById('left_leg');
+             left_hand = document.getElementById('left_hand');
+             right_leg = document.getElementById('right_leg');
             window.requestAnimationFrame(rotate);
             }
-   
+
     function rotate(timestamp) {
       var milliseconds = timestamp % 1000;
       var degrees      = milliseconds * .2; // 360 degrees in 1000 ms
@@ -32,7 +32,7 @@
       left_hand.setAttribute('x2', degrees);
       right_leg.setAttribute('y2', degrees);
       window.requestAnimationFrame(rotate);
-     
+
     }
     </script>
     <ellipse ry="31" rx="30.5" id="head" cy="98" cx="92.5" stroke="#000" fill="none">
