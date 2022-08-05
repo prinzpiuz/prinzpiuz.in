@@ -1,9 +1,10 @@
 name: Build and deploy
 
 on:
-  pull_request_review:
-    types:
-      - submitted
+  push:
+    branches:
+      - master # Set a branch name to trigger deployment
+  pull_request:
 
 jobs:
   deploy:
