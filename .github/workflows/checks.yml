@@ -15,7 +15,7 @@ jobs:
     name: Proofreading
     steps:
       - uses: actions/checkout@v3
-      - uses: heytitle/github-action-yaspeller/v0.0.7
+      - uses: p16i/github-action-yaspeller@v0.0.7
         with:
           ext: "*.md"
           dir: "./content"
