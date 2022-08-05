@@ -20,10 +20,10 @@ Scalable Vector Graphics (SVG) is an XML-based vector image format for **two-dim
 </svg>
 ```
 
-let's look the above svg code. let me try to explain basic elements & attributes of above code. This is a basic svg code for creating circle as shown above. All svg scripts should be between **\<svg>\</svg>** like html is in **\<html>\</html>**.  
-**xmlns** attribute is used to describe the namespace, since SVG is XML-based it is namespaced then only we can use it along with other XML-based languages. here ***http://www.w3.org/2000/svg*** means or defines the namespace for SVG. so when the user agent interprets this code and sees that the XML namespace of this element and its descents is SVG it will interpret it as SVG. This is very useful when users write SVG mixed with other XML-based languages. more about namespaces can be read in this awesome [article](https://developer.mozilla.org/en-US/docs/Web/SVG/Namespaces_Crash_Course)  
-**width** & **height** attribute is used to define the horizontal and vertical length of the user coordinate system  
-**viewBox** should be set to a string, containing four numbers separated by spaces and/or a comma, it defines the position and dimension of the content of the SVG script, the 4 numbers in the viewBox attribute represent min-x, min-y, width, and height. the **min-x** & **min-y** values are set at the top, left corner of our view box. Changing these values will pan our view. **width** and **height** set the number of pixels that are visible inside of our view box. so here 0, 0 means it should be in the center of the viewport, and width and height with values 100, 100 means all pixel should be visible. read [this](https://wattenberger.com/guide/scaling-svg) amazing article to understand more about the SVG view box.  
+let's look the above svg code. let me try to explain basic elements & attributes of above code. This is a basic svg code for creating circle as shown above. All svg scripts should be between **\<svg>\</svg>** like html is in **\<html>\</html>**.
+**xmlns** attribute is used to describe the namespace, since SVG is XML-based it is namespaced then only we can use it along with other XML-based languages. here ***http://www.w3.org/2000/svg*** means or defines the namespace for SVG. so when the user agent interprets this code and sees that the XML namespace of this element and its descents is SVG it will interpret it as SVG. This is very useful when users write SVG mixed with other XML-based languages. more about namespaces can be read in this awesome [article](https://developer.mozilla.org/en-US/docs/Web/SVG/Namespaces_Crash_Course)
+**width** & **height** attribute is used to define the horizontal and vertical length of the user coordinate system
+**viewBox** should be set to a string, containing four numbers separated by spaces and/or a comma, it defines the position and dimension of the content of the SVG script, the 4 numbers in the viewBox attribute represent min-x, min-y, width, and height. the **min-x** & **min-y** values are set at the top, left corner of our view box. Changing these values will pan our view. **width** and **height** set the number of pixels that are visible inside of our view box. so here 0, 0 means it should be in the center of the viewport, and width and height with values 100, 100 means all pixel should be visible. read [this](https://wattenberger.com/guide/scaling-svg) amazing article to understand more about the SVG view box.
 And **circle** element is what we use for drawing circles. It's a [basic](https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/Basic_Shapes)[ shape](https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/Basic_Shapes) element under the SVG tag
 
 ##### Now let's try something of little complex & cute
@@ -95,7 +95,7 @@ There are 3 possible ways we can animate an SVG image, Through **CSS**, **Animat
 
 {{< svg "/static/images/wonder_world_of_svgs/animated_cute_human.svg" >}}
 
-{{< more svg expand >}}  
+{{< more svg expand >}}
 <svg
 width="350"
 height="300"
@@ -149,7 +149,7 @@ cx="92.5"
 stroke="#000"
 fill="none"
 
-> 
+>
 <animate
   attributeName="stroke"
   dur="5000ms"

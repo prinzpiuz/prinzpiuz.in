@@ -10,7 +10,7 @@ Like `mkdir -p`, but in node.js!
 
 ```js
 var mkdirp = require('mkdirp');
-    
+
 mkdirp('/tmp/foo/bar/baz', function (err) {
     if (err) console.error(err)
     else console.log('pow!')
@@ -69,7 +69,7 @@ usage: mkdirp [DIR1,DIR2..] {OPTIONS}
 
   Create each supplied directory including any necessary parent directories that
   don't yet exist.
-  
+
   If the directory already exists, do nothing.
 
 OPTIONS are:

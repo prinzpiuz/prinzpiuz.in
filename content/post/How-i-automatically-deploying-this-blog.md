@@ -63,5 +63,5 @@ It's very pretty straightforward, even though let me explain this very simple fo
 - Then I am using Hugo's action I shared above to build my blog
 - Then I am using an action push build code into my repo using [Github personal access token](https://github.com/settings/tokens) with a custom commit message
 
-So whenever I create a merge request and merge it into master, deployment will automatically happen.  
+So whenever I create a merge request and merge it into master, deployment will automatically happen.
  Thanks to GitHub actions 👏🏼...

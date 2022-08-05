@@ -4,7 +4,7 @@ A fast, minimal, responsive [Hugo](https://gohugo.io/) theme for blogs.
 
 ![screenshot.png](https://raw.githubusercontent.com/austingebauer/devise/master/images/screenshot.png)
 
-For a live demo of the theme, see at: 
+For a live demo of the theme, see at:
 - [themes.gohugo.io/devise](https://themes.gohugo.io/devise)
 - [austingebauer.com](https://austingebauer.com)
 
@@ -28,7 +28,7 @@ This following guides installation, configuration, and updating of the Devise Hu
 
 ### Installation
 
-Before installing this theme, be sure to [install Hugo](https://gohugo.io/getting-started/quick-start/) 
+Before installing this theme, be sure to [install Hugo](https://gohugo.io/getting-started/quick-start/)
 and [create a new site](https://gohugo.io/getting-started/quick-start/#step-2-create-a-new-site).
 
 To install the theme, run the following from the root directory of your Hugo site:
@@ -102,7 +102,7 @@ copyright = "&copy; Copyright Year, Your Name"
 
 ### Updating
 
-To get updates to the theme, run the following from the root directory of your Hugo site: 
+To get updates to the theme, run the following from the root directory of your Hugo site:
 
 ```
 $ git submodule update --remote themes/devise
@@ -110,14 +110,14 @@ $ git submodule update --remote themes/devise
 
 ## Demo
 
-To run a live demo of the theme on your laptop, run the following from the `exampleSite` directory of the 
+To run a live demo of the theme on your laptop, run the following from the `exampleSite` directory of the
 devise theme:
 
 ```bash
 hugo server --themesDir ../.. --watch --verbose --cleanDestinationDir --disableFastRender
 ```
 
-For a live demo of the theme, see at: 
+For a live demo of the theme, see at:
 - [themes.gohugo.io/devise](https://themes.gohugo.io/devise)
 - [austingebauer.com](https://austingebauer.com)
 

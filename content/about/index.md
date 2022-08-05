@@ -6,7 +6,7 @@ draft: false
 
 ## Me
 
-Hi, I am prinzpiuz, I believe in [#FreeAsInFreedom]() in every aspect.  
+Hi, I am prinzpiuz, I believe in [#FreeAsInFreedom]() in every aspect.
 I'm a software engineer, currently working for [NetProtect](https://netprotect.com/), a subsidiary of [Ziff Davis](https://www.ziffdavis.com/).
 
 Previously I worked for
@@ -14,8 +14,8 @@ Previously I worked for
 - [Nuventure Connect](https://nuventure.in/) as a software engineer
 - [Tridz](https://tridz.com/) as a system admin
 
-I started this blog for sharing my Tweaks | Hacks | DIYs  
-I like reading very much (mostly science and history books/blogs),  
+I started this blog for sharing my Tweaks | Hacks | DIYs
+I like reading very much (mostly science and history books/blogs),
 also, I'll be watching movies/tv-shows in my free time.
 
 #### Contact Me

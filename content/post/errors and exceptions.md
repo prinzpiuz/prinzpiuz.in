@@ -5,7 +5,7 @@ draft: false
 categories: ["python"]
 ---
 
-This blog is about How to manage Exceptions in python, this is more like notes I took while reading [Dusty Phillips](https://dusty.phillips.codes/)'s [Python 3 Object-oriented Programming](https://www.packtpub.com/product/python-3-object-oriented-programming-third-edition/9781789615852),  
+This blog is about How to manage Exceptions in python, this is more like notes I took while reading [Dusty Phillips](https://dusty.phillips.codes/)'s [Python 3 Object-oriented Programming](https://www.packtpub.com/product/python-3-object-oriented-programming-third-edition/9781789615852),
 This post can be divided into
 
 - why raise an exception?
@@ -17,7 +17,7 @@ This post can be divided into
 #### Why raise an exception?
 
 All the programs out there don't always output a valid result, errors can happen like it's not possible to
-divide by zero, or to access the eighth item in a five-item list.  
+divide by zero, or to access the eighth item in a five-item list.
 Want to see some errors? The easiest way to cause an exception is this.
 
 ```shell
@@ -35,7 +35,7 @@ Exception (which extends BaseException ) as their superclass
 
 #### What's happening while an exception is raised?
 
-When an exception is raised, the program execution is stopped, and everything supposed to run after the exception will not run, if the exception is not managed correctly the program will exit with the error message  
+When an exception is raised, the program execution is stopped, and everything supposed to run after the exception will not run, if the exception is not managed correctly the program will exit with the error message
 Take a look at this simple function:
 
 ```python
@@ -162,12 +162,12 @@ value is returned
 
 #### The exception hierarchy
 
-Most exceptions are a subclass of the Exception class, but this is not fully true. The exception itself inherits from a class called BaseException. All exceptions must extend the BaseException class or one of its subclasses.  
+Most exceptions are a subclass of the Exception class, but this is not fully true. The exception itself inherits from a class called BaseException. All exceptions must extend the BaseException class or one of its subclasses.
 When we use the `except` clause without specifying any type of exception, it will
 catch all subclasses of `BaseException` which is to say, it will catch all exceptions,
 including the two special ones. Since we almost always want these to get special
 treatment, it is unwise to use the `except` statement without arguments. If you want
-to catch all exceptions other than SystemExit and KeyboardInterrupt, explicitly catch Exception.  
+to catch all exceptions other than SystemExit and KeyboardInterrupt, explicitly catch Exception.
 Furthermore, if you do want to catch all exceptions, I suggest using the syntax
 except BaseException: instead of a raw `except`. This helps explicitly tell future
 readers of your code that you are intentionally handling the special case exceptions.
@@ -185,7 +185,7 @@ class InvalidWithdrawal(Exception):
 raise InvalidWithdrawal("You don't have $50 in your account")
 ```
 
-The last line shows how to call that exception  
+The last line shows how to call that exception
 The Exception. \_\_init** method is designed to accept any arguments and store them
 as a tuple in an attribute named args . This makes exceptions easier to define without
 needing to override init**.
@@ -226,5 +226,5 @@ message passing
 
 ###### **Further reads**
 
-[Built-in Exceptions in python](https://docs.python.org/3/library/exceptions.html#bltin-exceptions)  
+[Built-in Exceptions in python](https://docs.python.org/3/library/exceptions.html#bltin-exceptions)
 [User-defined Exceptions](https://docs.python.org/3/tutorial/errors.html#tut-userexceptions)
