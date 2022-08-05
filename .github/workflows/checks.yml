@@ -18,4 +18,4 @@ jobs:
       - uses: p16i/github-action-yaspeller@v0.0.7
         with:
           ext: "*.md"
-          dir: "./content"
+          dir: "content"
