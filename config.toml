@@ -50,7 +50,7 @@ copyright = "&copy; Copyright 2022, prinzpiuz"
     href = "https://twitter.com/prinzpiuz/"
   [[params.social]]
     fa_icon = "fab fa-mastodon"
-    href = "https://mastodon.technology/@prinzpiuz"
+    href = "https://aana.site/@prinzpiuz"
   [[params.social]]
     fa_icon = "fas fa-images"
     href = "https://pixelfed.social/prinzpiuz"
