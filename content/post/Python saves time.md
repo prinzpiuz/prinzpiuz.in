@@ -9,7 +9,7 @@ categories: ["python", "linux"]
 
 Its common philosophy in the field of it to automate repetitive tasks, even if it takes some time now to set up it will save a lot of time in the future. In this post, I like to share the kinda experience I had today while updating my machine and how python solved it easily.
 
-In my work machine, I am running [Manjaro](https://manjaro.org/) Linux, which is a [Rolling Release](https://en.wikipedia.org/wiki/Rolling_release) based on [Archlinux](https://www.archlinux.org/). so while updating today I had an _“error\_\_: failed_ to commit transaction (conflicting files)”_ error, which is a common error in archlinux due to the same file already exists in the machine(file conflict) you can read more about it in [here](<https://wiki.archlinux.org/index.php/pacman#%22Failed_to_commit_transaction_(conflicting_files)%22_error>). The solution for this error is to delete each file manually, so easy na ?. just remove that file with the rm command.
+In my work machine, I am running [Manjaro](https://manjaro.org/) Linux, which is a [Rolling Release](https://en.wikipedia.org/wiki/Rolling_release) based on [Archlinux](https://www.archlinux.org/). so while updating today I had an _“error\_\_: failed_ to commit transaction (conflicting files)”_ error, which is a common error in archlinux due to the same file already existing in the machine(file conflict) you can read more about it [here](https://wiki.archlinux.org/index.php/pacman#%22Failed_to_commit_transaction_(conflicting_files)%22_error). The solution for this error is to delete each file manually, so easy na ?. just remove that file with the rm command.
 But what if we have this many conflicted files?
 
 {{< more shell expand >}}
@@ -55,7 +55,7 @@ btrfs-progs: /usr/share/man/man8/btrfstune.8.gz exists in filesystem
 btrfs-progs: /usr/share/man/man8/fsck.btrfs.8.gz exists in filesystem
 btrfs-progs: /usr/share/man/man8/mkfs.btrfs.8.gz exists in filesystem
 {{< /more >}}
-so it will be tough to delete all this conflict files one by one. I use python for helping in this kind of context.
+so it will be tough to delete all this conflict files one by one. I use python for help in this kind of context.
 so my idea is to save this shell output as a text file and parse strings one by one from it into a python list and split strings based on space and get the file path from it and run shell commands on that path from python
 
 ```python
