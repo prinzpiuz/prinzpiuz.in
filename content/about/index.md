@@ -37,4 +37,3 @@ Currently, I'm living in Varapuzha🏝️ | Kochi | Kerala | India
 - [Twitter](https://twitter.com/prinzpiuz/)
 - [Mastodon](https://aana.site/@prinzpiuz)
 - [Pixelfed](https://pixelfed.social/prinzpiuz)
-- [Telegram](https://t.me/prinzpiuz)
