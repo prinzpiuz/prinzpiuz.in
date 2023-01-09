@@ -4,7 +4,6 @@ title = "prinzpiuz"
 theme = "devise"
 relativeURLs = true
 enableEmoji = true
-googleAnalytics = "UA-167547056-1"
 enableRobotsTXT = true
 copyright = "&copy; Copyright 2022, prinzpiuz"
 # Main menu items
@@ -38,7 +37,7 @@ copyright = "&copy; Copyright 2022, prinzpiuz"
 [params]
   opengraph_io_api_key = "65b682c0-f713-473b-b75a-30e7eda27791"
   header_title = "PrinzPiuz"                 # Your header title
-  header_subtitle = "Software Engineer | NetProtect | Cochin" # Your header subtitle
+  header_subtitle = "Software Engineer | Ziff Davis | Cochin" # Your header subtitle
   home_image = "/images/avatar.jpeg"          # Path to header image starting from the static directory
   recent_posts = 5                           # Max amount of recent posts to show
   mainSections = ["posts", "post", "blog"]   # Main sections to include in recent posts
