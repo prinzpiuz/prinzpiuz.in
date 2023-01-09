@@ -10,13 +10,13 @@ This is small new year blog about things I self-host to make my life easier, I h
 
 {{< figure src="/images/self_hosting/neofetch.png" caption="[Neofetch](https://github.com/dylanaraps/neofetch) output of my server" height=250 width=350 class="figure_center" >}}
 
-As you can see my local server is only having minimum resources. Yet it accomplishing it's all duties. Even once, I ran [Counter Strike](https://blog.counter-strike.net/) in it and used to play it in my TV using steam link in Amazon 🔥 TV. Of course the output was not that impressing, But I loved that experience.  
+As you can see my local server is only having minimum resources. Yet it accomplishing it's all duties. Even once, I ran [Counter Strike](https://blog.counter-strike.net/) in it and used to play it in my TV using steam link in Amazon 🔥 TV. Of course the output was not that impressing, But I loved that experience.
 
 One of the thing I need to take care while self-hosting things is the availability of server when you need it. The main problem I faced was power failures, like after every power failure, I need to turn on PC by manually pressing power button. A simple hack I find out from PC's BIOS is Wake On Power feature as part of [ACPI](https://en.wikipedia.org/wiki/ACPI). Its turns on PC whenever power comes back, which ensure the availability of server if power is there. Which is what I needed. There is also another feature called [Wake On LAN](https://en.wikipedia.org/wiki/Wake-on-LAN), which works by receiving a magic packet from a network device.
 
 Coming back to our topic, The services I am mainly running are these...
 
-- ##### [Calibre](https://github.com/kovidgoyal/calibre) for E-book management  
+- ##### [Calibre](https://github.com/kovidgoyal/calibre) for E-book management
 
     Basically I'm only using calibre's Database system, I have another beautiful service for its frontend and other required features.
 
@@ -44,7 +44,7 @@ Coming back to our topic, The services I am mainly running are these...
 
 - ##### [Jellyfin](https://github.com/jellyfin/jellyfin) as Media Server
 
-    [📸 ScreenShot](https://prinzpiuz.in/images/self_hosting/jellyfin.png)  
+    [📸 ScreenShot](https://prinzpiuz.in/images/self_hosting/jellyfin.png)
 
     Jellyfin is an open alternative to Plex and Emby, Jellyfin is very feature rich, stable & also cross-platform. It has been more than a year, I am using it. No issues till here.
     Also, it's very easy to manage media in it
@@ -60,7 +60,7 @@ Coming back to our topic, The services I am mainly running are these...
 
 - ##### [Deluge](https://github.com/deluge-torrent/deluge) as BitTorrent client
 
-    [📸 ScreenShot](https://prinzpiuz.in/images/self_hosting/deluge.png)  
+    [📸 ScreenShot](https://prinzpiuz.in/images/self_hosting/deluge.png)
 
     The main reason I am using deluge is that it is very simple and minimal and doing its duty pretty awesome. There is also another reason which is, deluge have a web-UI and android client app and even a browser plugin
 
@@ -79,9 +79,9 @@ Coming back to our topic, The services I am mainly running are these...
   - Ability to work with other apps
   - Free and Open source 💛
 
-I will be updating this list as soon as new services are adding. Also in future I am planning to migrate to Raspberry Pi for more portability.  
+I will be updating this list as soon as new services are adding. Also in future I am planning to migrate to Raspberry Pi for more portability.
 
-In addition, I will be adding services like [Sonarr](https://github.com/Sonarr/Sonarr) & [Radarr](https://github.com/Radarr/Radarr) for downloading TV shows and movies or maybe [Nefarious](https://github.com/lardbit/nefarious). There are also services like [Lidarr](https://github.com/lidarr/lidarr) for your favorite tracks downloads and [Mylar3](https://github.com/mylar3/mylar3) for comic lovers.  
+In addition, I will be adding services like [Sonarr](https://github.com/Sonarr/Sonarr) & [Radarr](https://github.com/Radarr/Radarr) for downloading TV shows and movies or maybe [Nefarious](https://github.com/lardbit/nefarious). There are also services like [Lidarr](https://github.com/lidarr/lidarr) for your favorite tracks downloads and [Mylar3](https://github.com/mylar3/mylar3) for comic lovers.
 
 {{< center >}}
 
