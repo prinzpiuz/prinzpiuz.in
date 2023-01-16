@@ -6,5 +6,18 @@
         "latex",
         "plaintext",
         "markdown"
+    ],
+    "cSpell.words": [
+        "ACPI",
+        "Emby",
+        "hosters",
+        "Jackett",
+        "jellyfin",
+        "Lidarr",
+        "neofetch",
+        "OPDS",
+        "Radarr",
+        "Sonarr",
+        "Ziff"
     ]
 }

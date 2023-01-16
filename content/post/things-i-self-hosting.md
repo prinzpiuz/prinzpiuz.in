@@ -79,12 +79,50 @@ Coming back to our topic, The services I am mainly running are these...
   - Ability to work with other apps
   - Free and Open source 💛
 
-I will be updating this list as soon as new services are adding. Also in future I am planning to migrate to Raspberry Pi for more portability.
+- ##### [Sonarr](https://github.com/Sonarr/Sonarr) as a coordinator for downloading TV shows
 
-In addition, I will be adding services like [Sonarr](https://github.com/Sonarr/Sonarr) & [Radarr](https://github.com/Radarr/Radarr) for downloading TV shows and movies or maybe [Nefarious](https://github.com/lardbit/nefarious). There are also services like [Lidarr](https://github.com/lidarr/lidarr) for your favorite tracks downloads and [Mylar3](https://github.com/mylar3/mylar3) for comic lovers.
+  [📸 ScreenShot](https://prinzpiuz.in/images/self_hosting/sonarr.png)
+
+  Sonarr is a PVR for Usenet and BitTorrent users. It's basically works as a coordinator between my configured indexers, download client, and media manager for TV shows. When I add a new show to monitor in it, Sonarr will grab the best torrent file for me and add it to my download client and when my download finishes it will rename according to the standards and move it to my media folders. Also, it will automatically fetch future episodes too. The best part is it will update the quality of video if a better quality is available.
+
+  - Can scan your existing library and download any missing episodes
+  - Automatically detects new episodes
+  - Can watch for better quality of the episodes you already have and do an automatic upgrade. e.g. from DVD to Blu-ray
+  - Automatic failed download handling will try another release if one fails
+  - Free and Open source 💛
+
+- ##### [Radarr](https://github.com/Radarr/Radarr) as a coordinator downloading Movies
+
+  [📸 ScreenShot](https://prinzpiuz.in/images/self_hosting/radarr.png)
+
+  Radarr is same as that of sonarr except that this will download movies
+
+I will be updating this list as soon as new services are adding. Also in future I am planning to migrate to Raspberry Pi from current server for more portability.
 
 {{< center >}}
 
 So own your things, Enjoy your #freedom
 
 {{< /center >}}
+
+***
+
+__Some useful resources for further research__
+
+- A beautiful compose file for to make all these above services under an umbrella
+  - <https://github.com/navilg/media-stack>
+
+- Nefarious for combined feature of Sonarr and Radarr
+  - <https://github.com/lardbit/nefarious>
+
+- For Self-hosting your own music streaming service you can use Lidarr
+  - <https://github.com/lidarr/lidarr>
+
+- For comic lovers
+  - <https://github.com/mylar3/mylar3>
+
+- A lot more self-hosting ideas
+  - <https://github.com/awesome-selfhosted/awesome-selfhosted>
+
+- Reddit Community
+  - <https://www.reddit.com/r/selfhosted/>
