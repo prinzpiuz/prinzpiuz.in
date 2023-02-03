@@ -5,7 +5,7 @@ theme = "devise"
 relativeURLs = true
 enableEmoji = true
 enableRobotsTXT = true
-copyright = "&copy; Copyright 2022, prinzpiuz"
+copyright = "&copy; Copyright 2023, prinzpiuz"
 # Main menu items
 [menu]
   [[menu.main]]
