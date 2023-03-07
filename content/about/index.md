@@ -31,6 +31,10 @@ Currently, I'm living in Varapuzha🏝️ | Kochi | Kerala | India
 - personal: prinzpiuz@gmail.com
 - work: prince@nuventure.in
 
+#### Support Me
+
+{{< buy_me_beer >}}
+
 #### Social
 
 - [Github](http://github.com/prinzpiuz)
