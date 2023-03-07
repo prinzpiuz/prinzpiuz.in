@@ -52,7 +52,4 @@ copyright = "&copy; Copyright 2023, prinzpiuz"
     href = "https://aana.site/@prinzpiuz"
   [[params.social]]
     fa_icon = "fas fa-images"
-    href = "https://pixelfed.social/prinzpiuz"
-  [[params.social]]
-    fa_icon = "fab fa-strava"
-    href = "https://www.strava.com/athletes/68470966"
+    href = "https://portfolio.pixelfed.social/prinzpiuz"
