@@ -8,6 +8,9 @@
                 {{- block "main" . }}{{- end }}
             </div>
         </div>
+        {{ if .Params.asciinema }}
+            <script src="{{ .Site.BaseURL }}js/asciinema-player.js"></script>
+        {{ end }}
         {{- partial "footer.html" . -}}
     </body>
 </html>

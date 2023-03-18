@@ -5,4 +5,7 @@
     <link rel="stylesheet" href="/css/theme.css"/>
     <script data-goatcounter="https://prinzpiuz.goatcounter.com/count"
         async src="//gc.zgo.at/count.js"></script>
+    {{ if .Params.asciinema }}
+        <link rel="stylesheet" type="text/css" href="{{ .Site.BaseURL }}css/asciinema-player.css" />
+    {{ end }}
 </head>
