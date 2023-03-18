@@ -1,4 +1,4 @@
-# baseURL = ""
+baseURL = "https://prinzpiuz.in/"
 languageCode = "en-us"
 title = "prinzpiuz"
 theme = "devise"
