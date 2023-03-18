@@ -2,6 +2,7 @@
 title: "How I Automatically Deploying This Blog?"
 date: 2022-07-01T23:37:16+05:30
 draft: false
+categories: ["Deploy"]
 ---
 
 This is a kinda sequel to [My Blog Set up](/post/my-blog-setup/).
