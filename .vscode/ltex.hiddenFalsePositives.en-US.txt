@@ -1,0 +1,24 @@
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QHi, I am prinzpiuz, I believe in #FreeAsInFreedom in every aspect.\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\Q{{< figure src=\"/images/self_hosting/neofetch.png\" title=\"Neofetch Output\" height=400 width=400 class=\"figure_center\" >}}\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\Q{{< figure src=\"/images/self_hosting/neofetch.png\" caption=\"Neofetch Output\" height=400 width=400 class=\"figure_center\" >}}\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QCalibre for E-book management\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QCalibre-Web for E-book management\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QCalibre-Web for frontend for calibre database\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\Q{{< figure src=\"/images/self_hosting/neofetch.png\" caption=\"Calibre-Web in my server\" height=250 width=350 class=\"figure_center\" >}}\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\Q{{< figure src=\"/images/self_hosting/calibre_web.png\" caption=\"Calibre-Web in my server\" height=250 width=350 class=\"figure_center\" >}}\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\Q{{< figure src=\"/images/self_hosting/calibre_web.png\" caption=\"Calibre-Web in my server\" height=500 width=700 >}}\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QCalibre-Web frontend for calibre database\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QOne main feature I loved was send to kindle via email, this is main reason I used calibre-web.\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QSo I have created a free SendGrid account and connected it with calibre-web, so whenever i want to send a file my kindle i can just click on the particular book and do a send to kindle ⌣\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QJackett is a torrent search capable of listing working torrents from the configured index\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QSend to Kindle via email\nOPDS feed for e-book reader apps\nBootstrap 3 HTML5 interface\nUser management with fine-grained per-user permissions\nSupport for Calibre Custom Columns\nSelf-update capability\nLogin via LDAP, google/GitHub OAuth and via proxy authentication\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QSo I have created a free SendGrid account and connected it with calibre-web, so whenever I want to send a file my kindle I can just click on the particular book and do send to kindle 😃\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QCalibre-Web as frontend for calibre database\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QJackett is a torrent search capable of listing working torrents from the configured indexes, also it has capabilities to work with other apps like\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QJackett is a torrent search capable of listing working torrents from the configured indexes, also it has capabilities to work with other apps like Sonarr, Radarr, SickRage, CouchPotato, Mylar3, Lidarr, DuckieTV, qBittorrent, Nefarious etc.\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QJackett is a torrent search capable of listing working torrents from the configured indexes, also it has capabilities to work with other apps like Sonarr, Radarr, SickRage, CouchPotato, Mylar3, Lidarr, DuckieTV, qBittorrent, Nefarious etc.\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QJackett is a torrent search capable of listing working torrents from the configured indexes, also it has capabilities to work with other apps like Sonarr, Radarr, SickRage, CouchPotato, Mylar3, Lidarr, DuckieTV, qBittorrent, Nefarious etc.\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QJackett is a torrent search capable of listing working torrents from the configured indexes, also it has capabilities to work with other apps like Sonarr, Radarr, SickRage, CouchPotato, Mylar3, Lidarr, DuckieTV, qBittorrent, Nefarious etc.\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QJackett is a torrent search capable of listing working torrents from the configured indexes, also it has capabilities to work with other apps like Sonarr, Radarr, SickRage, CouchPotato, Mylar3, Lidarr, DuckieTV, qBittorrent, Nefarious etc.\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QSonarr is a PVR for Usenet and BitTorrent users.\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QRadarr as a coordinator downloading Movies\\E$"}

@@ -1,23 +1,29 @@
 {
-    "spellright.language": [
-        "en_US"
-    ],
-    "spellright.documentTypes": [
-        "latex",
-        "plaintext",
-        "markdown"
-    ],
-    "cSpell.words": [
-        "ACPI",
-        "Emby",
-        "hosters",
-        "Jackett",
-        "jellyfin",
-        "Lidarr",
-        "neofetch",
-        "OPDS",
-        "Radarr",
-        "Sonarr",
-        "Ziff"
-    ]
+  "spellright.language": [
+    "en_US"
+  ],
+  "spellright.documentTypes": [
+    "latex",
+    "plaintext",
+    "markdown"
+  ],
+  "cSpell.words": [
+    "ACPI",
+    "archlinux",
+    "asciinema",
+    "dagbag",
+    "Emby",
+    "hosters",
+    "Jackett",
+    "jellyfin",
+    "Lidarr",
+    "neofetch",
+    "oming",
+    "ommand",
+    "OPDS",
+    "pacman",
+    "Radarr",
+    "Sonarr",
+    "Ziff"
+  ]
 }

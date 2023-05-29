@@ -1,0 +1,11 @@
+prinzpiuz
+FreeAsInFreedom
+calibre
+Sonarr
+Radarr
+sonarr
+Lidarr
+zsh
+rc
+asciinema
+DAGs
