@@ -5,8 +5,8 @@ draft: true
 categories: ["Python", "Airflow", "Flask"]
 ---
 
-**This** is a small blog about some recent hurdles I faced in airflow and how I solved it.  
-So what is [airflow](https://airflow.apache.org/) as the airflow site says, _"Airflow is a platform created by the community to programmatically author, schedule and monitor workflows."_. In simple worlds it's a platform for programmatically executing workflows which is written in [DAGs](https://en.wikipedia.org/wiki/Directed_acyclic_graph), **Basically Directed Acyclic Graph** which is the full form of DAG, is a concept in [graph theory](https://en.wikipedia.org/wiki/Graph_theory).  
+**This** is a small blog about some recent hurdles I faced in airflow and how I solved it.
+So what is [airflow](https://airflow.apache.org/) as the airflow site says, _"Airflow is a platform created by the community to programmatically author, schedule and monitor workflows."_. In simple worlds it's a platform for programmatically executing workflows which is written in [DAGs](https://en.wikipedia.org/wiki/Directed_acyclic_graph), **Basically Directed Acyclic Graph** which is the full form of DAG, is a concept in [graph theory](https://en.wikipedia.org/wiki/Graph_theory).
 
 **Coming** to the problem a few weeks back our sign-up [page](https://www.ipvanish.com/) faced some DDoS attack, and we were forced to stop some dependent microservices, one of them is to which was used to pay commission to the affiliates, During that time frame we had more than three thousand sign-ups and paying affiliates commission was got into pending since related microservices where stopped. So my manager told me to write a script and process the log files and fetch the required details and pay the affiliates pending commissions. But I saw some pitfalls in these approaches. One needs to write a script and run it on the server, we need to upload the log files to the server and process them there, This didn't seem to be the best approach. Also, another thing is since each commission payment contains some database fetches and writes and then some API POST method it took about 3-5 seconds to complete. So it will be tough to track the whole process since it will take a decent amount of time to complete. And also I am pretty sure that this can happen in future also. So I need to find a sustainable solution with the following features in mind.
 
@@ -14,9 +14,9 @@ So what is [airflow](https://airflow.apache.org/) as the airflow site says, _"Ai
 * Easy to track the progress
 * Reusable
 
-**And** I was thinking, thinking, and thinking again. After an eternity later 😆 I got an idea. We were already using Airflow for orchestrating some of our workflows. And I found second and third points in the above list work better with Airflow than anything else. But for the first point, the best way is an interface to upload the log file and do the necessary validations the process it. But can we do that through airflow? That was the main question. After some quick research, I found that's possible by the design of Airflow. Airflow's UI is capable of extending 💡.  
+**And** I was thinking, thinking, and thinking again. After an eternity later 😆 I got an idea. We were already using Airflow for orchestrating some of our workflows. And I found second and third points in the above list work better with Airflow than anything else. But for the first point, the best way is an interface to upload the log file and do the necessary validations the process it. But can we do that through airflow? That was the main question. After some quick research, I found that's possible by the design of Airflow. Airflow's UI is capable of extending 💡.
 
-**Since** Airflow's underlying framework is Flask, and the UI is exposed using Flask-Admin. Airflow provides plugin support such that one can extend functionality by adding additional admin views, blueprints, and templates. Let me show you guys a simple example for explaining how this works. I think it's better to explain this by showing a sample code.  
+**Since** Airflow's underlying framework is Flask, and the UI is exposed using Flask-Admin. Airflow provides plugin support such that one can extend functionality by adding additional admin views, blueprints, and templates. Let me show you guys a simple example for explaining how this works. I think it's better to explain this by showing a sample code.
 
 ```python
 import csv
@@ -138,14 +138,14 @@ class AirflowTestPlugin(AirflowPlugin):
     flask_blueprints = [bp]
     appbuilder_views = [v_appbuilder_package]
 
-```  
+```
 
-**This** will create a Scripts tab in the admin UI menu bar of airflow and a menu item called skipped commission which on clicking will take us to the upload interface page like this.  
-[📸 screenshot](https://prinzpiuz.in/images/airflow_ui_extending/airflow_extending.png)  
+**This** will create a Scripts tab in the admin UI menu bar of airflow and a menu item called skipped commission which on clicking will take us to the upload interface page like this.
+[📸 screenshot](https://prinzpiuz.in/images/airflow_ui_extending/airflow_extending.png)
 
-**So** upon uploading the file, Flask view will do the required validations and if everything is correct this view will trigger the correct dag we want to start with the data from the log file and redirect the page to the corresponding dag page.  
+**So** upon uploading the file, Flask view will do the required validations and if everything is correct this view will trigger the correct dag we want to start with the data from the log file and redirect the page to the corresponding dag page.
 
-**Meanwhile**, the template file for the above interface is created using [Jinja](https://jinja.palletsprojects.com/en/3.1.x/) and code looks like this.  
+**Meanwhile**, the template file for the above interface is created using [Jinja](https://jinja.palletsprojects.com/en/3.1.x/) and code looks like this.
 
 ```html
 {% extends "airflow/main.html" %} {% block content %}
@@ -181,4 +181,3 @@ class AirflowTestPlugin(AirflowPlugin):
   * [source](https://github.com/pallets/flask)
   * [flask admin](https://flask-admin.readthedocs.io/en/latest/)
   * [jinja](https://jinja.palletsprojects.com/en/2.10.x/)
-  
