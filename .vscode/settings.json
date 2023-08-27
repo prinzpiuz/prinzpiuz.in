@@ -12,11 +12,13 @@
     "archlinux",
     "asciinema",
     "dagbag",
+    "dpkg",
     "Emby",
     "hosters",
     "Jackett",
     "jellyfin",
     "Lidarr",
+    "mtab",
     "neofetch",
     "oming",
     "ommand",
@@ -24,6 +26,7 @@
     "pacman",
     "Radarr",
     "Sonarr",
+    "sysconfig",
     "Ziff"
   ]
 }
