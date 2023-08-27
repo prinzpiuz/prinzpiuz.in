@@ -7,25 +7,25 @@ categories: ["Linux", "rSync", "Debian", "Cloning"]
 
 ##### **Context**
 
-Recently my primary workstation failed due to a motherboard issue. I needed to quickly get my development environment setup on another machine. Here are the steps I followed to clone my machine using [rsync](https://en.wikipedia.org/wiki/Rsync).  
-Before moving on to that, Let me explain a little about rsync, In layman's terms rsync is a utility for efficiently transferring and synchronizing files between a computer and an external disk, it does this by sending only the differences in the data to the destination rather than resending the whole file every time there is an update. This makes it very useful for mirroring or backing up data.  
-My workstation is primarily [Debian 11](https://www.debian.org/), and It has all my development environment setup including some old projects in python 2, which is very little documented and hard to set up again.  
+Recently my primary workstation failed due to a motherboard issue. I needed to quickly get my development environment setup on another machine. Here are the steps I followed to clone my machine using [rsync](https://en.wikipedia.org/wiki/Rsync).
+Before moving on to that, Let me explain a little about rsync, In layman's terms rsync is a utility for efficiently transferring and synchronizing files between a computer and an external disk, it does this by sending only the differences in the data to the destination rather than resending the whole file every time there is an update. This makes it very useful for mirroring or backing up data.
+My workstation is primarily [Debian 11](https://www.debian.org/), and It has all my development environment setup including some old projects in python 2, which is very little documented and hard to set up again.
 So Planned to clone my system using rsync to copy all data and setup to new machine.
 
 ##### **The Failed First Attempt**
 
-Even though my primary goal was to clone the system, I thought about cloning to an updated Debian 12 machine, Since the Debian 12 was released recently. So I took a fresh Debian 12 installation and tried cloning using rsync. The cloning completed successfully, and I updated the system packages in machine and tried a reboot. But after rebooting it failed to boot properly and got stuck in a loop 😭.  
+Even though my primary goal was to clone the system, I thought about cloning to an updated Debian 12 machine, Since the Debian 12 was released recently. So I took a fresh Debian 12 installation and tried cloning using rsync. The cloning completed successfully, and I updated the system packages in machine and tried a reboot. But after rebooting it failed to boot properly and got stuck in a loop 😭.
 After some debugging, I realized there were some missing or incompatible packages between Debian 11 and 12 which caused the boot failure. So I decided to clone it to another Debian 11 machine instead of upgrading to Debian 12.
 
 ##### **The Successful Cloning**
 
-I took machine and installed with a fresh [minimal Debian 11](https://www.debian.org/CD/netinst/) installation. Which wastes less time in installation. And install only required software packages for the system to boot. Then I enabled root login in the ssh configuration. Then only it will be able to synchronize the files in root partition with primary machine. Next, from primary machine, I make sure that target machine is available via network using [ping](https://linux.die.net/man/8/ping) command, I have connected both machines to the same local network through LAN.  
+I took machine and installed with a fresh [minimal Debian 11](https://www.debian.org/CD/netinst/) installation. Which wastes less time in installation. And install only required software packages for the system to boot. Then I enabled root login in the ssh configuration. Then only it will be able to synchronize the files in root partition with primary machine. Next, from primary machine, I make sure that target machine is available via network using [ping](https://linux.die.net/man/8/ping) command, I have connected both machines to the same local network through LAN.
 
 {{< center >}}
 `ping <target_machine_ip>`
 {{< /center >}}
 
-And its sample output can be seen [here](/images/how_to_clone_your_machine_to_another/ping.png).  
+And its sample output can be seen [here](/images/how_to_clone_your_machine_to_another/ping.png).
 Next I make sure that rsync with same version available in both system, if not for Debian system rsync can be installed with:
 
 {{< center >}}
@@ -38,7 +38,7 @@ Version of rsync can be checked like:
 `rsync --version`
 {{< /center >}}
 
-And its sample output can be seen [here](/images/how_to_clone_your_machine_to_another/rsync_version.png).  
+And its sample output can be seen [here](/images/how_to_clone_your_machine_to_another/rsync_version.png).
 For more additional rsync related information we can use.
 
 {{< center >}}
@@ -66,7 +66,7 @@ Next, I ran the rsync command from primary machine to clone all files and direct
 `sudo rsync -vPa -e 'ssh -o StrictHostKeyChecking=no' --exclude-from=/root/exclude-files.txt / REMOTE-IP:/`
 {{< /center >}}
 
-Let's break down the above command to understand what's happening under the hood.  
+Let's break down the above command to understand what's happening under the hood.
 
 - **`sudo`** – It is a command that allows the execution of a command with administrative privileges.
 - **`rsync`** – The rsync command itself, is used for file synchronization and transfer.
@@ -77,13 +77,13 @@ Let's break down the above command to understand what's happening under the hood
 - **`-o StrictHostKeyChecking=no`** – Disables strict host key checking, which means that the SSH connection will not prompt for confirmation if the remote server’s host key is unknown.
 - **`--exclude-from=/root/exclude-files.txt`** – This option allows you to specify a file that contains a list of patterns or paths to be excluded from the synchronization.
 - **`/`** – The forward slash represents the source directory or root directory that will be cloned.
-- **`REMOTE-IP:/`** – Specifies the destination server’s IP address or hostname followed by a colon and forward slash. It indicates the remote directory where the cloned files will be copied.  
+- **`REMOTE-IP:/`** – Specifies the destination server’s IP address or hostname followed by a colon and forward slash. It indicates the remote directory where the cloned files will be copied.
 
-The whole process took about an hour for me and after the successful completion, We need to restart the target machine, and then it will be an exact replica of the primary machine.  
+The whole process took about an hour for me and after the successful completion, We need to restart the target machine, and then it will be an exact replica of the primary machine.
 
 ##### **What's Next?**
 
-So For next I am planning to run a cron job with rsync command that can do incremental cloning, means only syncing the changed files in host system to target system, So that I can always have the files in target system be latest.  
+So For next I am planning to run a cron job with rsync command that can do incremental cloning, means only syncing the changed files in host system to target system, So that I can always have the files in target system be latest.
 Also, it's possible to do the process from target machine too, So that I can use one machine in office and other in home. Both will always be synchronized, and no need to carry laptops anymore 😀.
 Hmm, Need to do little research here. Let me try, test and give you guys an update
 
@@ -99,5 +99,5 @@ sudo yum install rsync        [On RHEL/CentOS/Fedora and Rocky/AlmaLinux]
 sudo emerge -a sys-apps/rsync [On Gentoo Linux]
 sudo apk add rsync            [On Alpine Linux]
 sudo pacman -S rsync          [On Arch Linux]
-sudo zypper install rsync     [On OpenSUSE]   
+sudo zypper install rsync     [On OpenSUSE]
 ```
