@@ -1,0 +1,25 @@
+{{ define "main" }}
+<div class="pl-sm-4 ml-sm-5 pt-2">
+  <div class="row">
+    <div class="col-12">
+      {{ range $key, $taxonomy := .Site.Taxonomies.categories.Alphabetical }}
+      <div class="pb-3">
+        <h5>
+          <span class="badge category text-capitalize">
+            {{ .Name | humanize }}
+          </span>
+        </h5>
+        <ul class="list-unstyled">
+          {{ range $taxonomy.Pages }}
+          <li>
+            {{ .Date.Format "Jan 2 2006" }}
+            <a href="{{ .Permalink }}">{{ .Title }}</a>
+          </li>
+          {{ end }}
+        </ul>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</div>
+{{ end }}
