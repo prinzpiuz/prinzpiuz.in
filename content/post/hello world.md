@@ -5,6 +5,9 @@ draft: false
 categories: ["helloworld"]
 ---
 
-welcome,കേറി വാടാ മക്കളെ, :pray: to my blog.
-This is my first blog, This is a kinda test publishing :sunglasses:
+{{< figure src="/images/hello-world/welcome.gif" height=150 width=150 class="figure_center" >}}
+
+welcome, കേറി വാടാ മക്കളെ, स्वागत :pray: to my blog.
+This is my first blog post.
+This is a test publishing :sunglasses:
 thank you... :sparkling_heart:
