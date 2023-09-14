@@ -1,0 +1,7 @@
+<footer class="text-center pb-1">
+  <small class="text-muted">
+    {{ if .Site.Copyright }} {{ .Site.Copyright | safeHTML }}<br />
+    Built with 💚 in <a href="https://gohugo.io/">Hugo</a>
+    {{ else }} {{ "&copy; Copyright Year, Your Name" | safeHTML }} {{ end }}
+  </small>
+</footer>
