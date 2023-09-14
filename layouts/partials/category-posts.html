@@ -10,7 +10,7 @@
                 <ul class="list-unstyled">
                     {{ range first $recent (where .Site.RegularPages "Type" "in" site.Params.mainSections) }}
                         <li>
-                            {{ .Date.Format "Jan 2 2006" }}
+                            {{ .Date.Format "Jan-02-06" }}
                             <a href="{{ .Permalink }}">{{ .Title }}</a>
                         </li>
                     {{ end }}
@@ -26,8 +26,8 @@
                     {{ range .Site.RegularPages }}
                         {{if not (in .Title "About")}}
                             <li>
-                                {{ .Date.Format "Jan 2 2006" }}
-                                <a href="{{ .Permalink }}">{{ .Title }}</a>
+                                {{ .Date.Format "Jan-02-06" }}
+                                <a href="{{ .Permalink }}">{{ .Title }}</a> {{ partial "reading-time.html" . }}
                             </li>
                         {{ end }}
                     {{ end }}
