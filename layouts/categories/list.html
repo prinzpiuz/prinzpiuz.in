@@ -12,8 +12,8 @@
         <ul class="list-unstyled">
           {{ range $taxonomy.Pages }}
           <li>
-            {{ .Date.Format "Jan 2 2006" }}
-            <a href="{{ .Permalink }}">{{ .Title }}</a>
+            {{ .Date.Format "Jan-2-06" }}
+            <a href="{{ .Permalink }}">{{ .Title }}</a> {{ partial "reading-time.html" . }}
           </li>
           {{ end }}
         </ul>
