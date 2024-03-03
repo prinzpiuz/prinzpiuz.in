@@ -1,6 +1,6 @@
 # Changelog
 
-## [1.1.0] - 2024-03-03
+## [1.2.0] - 2024-03-03
 
 ### ⛰️  Features
 
@@ -9,6 +9,7 @@
 
 ### 🐛 Bug Fixes
 
+- *(css)* Responsive issue for version fixed - ([3dcc522](https://github.com/orhun/git-cliff/commit/3dcc522d66a29c1ba469ada914a2611436f80405))
 - Spelling mistakes corrected in python saves my time post - ([aa24932](https://github.com/orhun/git-cliff/commit/aa24932d48bb3d2aaf4941de06d6705474845001))
 - Spelling and grammer mistakes in Open alternative, not ban fixed - ([2171b69](https://github.com/orhun/git-cliff/commit/2171b699178d56306cf2374fc67cf28f921059db))
 
@@ -27,6 +28,7 @@
 - *(action)* Bug in deploy action fixed - ([8bdcbf0](https://github.com/orhun/git-cliff/commit/8bdcbf07a78f4fd27950c6219aab551f69bfd3ac))
 - *(action)* Bug in github action fixed - ([3daeeda](https://github.com/orhun/git-cliff/commit/3daeeda786e01b4ca2255abce107bf163f2c5645))
 - *(action)* Bug in action file fixed - ([957ad13](https://github.com/orhun/git-cliff/commit/957ad137482275d3a456ff4719270e60a5427760))
+- *(generated)* Changelog generated & version updated automatically - ([3e37c23](https://github.com/orhun/git-cliff/commit/3e37c23620b2d7305f10ff47b9b471fed4dbbc2e))
 - *(generated)* Changelog generated & version updated automatically - ([6f846df](https://github.com/orhun/git-cliff/commit/6f846df77dbfc56b3f5c4de1d14e9bde67f728a3))
 - *(merge)* Merge - ([bec5d03](https://github.com/orhun/git-cliff/commit/bec5d03cbbabd16d30f69cd00154fd0521a1343e))
 - Gitignore updated - ([d547585](https://github.com/orhun/git-cliff/commit/d547585a90f9bed035f5ccfdf8c81f901509a69a))
