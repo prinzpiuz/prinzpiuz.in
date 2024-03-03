@@ -22,7 +22,6 @@ Want to see some errors? The easiest way to cause an exception is this.
 
 ```shell
 >>> print "hello world"
-File "<stdin>", line 1
 print "hello world"
 ^
 SyntaxError: invalid syntax
@@ -54,8 +53,6 @@ statement never executes either
 >>> no_return()
 I am about to raise an exception
 Traceback (most recent call last):
-File "<stdin>", line 1, in <module>
-File "exception_quits.py", line 3, in no_return
 raise Exception("This is always raised")
 Exception: This is always raised
 ```
@@ -92,10 +89,8 @@ print(funny_division("hello"))
 Zero is not a good idea!
 2.0
 Traceback (most recent call last):
-File "catch_specific_exception.py", line 9, in <module>
 print(funny_division("hello"))
-File "catch_specific_exception.py", line 3, in funny_division
-return 100 / anumber
+return 100 / divider
 TypeError: unsupported operand type(s) for /: 'int' and 'str'.
 ```
 
