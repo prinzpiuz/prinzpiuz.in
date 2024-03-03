@@ -35,5 +35,5 @@ jobs:
           personal_token: ${{ secrets.PERSONAL_TOKEN }}
           external_repository: prinzpiuz/prinzpiuz.github.io
           publish_dir: ./public
-          publish_branch: release
+          publish_branch: master
           commit_message: ${{ github.event.head_commit.message }}
