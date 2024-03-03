@@ -3,7 +3,7 @@
     {{ if .Site.Copyright }} {{ .Site.Copyright | safeHTML }}<br />
     Built with 💚 in <a href="https://gohugo.io/">Hugo</a>{{ end }}<br />
   </small>
-  <div style="text-align: right !important;position: absolute !important;right: 50px !important;bottom: 16px !important;">
+  <div id="version_div">
     {{ if.Site.Params.version }} v{{ .Site.Params.version | safeHTML }} {{ end}}
   </div>
 </footer>
