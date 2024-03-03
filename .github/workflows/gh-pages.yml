@@ -3,9 +3,7 @@ name: Build and deploy
 on:
   push:
     branches:
-      - master # Set a branch name to trigger deployment
-  pull_request:
-
+      - release
 jobs:
   deploy:
     runs-on: ubuntu-20.04
