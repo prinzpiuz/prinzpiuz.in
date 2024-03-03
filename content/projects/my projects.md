@@ -15,7 +15,7 @@ draft: false
   [![GitHub stars](https://img.shields.io/github/stars/prinzpiuz/RailwayStatusBot?style=flat-square)](https://github.com/prinzpiuz/RailwayStatusBot/stargazers)[![GitHub license](https://img.shields.io/github/license/prinzpiuz/RailwayStatusBot?style=flat-square)](https://github.com/prinzpiuz/RailwayStatusBot/blob/master/LICENSE)
 
   This is a telegram BOT built with python and telegram bot framework
-   this bot provides lots of functionalites provied by NTES inside telegram
+   this bot provides lots of functionalites provided by NTES inside telegram
 
 - ##### [MSM](https://github.com/prinzpiuz/MSM)
 
@@ -37,5 +37,5 @@ draft: false
 
   [![GitHub stars](https://img.shields.io/github/stars/prinzpiuz/django_update_checker)](https://github.com/prinzpiuz/django_update_checker/stargazers)[![GitHub forks](https://img.shields.io/github/forks/prinzpiuz/django_update_checker)](https://github.com/prinzpiuz/django_update_checker/network)[![GitHub license](https://img.shields.io/github/license/prinzpiuz/django_update_checker?color=black)](https://github.com/prinzpiuz/django_update_checker/blob/master/LICENSE)
 
-  This is a forkable github action to track django's security updates and new releases from django's offcial [News & Events](https://www.djangoproject.com/weblog/) portal & notify alerts in configured MS Teams channel
+  This is a forkable github action to track django's security updates and new releases from django's official [News & Events](https://www.djangoproject.com/weblog/) portal & notify alerts in configured MS Teams channel
   No servers needed 🤞

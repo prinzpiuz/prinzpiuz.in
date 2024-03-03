@@ -57,7 +57,7 @@ These are the set-ups i tried so far....
   So I planned to build a dedicated Mobile application for the same which solves all above problem
 
 - **[MSM](https://github.com/prinzpiuz/MSM)**
-   This is a dedicated mobile application for managing media server buit with [dart](https://dart.dev/) and [flutter](https://flutter.dev/) works on top of ssh,
+   This is a dedicated mobile application for managing media server built with [dart](https://dart.dev/) and [flutter](https://flutter.dev/) works on top of ssh,
   so no other dedicated set-up needed for this, only need to enable ssh connections to your server
    **Features**
 
