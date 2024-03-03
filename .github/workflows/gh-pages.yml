@@ -30,10 +30,10 @@ jobs:
         # If you're changing the branch from main,
         # also change the `main` in `refs/heads/main`
         # below accordingly.
-        if: ${{ github.ref == 'refs/heads/master' }}
+        if: ${{ github.ref == 'refs/heads/release' }}
         with:
           personal_token: ${{ secrets.PERSONAL_TOKEN }}
           external_repository: prinzpiuz/prinzpiuz.github.io
           publish_dir: ./public
-          publish_branch: master
+          publish_branch: release
           commit_message: ${{ github.event.head_commit.message }}
