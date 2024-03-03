@@ -1,6 +1,6 @@
 # Changelog
 
-## [1.3.0] - 2024-03-03
+## [1.4.0] - 2024-03-03
 
 ### ⛰️  Features
 
@@ -28,6 +28,7 @@
 - *(action)* Bug in deploy action fixed - ([8bdcbf0](https://github.com/orhun/git-cliff/commit/8bdcbf07a78f4fd27950c6219aab551f69bfd3ac))
 - *(action)* Bug in github action fixed - ([3daeeda](https://github.com/orhun/git-cliff/commit/3daeeda786e01b4ca2255abce107bf163f2c5645))
 - *(action)* Bug in action file fixed - ([957ad13](https://github.com/orhun/git-cliff/commit/957ad137482275d3a456ff4719270e60a5427760))
+- *(generated)* Changelog generated & version updated automatically - ([689dc40](https://github.com/orhun/git-cliff/commit/689dc40d377712f82f37a93584ae5dfeff8ca6b4))
 - *(generated)* Changelog generated & version updated automatically - ([14da551](https://github.com/orhun/git-cliff/commit/14da5511192134214e44f3669a797bd48009c3f1))
 - *(generated)* Changelog generated & version updated automatically - ([3e37c23](https://github.com/orhun/git-cliff/commit/3e37c23620b2d7305f10ff47b9b471fed4dbbc2e))
 - *(generated)* Changelog generated & version updated automatically - ([6f846df](https://github.com/orhun/git-cliff/commit/6f846df77dbfc56b3f5c4de1d14e9bde67f728a3))
@@ -38,6 +39,7 @@
 ### Build
 
 - *(github)* Improvements in github action - ([a68614c](https://github.com/orhun/git-cliff/commit/a68614c84ea5694919c5dada9e0078c20a37b90a))
+- *(github action)* Updated branch in action file - ([f2eef59](https://github.com/orhun/git-cliff/commit/f2eef59dcf555e43d93474ec3c4dece06923c7c3))
 - *(github action)* Branch name updated in action file - ([7fe1409](https://github.com/orhun/git-cliff/commit/7fe1409341d29eab8a5b006858a10911249e1acb))
 - *(github action)* Commiting changes to master branch removed - ([3cfee7e](https://github.com/orhun/git-cliff/commit/3cfee7ea1e6598f81c132c92d339f6c710e737aa))
 - *(pre-commit)* Added typos checker and git leak analyzer - ([4dd2f08](https://github.com/orhun/git-cliff/commit/4dd2f0887f929a11af4e7c1168cc0b7db4c6df4b))
