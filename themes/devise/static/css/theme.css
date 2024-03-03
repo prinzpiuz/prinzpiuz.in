@@ -15275,3 +15275,15 @@ h4 {
 a {
   text-decoration: underline;
 }
+
+#version_div {
+  @media (min-width: 1366px) {
+    text-align: right ;
+    position: absolute ;
+    right: 50px ;
+    bottom: 16px ;
+  }
+  @media (max-width: 600px){
+    text-align: center;
+  }
+}
