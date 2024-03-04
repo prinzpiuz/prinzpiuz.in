@@ -15279,11 +15279,23 @@ a {
 #version_div {
   @media (min-width: 1366px) {
     text-align: right ;
-    position: absolute ;
+    position: relative ;
     right: 50px ;
     bottom: 16px ;
   }
   @media (max-width: 600px){
     text-align: center;
+  }
+}
+
+
+#not_by_ai {
+  @media (min-width: 1366px) {
+    position: fixed;
+    left: 50px ;
+    bottom: 16px ;
+  }
+  @media (max-width: 600px){
+    float: none;
   }
 }
