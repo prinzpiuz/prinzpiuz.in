@@ -1,9 +1,10 @@
 # Changelog
 
-## [1.4.0] - 2024-03-03
+## [1.5.0] - 2024-03-04
 
 ### ⛰️  Features
 
+- *(footer)* Not by AI added at footer - ([164922d](https://github.com/orhun/git-cliff/commit/164922dcb26fc359266fb4e8c7c4a07cebd6490b))
 - *(footer)* Showing version on footer - ([061e0f3](https://github.com/orhun/git-cliff/commit/061e0f37e801c102c9f94cac7537ea10534b4f82))
 - *(head)* Removed google analytics and introduced opensource analytics called goat counter - ([b706c82](https://github.com/orhun/git-cliff/commit/b706c82c59e10dcc4f94b97be80725e6f52ea4a2))
 
@@ -28,6 +29,7 @@
 - *(action)* Bug in deploy action fixed - ([8bdcbf0](https://github.com/orhun/git-cliff/commit/8bdcbf07a78f4fd27950c6219aab551f69bfd3ac))
 - *(action)* Bug in github action fixed - ([3daeeda](https://github.com/orhun/git-cliff/commit/3daeeda786e01b4ca2255abce107bf163f2c5645))
 - *(action)* Bug in action file fixed - ([957ad13](https://github.com/orhun/git-cliff/commit/957ad137482275d3a456ff4719270e60a5427760))
+- *(generated)* Changelog generated & version updated automatically - ([ed454f3](https://github.com/orhun/git-cliff/commit/ed454f3d5dd712ec53f4bd0984c31359d838aaee))
 - *(generated)* Changelog generated & version updated automatically - ([689dc40](https://github.com/orhun/git-cliff/commit/689dc40d377712f82f37a93584ae5dfeff8ca6b4))
 - *(generated)* Changelog generated & version updated automatically - ([14da551](https://github.com/orhun/git-cliff/commit/14da5511192134214e44f3669a797bd48009c3f1))
 - *(generated)* Changelog generated & version updated automatically - ([3e37c23](https://github.com/orhun/git-cliff/commit/3e37c23620b2d7305f10ff47b9b471fed4dbbc2e))
