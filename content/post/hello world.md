@@ -2,6 +2,7 @@
 title: "Hello world..!"
 date: 2020-05-24T00:59:10+05:30
 draft: false
+clappy: true
 categories: ["helloworld"]
 ---
 

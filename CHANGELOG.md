@@ -1,6 +1,6 @@
 # Changelog
 
-## [1.5.0] - 2024-03-04
+## [1.6.0] - 2024-03-18
 
 ### ⛰️  Features
 
@@ -17,6 +17,7 @@
 ### 🚜 Refactor
 
 - *(content)* Spelling correction - ([7329d73](https://github.com/orhun/git-cliff/commit/7329d7356915049243cd9cb1467891e21f4baee0))
+- *(prinzpiuz.in)* Full refactor - ([c494553](https://github.com/orhun/git-cliff/commit/c494553f10460c280296d1438a922df5fa860d7a))
 - Spelling correction - ([cf41d57](https://github.com/orhun/git-cliff/commit/cf41d5749dd155649c02bb2e66a74ce506155d0d))
 
 ### 🎨 Styling
@@ -29,6 +30,7 @@
 - *(action)* Bug in deploy action fixed - ([8bdcbf0](https://github.com/orhun/git-cliff/commit/8bdcbf07a78f4fd27950c6219aab551f69bfd3ac))
 - *(action)* Bug in github action fixed - ([3daeeda](https://github.com/orhun/git-cliff/commit/3daeeda786e01b4ca2255abce107bf163f2c5645))
 - *(action)* Bug in action file fixed - ([957ad13](https://github.com/orhun/git-cliff/commit/957ad137482275d3a456ff4719270e60a5427760))
+- *(generated)* Changelog generated & version updated automatically - ([ae88a31](https://github.com/orhun/git-cliff/commit/ae88a31f3908cc257092eccbf6264e32705f76de))
 - *(generated)* Changelog generated & version updated automatically - ([ed454f3](https://github.com/orhun/git-cliff/commit/ed454f3d5dd712ec53f4bd0984c31359d838aaee))
 - *(generated)* Changelog generated & version updated automatically - ([689dc40](https://github.com/orhun/git-cliff/commit/689dc40d377712f82f37a93584ae5dfeff8ca6b4))
 - *(generated)* Changelog generated & version updated automatically - ([14da551](https://github.com/orhun/git-cliff/commit/14da5511192134214e44f3669a797bd48009c3f1))
