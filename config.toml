@@ -1,10 +1,11 @@
 baseURL = "https://prinzpiuz.in/"
 languageCode = "en-us"
 title = "prinzpiuz"
+theme = "devise"
 relativeURLs = true
 enableEmoji = true
 enableRobotsTXT = true
-copyright = "&copy; Copyright 2023, prinzpiuz"
+copyright = "&copy; Copyright 2024, prinzpiuz"
 # Main menu items
 [menu]
   [[menu.main]]

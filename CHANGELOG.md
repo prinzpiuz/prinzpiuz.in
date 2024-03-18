@@ -2,6 +2,7 @@
 
 ## [1.10.0] - 2024-03-18
 
+
 ### ⛰️  Features
 
 - *(footer)* Not by AI added at footer - ([164922d](https://github.com/orhun/git-cliff/commit/164922dcb26fc359266fb4e8c7c4a07cebd6490b))
@@ -18,7 +19,6 @@
 ### 🚜 Refactor
 
 - *(content)* Spelling correction - ([7329d73](https://github.com/orhun/git-cliff/commit/7329d7356915049243cd9cb1467891e21f4baee0))
-- *(prinzpiuz.in)* Full refactor - ([c494553](https://github.com/orhun/git-cliff/commit/c494553f10460c280296d1438a922df5fa860d7a))
 - *(themes)* Removed themes - ([4c1263a](https://github.com/orhun/git-cliff/commit/4c1263a37f78c8de543a9dd21b4aaf974e28aa40))
 - Spelling correction - ([cf41d57](https://github.com/orhun/git-cliff/commit/cf41d5749dd155649c02bb2e66a74ce506155d0d))
 
