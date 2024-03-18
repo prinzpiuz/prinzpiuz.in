@@ -1,6 +1,6 @@
 # Changelog
 
-## [1.7.0] - 2024-03-18
+## [1.9.0] - 2024-03-18
 
 ### ⛰️  Features
 
@@ -31,6 +31,7 @@
 - *(action)* Bug in deploy action fixed - ([8bdcbf0](https://github.com/orhun/git-cliff/commit/8bdcbf07a78f4fd27950c6219aab551f69bfd3ac))
 - *(action)* Bug in github action fixed - ([3daeeda](https://github.com/orhun/git-cliff/commit/3daeeda786e01b4ca2255abce107bf163f2c5645))
 - *(action)* Bug in action file fixed - ([957ad13](https://github.com/orhun/git-cliff/commit/957ad137482275d3a456ff4719270e60a5427760))
+- *(generated)* Changelog generated & version updated automatically - ([b40d5ae](https://github.com/orhun/git-cliff/commit/b40d5aed57affb2aaab591eca373f5dbf21df58e))
 - *(generated)* Changelog generated & version updated automatically - ([e25e2bc](https://github.com/orhun/git-cliff/commit/e25e2bc1ec32fc364a9ae309890bf7de562a9486))
 - *(generated)* Changelog generated & version updated automatically - ([ae88a31](https://github.com/orhun/git-cliff/commit/ae88a31f3908cc257092eccbf6264e32705f76de))
 - *(generated)* Changelog generated & version updated automatically - ([ed454f3](https://github.com/orhun/git-cliff/commit/ed454f3d5dd712ec53f4bd0984c31359d838aaee))
