@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <title>My Media Server Set-up</title>
+
+  <meta name="description" content="Just Some Random Engineering, DIY Stuff" />
+
+
+  <meta property="og:url" content="https://prinzpiuz.in/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="prinzpiuz" />
+  <meta
+    property="og:description"
+    content="Just Some Random Engineering, DIY Stuff"
+  />
+  <meta property="og:image" content="https://prinzpiuz.in/images/avatar.jpeg" />
+
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta property="twitter:domain" content="prinzpiuz.in" />
+  <meta property="twitter:url" content="https://prinzpiuz.in/" />
+  <meta name="twitter:title" content="prinzpiuz" />
+  <meta
+    name="twitter:description"
+    content="Just Some Random Engineering, DIY Stuff"
+  />
+  <meta
+    name="twitter:image"
+    content="https://prinzpiuz.in/images/avatar.jpeg"
+  />
+
+
+
+  <meta charset="utf-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, shrink-to-fit=no"
+  />
+  <link rel="stylesheet" href="../../css/theme.css" />
+  <script
+    data-goatcounter="https://prinzpiuz.goatcounter.com/count"
+    async
+    src="//gc.zgo.at/count.js"
+  ></script>
+</head>
+<body>
+    <div id="content" class="mx-auto"><header class="container mt-sm-5 mt-4 mb-4 mt-xs-1">
+    <div class="row">
+        <div class="col-sm-4 col-12 text-sm-right text-center pt-sm-4">
+            <a href="../../" class="text-decoration-none">
+                <img id="home-image" class="rounded-circle"
+
+
+                            src="../../images/avatar.jpeg"
+
+
+                />
+            </a>
+        </div>
+        <div class="col-sm-8 col-12 text-sm-left text-center">
+            <h2 class="m-0 mb-2 mt-4">
+                <a href="../../" class="text-decoration-none">
+
+                        PrinzPiuz
+
+                </a>
+            </h2>
+            <p class="text-muted mb-1">
+
+                    Software Engineer | Ziff Davis | Cochin
+
+            </p>
+            <ul id="nav-links" class="list-inline mb-2">
+
+
+                    <li class="list-inline-item">
+                        <a class="badge badge-white " href="../../about/" title="About">About</a>
+                    </li>
+
+                    <li class="list-inline-item">
+                        <a class="badge badge-white " href="../../post/" title="Posts">Posts</a>
+                    </li>
+
+                    <li class="list-inline-item">
+                        <a class="badge badge-white " href="../../categories/" title="Categories">Categories</a>
+                    </li>
+
+                    <li class="list-inline-item">
+                        <a class="badge badge-white " href="../../projects/my-projects/index.html" title="Projects">Projects</a>
+                    </li>
+
+            </ul>
+            <ul id="nav-social" class="list-inline">
+
+                    <li class="list-inline-item mr-3">
+                        <a href="https://github.com/prinzpiuz" target="_blank">
+                            <i class="fab fa-github fa-1x text-muted"></i>
+                        </a>
+                    </li>
+
+                    <li class="list-inline-item mr-3">
+                        <a href="https://twitter.com/prinzpiuz/" target="_blank">
+                            <i class="fab fa-twitter fa-1x text-muted"></i>
+                        </a>
+                    </li>
+
+                    <li class="list-inline-item mr-3">
+                        <a href="https://elk.zone/aana.site/@prinzpiuz" target="_blank">
+                            <i class="fab fa-mastodon text-muted"></i>
+                        </a>
+                    </li>
+
+                    <li class="list-inline-item mr-3">
+                        <a href="https://portfolio.pixelfed.social/prinzpiuz" target="_blank">
+                            <i class="fas fa-images text-muted"></i>
+                        </a>
+                    </li>
+
+            </ul>
+        </div>
+    </div>
+    <hr />
+</header>
+<div class="container">
+    <div class="pl-sm-2">
+        <div class="mb-3">
+            <h3 class="mb-0">My Media Server Set-up</h3>
+
+            <small class="text-muted">Published June 13, 2020</small>
+            <small>🕐 4 Mins</small>
+
+
+        </div>
+
+        <article>
+            <figure class="figure_center">
+    <img src="../../images/media_server/media_server.jpg" width="300" height="300"/>
+</figure>
+
+<blockquote>
+<p><em>The reason I&rsquo;m writing this blog because I learned lot of things while setting up my media server to current configuration, so this is kinda experience sharing, may be useful for those who trying one.</em></p>
+</blockquote>
+<h5 id="little-history-">Little History 🕜</h5>
+<p>From my teenage itself I&rsquo;m a binge movie watcher, at that time I saves money and buy DVDs of movies I like and I had a small collection of DVDs, then I brought a desktop PC, and it was time of USB sticks and it became little more easy and cheap to collect movies, still somebody need to download movies from torrent (thanks <a href="https://en.wikipedia.org/wiki/The_Pirate_Bay">The Pirate Bay</a>) or <a href="https://en.wikipedia.org/wiki/Ripping">rip</a> from DVDs,but still network speed was very low then(I had a BSNL bradband connection which had only 512kbps),
+With the arrival of 4G. everybody having lot of data and every body was downloading lot of movies, TV series, Documentaries..etc. and I set-up a <a href="https://kodi.tv/">Kodi</a> server in pc and kodi client in mobile and streaming movies from pc to mobile through LAN, which changed a lot of things in my movie watching experience. like now I can watch movies from where ever I want, also I can watch in whatever style I want. Then I moved to Banglore for my intership and work. And it changed lot of things like it was an end to first era of my pc, after i went to Banglore nobody used my PC and it was turning to an E-waste, and I am forced to watch movies in my laptop (I always hated saving media files in my work machine). But I had to, But within year due to some personal issues I had to relocate to my home town. Also we had a new smart TV in home. Also a Fibre optic internet connection @ 50MbPS 😆 and I have got a plan for my old PC, <strong>Turning it to media server</strong> 🎦.
+so the set-up is like my old pc as <a href="https://emby.media/">emby</a> server streaming contents to my TV through my Home LAN.and for performance i changed it to a minimal <a href="https://www.debian.org/">debian</a> machine and all access through <a href="https://en.wikipedia.org/wiki/Secure_Shell">ssh</a> from lap or phone through <a href="https://termux.com/">termux</a> since there is no GUI I can save lot of memory.</p>
+<h5 id="thats-not-the-end-">That&rsquo;s not the end. ❗</h5>
+<p>we need to put movies to server, TV shows and movies to their respective folders.
+These are the set-ups i tried so far&hellip;.</p>
+<ul>
+<li>
+<p><strong><a href="https://en.wikipedia.org/wiki/Secure_copy">scp</a></strong>
+its a secure file copying protocol for transferring file between two machines</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">scp -r user@host:directory/SourceFolder TargetFolder
+</code></pre></div></li>
+<li>
+<p><strong><a href="https://en.wikipedia.org/wiki/SSHFS">sshfs</a></strong>
+Basically it helps to mount file system from server in to our local machine, which gives us a GUI based interaction to server, so that we can edit files and move them to server like normal GUI thing,I created the following <a href="https://en.wikipedia.org/wiki/Alias_(command)">alias</a> for the easy access of same</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">alias mov<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;sudo sshfs user@host:directory/SourceFolder TargetFolder&#34;</span>
+</code></pre></div><p>this should be added to your corresponding rc file.</p>
+</li>
+<li>
+<p><strong><a href="https://github.com/prinzpiuz/Media-Server-Manager">Custom Media Server Manager</a></strong>
+so this is a custom minimal server built with python and <a href="https://github.com/pallets/flask">flask</a>, flask is minimal python framework to build web application, and I run this in my server with <a href="https://github.com/unbit/uwsgi">uWSGI</a> and <a href="https://en.wikipedia.org/wiki/Nginx">nginx</a>
+<strong>Features</strong></p>
+<ul>
+<li>Uploading to selected folder</li>
+<li>Multi uploads</li>
+<li>New folder creation</li>
+<li>File listing</li>
+<li>Multiple file deletion</li>
+</ul>
+<p><strong>Limitations</strong></p>
+<ul>
+<li>Server management(on top of media i also need to watch this)</li>
+<li>Chance of browser to crash while handling larger files(especially in mobile browser)
+*solution(upload in chunks)</li>
+<li>No background task support</li>
+<li>Hard to set-up for non technical people</li>
+</ul>
+<p>So I planned to build a dedicated Mobile application for the same which solves all above problem</p>
+</li>
+<li>
+<p><strong><a href="https://github.com/prinzpiuz/MSM">MSM</a></strong>
+This is a dedicated mobile application for managing media server built with <a href="https://dart.dev/">dart</a> and <a href="https://flutter.dev/">flutter</a> works on top of ssh,
+so no other dedicated set-up needed for this, only need to enable ssh connections to your server
+<strong>Features</strong></p>
+<ul>
+<li>Dedicated manager for Media servers</li>
+<li>Works on top of ssh</li>
+<li>Support background tasks</li>
+<li>CRUD operations on files</li>
+<li>Live shell(you can access server from mobile through terminal in application)</li>
+<li>Save and run frequently used commands</li>
+</ul>
+<p>latest stable release can be Downloaded from <a href="https://github.com/prinzpiuz/MSM/releases">here</a>
+And this was very useful for me since I usually download movies in my phone.
+Ios version not yet available&hellip;.</p>
+</li>
+</ul>
+
+        </article>
+
+    </div>
+</div>
+    </div>
+
+    <footer class="text-center pb-1">
+  <small class="text-muted">
+     &copy; Copyright 2024, prinzpiuz<br />
+    Built with 💚 in <a href="https://gohugo.io/">Hugo</a><br />
+  </small>
+  <div id="version_div">
+     v1.5.0
+  </div>
+  <div id="not_by_ai">
+    <img src="../../images/not_by_ai.svg" alt="Not By AI" />
+  </div>
+</footer>
+</body>
+</html>

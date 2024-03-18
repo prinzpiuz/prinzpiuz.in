@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>prinzpiuz</title>
+    <link>https://prinzpiuz.in/</link>
+    <description>Recent content on prinzpiuz</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; Copyright 2024, prinzpiuz</copyright>
+    <lastBuildDate>Sun, 27 Aug 2023 20:24:58 +0530</lastBuildDate><atom:link href="https://prinzpiuz.in/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to Clone Your Machine to Another</title>
+      <link>https://prinzpiuz.in/post/how-to-clone-your-machine-to-another/</link>
+      <pubDate>Sun, 27 Aug 2023 20:24:58 +0530</pubDate>
+
+      <guid>https://prinzpiuz.in/post/how-to-clone-your-machine-to-another/</guid>
+      <description>Context Recently my primary workstation failed due to a motherboard issue. I needed to quickly get my development environment setup on another machine. Here are the steps I followed to clone my machine using rsync. Before moving on to that, Let me explain a little about rsync, In layman&amp;rsquo;s terms rsync is a utility for efficiently transferring and synchronizing files between a computer and an external disk, it does this by sending only the differences in the data to the destination rather than resending the whole file every time there is an update.</description>
+    </item>
+
+    <item>
+      <title>DYK? You Can Actually Extend Airflow UI 😯</title>
+      <link>https://prinzpiuz.in/post/how-to-extent-airflow-ui/</link>
+      <pubDate>Sun, 28 May 2023 10:49:11 +0530</pubDate>
+
+      <guid>https://prinzpiuz.in/post/how-to-extent-airflow-ui/</guid>
+      <description>This is a small blog about some recent hurdles I faced in airflow and how I solved it. So what is airflow as the airflow site says, &amp;ldquo;Airflow is a platform created by the community to programmatically author, schedule and monitor workflows.&amp;quot;. In simple worlds it&amp;rsquo;s a platform for programmatically executing workflows which is written in DAGs, Basically Directed Acyclic Graph which is the full form of DAG, is a concept in graph theory.</description>
+    </item>
+
+    <item>
+      <title>A Small Tweak To Enhance Your Shell</title>
+      <link>https://prinzpiuz.in/post/a-small-tweak-to-enhance-your-shell/</link>
+      <pubDate>Sat, 18 Mar 2023 18:50:44 +0530</pubDate>
+
+      <guid>https://prinzpiuz.in/post/a-small-tweak-to-enhance-your-shell/</guid>
+      <description>This is a short blog about, How a small enhancement in my .zshrc file helped me to do some repetitive steps automatically. So coming to the topic, Let me explain the situation, Te problem here was navigating between each of the project folders, also to activate virtual environments in the case of python projects. I need to remember all the paths of projects folder and their virtual environments in case of python projects.</description>
+    </item>
+
+    <item>
+      <title>Things I Self-Hosting 🖳</title>
+      <link>https://prinzpiuz.in/post/things-i-self-hosting/</link>
+      <pubDate>Fri, 06 Jan 2023 20:23:40 +0530</pubDate>
+
+      <guid>https://prinzpiuz.in/post/things-i-self-hosting/</guid>
+      <description>Disclaimer: This blog is not in any way promoting piracy.
+This is small new year blog about things I self-host to make my life easier, I have a previous blog here about my media server setup. So the same system I am using for self-hosting some applications which are helpful for me in my day-to-day life, basically I have turned my childhood PC to a local server, it&amp;rsquo;s been 13 years since its first boot, this mighty machine working for me without any complaints.</description>
+    </item>
+
+    <item>
+      <title>How I Automatically Deploying This Blog?</title>
+      <link>https://prinzpiuz.in/post/how-i-automatically-deploying-this-blog/</link>
+      <pubDate>Fri, 01 Jul 2022 23:37:16 +0530</pubDate>
+
+      <guid>https://prinzpiuz.in/post/how-i-automatically-deploying-this-blog/</guid>
+      <description>This is a kinda sequel to My Blog Set up. So before explaining the current setup. I know you guys are curious about knowing about the previous setup. Before, my setup was like, I set up my blog&amp;rsquo;s build folder as a git submodule. so after completing writing my blog I manually take a build and push both repos (blog repo and build repo) to GitHub and then manually create merge requisites there and merge to master.</description>
+    </item>
+
+    <item>
+      <title>Wonder World of SVGs</title>
+      <link>https://prinzpiuz.in/post/wonder-world-of-svgs/</link>
+      <pubDate>Mon, 06 Jun 2022 10:45:15 +0530</pubDate>
+
+      <guid>https://prinzpiuz.in/post/wonder-world-of-svgs/</guid>
+      <description>Little SVG history Scalable Vector Graphics (SVG) is an XML-based vector image format for two-dimensional graphics with support for interactivity and animation. The SVG specification is an open standard developed by the World Wide Web Consortium (W3C) in 1999. SVG images are defined in a vector graphics format and stored in XML text files. SVG images can thus be scaled in size without loss of quality, and SVG files can be searched, indexed, scripted, and compressed.</description>
+    </item>
+
+    <item>
+      <title>Introduction to Async Django</title>
+      <link>https://prinzpiuz.in/post/introduction-to-async-django/</link>
+      <pubDate>Thu, 21 Jan 2021 00:43:47 +0530</pubDate>
+
+      <guid>https://prinzpiuz.in/post/introduction-to-async-django/</guid>
+      <description>This is a written version of the talk I presented to my colleagues. This is a basic introduction to asynchronous programming in django. So the async support for django came with django 3.1 in august 2020, a great leap in the history of Django. still, it lacks support in certain areas like ORM, and cache layer, but it will be available soon. The effort for implementing async support in django was done by Andrew Godwin 👏 Now let&amp;rsquo;s look into how this async django works&amp;hellip;</description>
+    </item>
+
+    <item>
+      <title>Errors and Exceptions In Python</title>
+      <link>https://prinzpiuz.in/post/errors-and-exceptions/</link>
+      <pubDate>Sat, 03 Oct 2020 17:46:27 +0530</pubDate>
+
+      <guid>https://prinzpiuz.in/post/errors-and-exceptions/</guid>
+      <description>This blog is about How to manage Exceptions in python, this is more like notes I took while reading Dusty Phillips&amp;rsquo;s Python 3 Object-oriented Programming, This post can be divided into
+ why raise an exception? what is happening when an exception is raised? Handling exceptions The exception hierarchy Defining our exceptions  Why raise an exception? All the programs out there don&amp;rsquo;t always output a valid result, errors can happen like it&amp;rsquo;s not possible to divide by zero, or to access the eighth item in a five-item list.</description>
+    </item>
+
+    <item>
+      <title>Open Alternative, Not Ban</title>
+      <link>https://prinzpiuz.in/post/open-alternative-not-ban/</link>
+      <pubDate>Tue, 07 Jul 2020 16:23:04 +0530</pubDate>
+
+      <guid>https://prinzpiuz.in/post/open-alternative-not-ban/</guid>
+      <description>So this blog is my personal opinion on the recent ban of apps in India, Due to the border conflicts with China. Openly say I am against this ban, but rather than ban people must aware of the consequences of using such closed-source apps. And people must aware that not only apps in this list raise security issues said by the Government, all those closed source apps out there raises different kind of security and privacy issues for us as an individual</description>
+    </item>
+
+    <item>
+      <title>My Media Server Set-up</title>
+      <link>https://prinzpiuz.in/post/my-media-server-setup/</link>
+      <pubDate>Sat, 13 Jun 2020 14:58:35 +0530</pubDate>
+
+      <guid>https://prinzpiuz.in/post/my-media-server-setup/</guid>
+      <description>The reason I&amp;rsquo;m writing this blog because I learned lot of things while setting up my media server to current configuration, so this is kinda experience sharing, may be useful for those who trying one.
+ Little History 🕜 From my teenage itself I&amp;rsquo;m a binge movie watcher, at that time I saves money and buy DVDs of movies I like and I had a small collection of DVDs, then I brought a desktop PC, and it was time of USB sticks and it became little more easy and cheap to collect movies, still somebody need to download movies from torrent (thanks The Pirate Bay) or rip from DVDs,but still network speed was very low then(I had a BSNL bradband connection which had only 512kbps), With the arrival of 4G.</description>
+    </item>
+
+    <item>
+      <title>Python Saves My Time</title>
+      <link>https://prinzpiuz.in/post/python-saves-time/</link>
+      <pubDate>Tue, 02 Jun 2020 00:20:59 +0530</pubDate>
+
+      <guid>https://prinzpiuz.in/post/python-saves-time/</guid>
+      <description>&amp;ldquo;Repetitive task should be automated&amp;rdquo; - somebody, somewhere 😎
+ Its common philosophy in the field of it to automate repetitive tasks, even if it takes some time now to set up it will save a lot of time in the future. In this post, I like to share the kinda experience I had today while updating my machine and how python solved it easily.
+In my work machine, I am running Manjaro Linux, which is a Rolling Release based on Archlinux.</description>
+    </item>
+
+    <item>
+      <title>My Blog Set up</title>
+      <link>https://prinzpiuz.in/post/my-blog-setup/</link>
+      <pubDate>Tue, 26 May 2020 15:29:46 +0530</pubDate>
+
+      <guid>https://prinzpiuz.in/post/my-blog-setup/</guid>
+      <description>I was planning to set up a blog from my college days onwards. it&amp;rsquo;s been 5 years since I&amp;rsquo;m out of college. since I&amp;rsquo;m a miser person, I was always looking for the cheapest hosting service 😎 also, I don&amp;rsquo;t want the headaches of hosting like
+ server management database management backups hosting/bandwidth/scalability/users  And I have found a solution for all this, for server management, we can choose some hosting services like GitHub/Gitlab pages or Netfly.</description>
+    </item>
+
+    <item>
+      <title>My Projects</title>
+      <link>https://prinzpiuz.in/projects/my-projects/</link>
+      <pubDate>Sun, 24 May 2020 01:17:05 +0530</pubDate>
+
+      <guid>https://prinzpiuz.in/projects/my-projects/</guid>
+      <description>These are my hobby projects 👏 if you guys like, put a ⭐ More projects can be seen here   Railgadi BOT
+This is a telegram BOT built with python and telegram bot framework this bot provides lots of functionalites provided by NTES inside telegram
+  MSM
+This is a android app built on top of Dart and Flutter This app helps to manage our media servers like emby/jellyfin/plex/kodi&amp;hellip;etc Works on top of ssh, No further setup needed in server</description>
+    </item>
+
+    <item>
+      <title>Hello world..!</title>
+      <link>https://prinzpiuz.in/post/hello-world/</link>
+      <pubDate>Sun, 24 May 2020 00:59:10 +0530</pubDate>
+
+      <guid>https://prinzpiuz.in/post/hello-world/</guid>
+      <description>welcome, കേറി വാടാ മക്കളെ, स्वागत 🙏 to my blog.
+This is my first blog post.
+This is a test publishing 😎
+Thank you&amp;hellip; 💖</description>
+    </item>
+
+    <item>
+      <title>About</title>
+      <link>https://prinzpiuz.in/about/</link>
+      <pubDate>Sat, 23 May 2020 00:18:33 +0530</pubDate>
+
+      <guid>https://prinzpiuz.in/about/</guid>
+      <description>Me Hi, I am prinzpiuz, I believe in #FreeAsInFreedom in every aspect. I&amp;rsquo;m a software engineer, currently working for NetProtect, a subsidiary of Ziff Davis.
+Previously I worked for
+ Nuventure Connect as a software engineer Tridz as a system admin  I started this blog for sharing my Tweaks | Hacks | DIYs I like reading very much (mostly science and history books/blogs), also, I&amp;rsquo;ll be watching movies/tv-shows in my free time.</description>
+    </item>
+
+  </channel>
+</rss>

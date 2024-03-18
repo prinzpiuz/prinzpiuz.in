@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <title>How to Clone Your Machine to Another</title>
+
+  <meta name="description" content="Just Some Random Engineering, DIY Stuff" />
+
+
+  <meta property="og:url" content="https://prinzpiuz.in/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="prinzpiuz" />
+  <meta
+    property="og:description"
+    content="Just Some Random Engineering, DIY Stuff"
+  />
+  <meta property="og:image" content="https://prinzpiuz.in/images/avatar.jpeg" />
+
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta property="twitter:domain" content="prinzpiuz.in" />
+  <meta property="twitter:url" content="https://prinzpiuz.in/" />
+  <meta name="twitter:title" content="prinzpiuz" />
+  <meta
+    name="twitter:description"
+    content="Just Some Random Engineering, DIY Stuff"
+  />
+  <meta
+    name="twitter:image"
+    content="https://prinzpiuz.in/images/avatar.jpeg"
+  />
+
+
+
+  <meta charset="utf-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, shrink-to-fit=no"
+  />
+  <link rel="stylesheet" href="../../css/theme.css" />
+  <script
+    data-goatcounter="https://prinzpiuz.goatcounter.com/count"
+    async
+    src="//gc.zgo.at/count.js"
+  ></script>
+</head>
+<body>
+    <div id="content" class="mx-auto"><header class="container mt-sm-5 mt-4 mb-4 mt-xs-1">
+    <div class="row">
+        <div class="col-sm-4 col-12 text-sm-right text-center pt-sm-4">
+            <a href="../../" class="text-decoration-none">
+                <img id="home-image" class="rounded-circle"
+
+
+                            src="../../images/avatar.jpeg"
+
+
+                />
+            </a>
+        </div>
+        <div class="col-sm-8 col-12 text-sm-left text-center">
+            <h2 class="m-0 mb-2 mt-4">
+                <a href="../../" class="text-decoration-none">
+
+                        PrinzPiuz
+
+                </a>
+            </h2>
+            <p class="text-muted mb-1">
+
+                    Software Engineer | Ziff Davis | Cochin
+
+            </p>
+            <ul id="nav-links" class="list-inline mb-2">
+
+
+                    <li class="list-inline-item">
+                        <a class="badge badge-white " href="../../about/" title="About">About</a>
+                    </li>
+
+                    <li class="list-inline-item">
+                        <a class="badge badge-white " href="../../post/" title="Posts">Posts</a>
+                    </li>
+
+                    <li class="list-inline-item">
+                        <a class="badge badge-white " href="../../categories/" title="Categories">Categories</a>
+                    </li>
+
+                    <li class="list-inline-item">
+                        <a class="badge badge-white " href="../../projects/my-projects/index.html" title="Projects">Projects</a>
+                    </li>
+
+            </ul>
+            <ul id="nav-social" class="list-inline">
+
+                    <li class="list-inline-item mr-3">
+                        <a href="https://github.com/prinzpiuz" target="_blank">
+                            <i class="fab fa-github fa-1x text-muted"></i>
+                        </a>
+                    </li>
+
+                    <li class="list-inline-item mr-3">
+                        <a href="https://twitter.com/prinzpiuz/" target="_blank">
+                            <i class="fab fa-twitter fa-1x text-muted"></i>
+                        </a>
+                    </li>
+
+                    <li class="list-inline-item mr-3">
+                        <a href="https://elk.zone/aana.site/@prinzpiuz" target="_blank">
+                            <i class="fab fa-mastodon text-muted"></i>
+                        </a>
+                    </li>
+
+                    <li class="list-inline-item mr-3">
+                        <a href="https://portfolio.pixelfed.social/prinzpiuz" target="_blank">
+                            <i class="fas fa-images text-muted"></i>
+                        </a>
+                    </li>
+
+            </ul>
+        </div>
+    </div>
+    <hr />
+</header>
+<div class="container">
+    <div class="pl-sm-2">
+        <div class="mb-3">
+            <h3 class="mb-0">How to Clone Your Machine to Another</h3>
+
+            <small class="text-muted">Published August 27, 2023</small>
+            <small>🕐 5 Mins</small>
+
+
+        </div>
+
+        <article>
+            <h5 id="context"><strong>Context</strong></h5>
+<p>Recently my primary workstation failed due to a motherboard issue. I needed to quickly get my development environment setup on another machine. Here are the steps I followed to clone my machine using <a href="https://en.wikipedia.org/wiki/Rsync">rsync</a>.
+Before moving on to that, Let me explain a little about rsync, In layman&rsquo;s terms rsync is a utility for efficiently transferring and synchronizing files between a computer and an external disk, it does this by sending only the differences in the data to the destination rather than resending the whole file every time there is an update. This makes it very useful for mirroring or backing up data.
+My workstation is primarily <a href="https://www.debian.org/">Debian 11</a>, and It has all my development environment setup including some old projects in Python 2, which is very little documented and hard to set up again.
+So Planned to clone my system using rsync to copy all data and setup to a new machine.</p>
+<h5 id="the-failed-first-attempt"><strong>The Failed First Attempt</strong></h5>
+<p>Even though my primary goal was to clone the system, I thought about cloning to an updated Debian 12 machine, Since the Debian 12 was released recently. So I took a fresh Debian 12 installation and tried cloning using rsync. The cloning was completed successfully, and I updated the system packages in the machine and tried a reboot. But after rebooting it failed to boot properly and got stuck in a loop 😭.
+After some debugging, I realized there were some missing or incompatible packages between Debian 11 and 12 which caused the boot failure. So I decided to clone it to another Debian 11 machine instead of upgrading to Debian 12.</p>
+<h5 id="the-successful-cloning"><strong>The Successful Cloning</strong></h5>
+<p>I took the machine and installed it with a fresh <a href="https://www.debian.org/CD/netinst/">minimal Debian 11</a> installation. Which wastes less time in installation. And install only required software packages for the system to boot. Then I enabled root login in the <code>SSH</code> configuration. Then only it will be able to synchronize the files in the root partition of the primary machine with the target machine. Next, from the primary machine, I make sure that the target machine is reachable via the network using the <a href="https://linux.die.net/man/8/ping">ping</a> command, I have connected both machines to the same local network and, I have used Ethernet ports for better speed.</p>
+<div style="text-align: center"><code>ping &lt;target_machine_ip&gt;</code></div>
+
+<p>And its sample output can be seen <a href="../../images/how_to_clone_your_machine_to_another/ping.png">here</a>.
+Next, I make sure that rsync with same version available in both systems, if not for the Debian system rsync can be installed with the command:</p>
+<div style="text-align: center"><code>sudo apt install rsync</code></div>
+
+<p>Version of rsync can be checked like:</p>
+<div style="text-align: center"><code>rsync --version</code></div>
+
+<p>And its sample output can be seen <a href="../../images/how_to_clone_your_machine_to_another/rsync_version.png">here</a>.</p>
+<p>There are directories and files that I want to exclude from cloning because they are either already available in the destination server or are autogenerated. These include the <code>/boot</code>, <code>/tmp</code>, and <code>/dev</code> directories. Therefore, I created an exclusion file <code>/root/exclude-files.txt</code> and added the following entries:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">/boot
+/dev
+/tmp
+/sys
+/proc
+/backup
+/etc/fstab
+/etc/mtab
+/etc/mdadm.conf
+/etc/sysconfig/network*
+</code></pre></div><p>Next, I ran the rsync command from the primary machine to clone all files and directories to the target machine, The command is</p>
+<div style="text-align: center"><code>sudo rsync -vPa -e 'ssh -o StrictHostKeyChecking=no' --exclude-from=/root/exclude-files.txt / REMOTE-IP:/</code></div>
+
+<p>Let&rsquo;s break down the above command to understand what&rsquo;s happening under the hood.</p>
+<ul>
+<li><strong><code>sudo</code></strong> – It is a command that allows the execution of a command with administrative privileges.</li>
+<li><strong><code>rsync</code></strong> – The rsync command itself, is used for file synchronization and transfer.</li>
+<li><strong><code>-v</code></strong> - This option enables verbose output, providing detailed information about the progress of the synchronization.</li>
+<li><strong><code>-P</code></strong> – This option is equivalent to &ndash;progress and enables partial file transfers and displays the progress of each file during the synchronization.</li>
+<li><strong><code>-a</code></strong> – This option stands for “archive mode” and is a shorthand for preserving important file attributes such as permissions, ownership, timestamps, etc.</li>
+<li><strong><code>-e</code></strong> – This option specifies the remote shell to use for the synchronization.</li>
+<li><strong><code>-o StrictHostKeyChecking=no</code></strong> – Disables strict host key checking, which means that the SSH connection will not prompt for confirmation if the remote server’s host key is unknown.</li>
+<li><strong><code>--exclude-from=/root/exclude-files.txt</code></strong> – This option allows you to specify a file that contains a list of patterns or paths to be excluded from the synchronization.</li>
+<li><strong><code>/</code></strong> – The forward slash represents the source directory or root directory that will be cloned.</li>
+<li><strong><code>REMOTE-IP:/</code></strong> – Specifies the destination server’s IP address or hostname followed by a colon and forward slash. It indicates the remote directory where the cloned files will be copied.</li>
+</ul>
+<p>The whole process took about an hour for me and after the successful completion, We need to restart the target machine, and then it will be an exact replica of the primary machine 😃.</p>
+<h5 id="whats-next"><strong>What&rsquo;s Next?</strong></h5>
+<p>So next, I am planning to run a cron job with the rsync command that can do incremental cloning, which means only syncing the changed files in the host system to the target system, So that I can always have the files in the target system be latest.
+Also, it&rsquo;s possible to do the process from the target machine too, So that I can use one machine in the office and other in the home. Both will always be synchronized, and no need to carry laptops anymore 😀.
+Hmm, Need to do a little research here. Let me try, test, and give you guys an update</p>
+<hr>
+<h6 id="extras"><strong>Extras</strong></h6>
+<p>Rsync command installation in different Linux distributions.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">sudo apt install rsync        <span style="color:#f92672">[</span>On Debian, Ubuntu and Mint<span style="color:#f92672">]</span>
+sudo yum install rsync        <span style="color:#f92672">[</span>On RHEL/CentOS/Fedora and Rocky/AlmaLinux<span style="color:#f92672">]</span>
+sudo emerge -a sys-apps/rsync <span style="color:#f92672">[</span>On Gentoo Linux<span style="color:#f92672">]</span>
+sudo apk add rsync            <span style="color:#f92672">[</span>On Alpine Linux<span style="color:#f92672">]</span>
+sudo pacman -S rsync          <span style="color:#f92672">[</span>On Arch Linux<span style="color:#f92672">]</span>
+sudo zypper install rsync     <span style="color:#f92672">[</span>On OpenSUSE<span style="color:#f92672">]</span>
+</code></pre></div>
+        </article>
+
+    </div>
+</div>
+    </div>
+
+    <footer class="text-center pb-1">
+  <small class="text-muted">
+     &copy; Copyright 2024, prinzpiuz<br />
+    Built with 💚 in <a href="https://gohugo.io/">Hugo</a><br />
+  </small>
+  <div id="version_div">
+     v1.5.0
+  </div>
+  <div id="not_by_ai">
+    <img src="../../images/not_by_ai.svg" alt="Not By AI" />
+  </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <title>Things I Self-Hosting 🖳</title>
+
+  <meta name="description" content="Just Some Random Engineering, DIY Stuff" />
+
+
+  <meta property="og:url" content="https://prinzpiuz.in/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="prinzpiuz" />
+  <meta
+    property="og:description"
+    content="Just Some Random Engineering, DIY Stuff"
+  />
+  <meta property="og:image" content="https://prinzpiuz.in/images/avatar.jpeg" />
+
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta property="twitter:domain" content="prinzpiuz.in" />
+  <meta property="twitter:url" content="https://prinzpiuz.in/" />
+  <meta name="twitter:title" content="prinzpiuz" />
+  <meta
+    name="twitter:description"
+    content="Just Some Random Engineering, DIY Stuff"
+  />
+  <meta
+    name="twitter:image"
+    content="https://prinzpiuz.in/images/avatar.jpeg"
+  />
+
+
+
+  <meta charset="utf-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, shrink-to-fit=no"
+  />
+  <link rel="stylesheet" href="../../css/theme.css" />
+  <script
+    data-goatcounter="https://prinzpiuz.goatcounter.com/count"
+    async
+    src="//gc.zgo.at/count.js"
+  ></script>
+</head>
+<body>
+    <div id="content" class="mx-auto"><header class="container mt-sm-5 mt-4 mb-4 mt-xs-1">
+    <div class="row">
+        <div class="col-sm-4 col-12 text-sm-right text-center pt-sm-4">
+            <a href="../../" class="text-decoration-none">
+                <img id="home-image" class="rounded-circle"
+
+
+                            src="../../images/avatar.jpeg"
+
+
+                />
+            </a>
+        </div>
+        <div class="col-sm-8 col-12 text-sm-left text-center">
+            <h2 class="m-0 mb-2 mt-4">
+                <a href="../../" class="text-decoration-none">
+
+                        PrinzPiuz
+
+                </a>
+            </h2>
+            <p class="text-muted mb-1">
+
+                    Software Engineer | Ziff Davis | Cochin
+
+            </p>
+            <ul id="nav-links" class="list-inline mb-2">
+
+
+                    <li class="list-inline-item">
+                        <a class="badge badge-white " href="../../about/" title="About">About</a>
+                    </li>
+
+                    <li class="list-inline-item">
+                        <a class="badge badge-white " href="../../post/" title="Posts">Posts</a>
+                    </li>
+
+                    <li class="list-inline-item">
+                        <a class="badge badge-white " href="../../categories/" title="Categories">Categories</a>
+                    </li>
+
+                    <li class="list-inline-item">
+                        <a class="badge badge-white " href="../../projects/my-projects/index.html" title="Projects">Projects</a>
+                    </li>
+
+            </ul>
+            <ul id="nav-social" class="list-inline">
+
+                    <li class="list-inline-item mr-3">
+                        <a href="https://github.com/prinzpiuz" target="_blank">
+                            <i class="fab fa-github fa-1x text-muted"></i>
+                        </a>
+                    </li>
+
+                    <li class="list-inline-item mr-3">
+                        <a href="https://twitter.com/prinzpiuz/" target="_blank">
+                            <i class="fab fa-twitter fa-1x text-muted"></i>
+                        </a>
+                    </li>
+
+                    <li class="list-inline-item mr-3">
+                        <a href="https://elk.zone/aana.site/@prinzpiuz" target="_blank">
+                            <i class="fab fa-mastodon text-muted"></i>
+                        </a>
+                    </li>
+
+                    <li class="list-inline-item mr-3">
+                        <a href="https://portfolio.pixelfed.social/prinzpiuz" target="_blank">
+                            <i class="fas fa-images text-muted"></i>
+                        </a>
+                    </li>
+
+            </ul>
+        </div>
+    </div>
+    <hr />
+</header>
+<div class="container">
+    <div class="pl-sm-2">
+        <div class="mb-3">
+            <h3 class="mb-0">Things I Self-Hosting 🖳</h3>
+
+            <small class="text-muted">Published January 6, 2023</small>
+            <small>🕐 5 Mins</small>
+
+
+        </div>
+
+        <article>
+            <p><em>Disclaimer: This blog is not in any way promoting piracy.</em></p>
+<p>This is small new year blog about things I self-host to make my life easier, I have a previous blog <a href="https://prinzpiuz.in/post/my-media-server-setup/">here</a> about my media server setup. So the same system I am using for self-hosting some applications which are helpful for me in my day-to-day life, basically I have turned my childhood PC to a local server, it&rsquo;s been 13 years since its first boot, this mighty machine working for me without any complaints. It&rsquo;s not about having a big server, in terms of resources &amp; hardware, it&rsquo;s about the mentality to host things your own &amp; having fun of DIY 🛠 things.</p>
+<figure class="figure_center">
+    <img src="../../images/self_hosting/neofetch.png"
+         alt="Neofetch output of my server" width="350" height="250"/> <figcaption>
+            <p><a href="https://github.com/dylanaraps/neofetch">Neofetch</a> output of my server</p>
+        </figcaption>
+</figure>
+
+<p>As you can see my local server is only having minimum resources. Yet it accomplishing it&rsquo;s all duties. Even once, I ran <a href="https://blog.counter-strike.net/">Counter Strike</a> in it and used to play it in my TV using steam link in Amazon 🔥 TV. Of course the output was not that impressing, But I loved that experience.</p>
+<p>One of the thing I need to take care while self-hosting things is the availability of server when you need it. The main problem I faced was power failures, like after every power failure, I need to turn on PC by manually pressing power button. A simple hack I find out from PC&rsquo;s BIOS is Wake On Power feature as part of <a href="https://en.wikipedia.org/wiki/ACPI">ACPI</a>. Its turns on PC whenever power comes back, which ensure the availability of server if power is there. Which is what I needed. There is also another feature called <a href="https://en.wikipedia.org/wiki/Wake-on-LAN">Wake On LAN</a>, which works by receiving a magic packet from a network device.</p>
+<p>Coming back to our topic, The services I am mainly running are these&hellip;</p>
+<ul>
+<li>
+<h5 id="calibrehttpsgithubcomkovidgoyalcalibre-for-e-book-management"><a href="https://github.com/kovidgoyal/calibre">Calibre</a> for E-book management</h5>
+<p>Basically I&rsquo;m only using calibre&rsquo;s Database system, I have another beautiful service for its frontend and other required features.</p>
+<ul>
+<li>Easily organize e-books</li>
+<li>Easily convert e-books to other formats</li>
+<li>Able to talk to e-book reader devices</li>
+<li>Cross platform</li>
+<li>Free and Open source 💛</li>
+</ul>
+</li>
+<li>
+<h5 id="calibre-webhttpsgithubcomjaneczkucalibre-web-as-frontend-for-calibre-database"><a href="https://github.com/janeczku/calibre-web">Calibre-Web</a> as frontend for calibre database</h5>
+<p><a href="https://prinzpiuz.in/images/self_hosting/calibre_web.png">📸 ScreenShot</a></p>
+<p>This is a nice frontend of calibre database with some extra features. One main feature I loved was send to kindle via email, this is main reason I used calibre-web.
+So I have created a free SendGrid account and connected it with calibre-web, so whenever I want to send a file to my kindle I can just click on the particular book and do send to kindle 😃</p>
+<ul>
+<li>Send to Kindle via email</li>
+<li>OPDS feed for e-book reader apps</li>
+<li>Bootstrap 3 HTML5 interface</li>
+<li>User management with fine-grained per-user permissions</li>
+<li>Support for Calibre Custom Columns</li>
+<li>Self-update capability</li>
+<li>Login via LDAP, google/GitHub OAuth and via proxy authentication</li>
+<li>Free and Open source 💛</li>
+</ul>
+</li>
+<li>
+<h5 id="jellyfinhttpsgithubcomjellyfinjellyfin-as-media-server"><a href="https://github.com/jellyfin/jellyfin">Jellyfin</a> as Media Server</h5>
+<p><a href="https://prinzpiuz.in/images/self_hosting/jellyfin.png">📸 ScreenShot</a></p>
+<p>Jellyfin is an open alternative to Plex and Emby, Jellyfin is very feature rich, stable &amp; also cross-platform. It has been more than a year, I am using it. No issues till here.
+Also, it&rsquo;s very easy to manage media in it</p>
+<ul>
+<li>Support Music &amp; Pictures</li>
+<li>User management</li>
+<li>Parental controls</li>
+<li>Client applications for all major platforms</li>
+<li>Community support</li>
+<li>Lot of community created plugins</li>
+<li>Most features in Emby and Plex like Live TV, DVR, and hardware transcoding</li>
+<li>Free and Open source 💛</li>
+</ul>
+</li>
+<li>
+<h5 id="delugehttpsgithubcomdeluge-torrentdeluge-as-bittorrent-client"><a href="https://github.com/deluge-torrent/deluge">Deluge</a> as BitTorrent client</h5>
+<p><a href="https://prinzpiuz.in/images/self_hosting/deluge.png">📸 ScreenShot</a></p>
+<p>The main reason I am using deluge is that it is very simple and minimal and doing its duty pretty awesome. There is also another reason which is, deluge have a web-UI and android client app and even a browser plugin</p>
+<ul>
+<li>Various user interfaces available such as the GTK-UI, Web-UI and Console-UI</li>
+<li>A rich collection of Plugins</li>
+<li>Client-Server model</li>
+<li>Free and Open source 💛</li>
+</ul>
+</li>
+<li>
+<h5 id="jacketthttpsgithubcomjackettjackett-as-torrent-search-engine"><a href="https://github.com/Jackett/Jackett">Jackett</a> as Torrent Search Engine</h5>
+<p><a href="https://prinzpiuz.in/images/self_hosting/jackett.png">📸 ScreenShot</a></p>
+<p>Jackett is a torrent search capable of listing working torrents from the configured indexes, also it has capabilities to work with other apps like Sonarr, Radarr, SickRage, CouchPotato, Mylar3, Lidarr, DuckieTV, qBittorrent, Nefarious etc.</p>
+<ul>
+<li>Very fast</li>
+<li>Ability to work with other apps</li>
+<li>Free and Open source 💛</li>
+</ul>
+</li>
+<li>
+<h5 id="sonarrhttpsgithubcomsonarrsonarr-as-a-coordinator-for-downloading-tv-shows"><a href="https://github.com/Sonarr/Sonarr">Sonarr</a> as a coordinator for downloading TV shows</h5>
+<p><a href="https://prinzpiuz.in/images/self_hosting/sonarr.png">📸 ScreenShot</a></p>
+<p>Sonarr is a PVR for Usenet and BitTorrent users. It&rsquo;s basically works as a coordinator between my configured indexers, download client, and media manager for TV shows. When I add a new show to monitor in it, Sonarr will grab the best torrent file for me and add it to my download client and when my download finishes it will rename according to the standards and move it to my media folders. Also, it will automatically fetch future episodes too. The best part is it will update the quality of video if a better quality is available.</p>
+<ul>
+<li>Can scan your existing library and download any missing episodes</li>
+<li>Automatically detects new episodes</li>
+<li>Can watch for better quality of the episodes you already have and do an automatic upgrade. e.g. from DVD to Blu-ray</li>
+<li>Automatic failed download handling will try another release if one fails</li>
+<li>Free and Open source 💛</li>
+</ul>
+</li>
+<li>
+<h5 id="radarrhttpsgithubcomradarrradarr-as-a-coordinator-downloading-movies"><a href="https://github.com/Radarr/Radarr">Radarr</a> as a coordinator downloading Movies</h5>
+<p><a href="https://prinzpiuz.in/images/self_hosting/radarr.png">📸 ScreenShot</a></p>
+<p>Radarr is same as that of sonarr except that this will download movies</p>
+</li>
+</ul>
+<p>I will be updating this list as soon as new services are adding. Also in future I am planning to migrate to Raspberry Pi from current server for more portability.</p>
+<div style="text-align: center">So own your things, Enjoy your #freedom</div>
+
+<hr>
+<p><strong>Some useful resources for further research</strong></p>
+<ul>
+<li>
+<p>A beautiful compose file for to make all these above services under an umbrella</p>
+<ul>
+<li><a href="https://github.com/navilg/media-stack">https://github.com/navilg/media-stack</a></li>
+</ul>
+</li>
+<li>
+<p>Nefarious for combined feature of Sonarr and Radarr</p>
+<ul>
+<li><a href="https://github.com/lardbit/nefarious">https://github.com/lardbit/nefarious</a></li>
+</ul>
+</li>
+<li>
+<p>For Self-hosting your own music streaming service you can use Lidarr</p>
+<ul>
+<li><a href="https://github.com/lidarr/lidarr">https://github.com/lidarr/lidarr</a></li>
+</ul>
+</li>
+<li>
+<p>For comic lovers</p>
+<ul>
+<li><a href="https://github.com/mylar3/mylar3">https://github.com/mylar3/mylar3</a></li>
+</ul>
+</li>
+<li>
+<p>A lot more self-hosting ideas</p>
+<ul>
+<li><a href="https://github.com/awesome-selfhosted/awesome-selfhosted">https://github.com/awesome-selfhosted/awesome-selfhosted</a></li>
+</ul>
+</li>
+<li>
+<p>Reddit Community</p>
+<ul>
+<li><a href="https://www.reddit.com/r/selfhosted/">https://www.reddit.com/r/selfhosted/</a></li>
+</ul>
+</li>
+</ul>
+
+        </article>
+
+    </div>
+</div>
+    </div>
+
+    <footer class="text-center pb-1">
+  <small class="text-muted">
+     &copy; Copyright 2024, prinzpiuz<br />
+    Built with 💚 in <a href="https://gohugo.io/">Hugo</a><br />
+  </small>
+  <div id="version_div">
+     v1.5.0
+  </div>
+  <div id="not_by_ai">
+    <img src="../../images/not_by_ai.svg" alt="Not By AI" />
+  </div>
+</footer>
+</body>
+</html>

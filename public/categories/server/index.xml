@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>server on prinzpiuz</title>
+    <link>https://prinzpiuz.in/categories/server/</link>
+    <description>Recent content in server on prinzpiuz</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; Copyright 2024, prinzpiuz</copyright>
+    <lastBuildDate>Fri, 06 Jan 2023 20:23:40 +0530</lastBuildDate><atom:link href="https://prinzpiuz.in/categories/server/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Things I Self-Hosting 🖳</title>
+      <link>https://prinzpiuz.in/post/things-i-self-hosting/</link>
+      <pubDate>Fri, 06 Jan 2023 20:23:40 +0530</pubDate>
+
+      <guid>https://prinzpiuz.in/post/things-i-self-hosting/</guid>
+      <description>Disclaimer: This blog is not in any way promoting piracy.
+This is small new year blog about things I self-host to make my life easier, I have a previous blog here about my media server setup. So the same system I am using for self-hosting some applications which are helpful for me in my day-to-day life, basically I have turned my childhood PC to a local server, it&amp;rsquo;s been 13 years since its first boot, this mighty machine working for me without any complaints.</description>
+    </item>
+
+    <item>
+      <title>My Media Server Set-up</title>
+      <link>https://prinzpiuz.in/post/my-media-server-setup/</link>
+      <pubDate>Sat, 13 Jun 2020 14:58:35 +0530</pubDate>
+
+      <guid>https://prinzpiuz.in/post/my-media-server-setup/</guid>
+      <description>The reason I&amp;rsquo;m writing this blog because I learned lot of things while setting up my media server to current configuration, so this is kinda experience sharing, may be useful for those who trying one.
+ Little History 🕜 From my teenage itself I&amp;rsquo;m a binge movie watcher, at that time I saves money and buy DVDs of movies I like and I had a small collection of DVDs, then I brought a desktop PC, and it was time of USB sticks and it became little more easy and cheap to collect movies, still somebody need to download movies from torrent (thanks The Pirate Bay) or rip from DVDs,but still network speed was very low then(I had a BSNL bradband connection which had only 512kbps), With the arrival of 4G.</description>
+    </item>
+
+  </channel>
+</rss>
