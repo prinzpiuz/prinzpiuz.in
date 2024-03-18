@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Deploy on prinzpiuz</title>
+    <link>https://prinzpiuz.in/categories/deploy/</link>
+    <description>Recent content in Deploy on prinzpiuz</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; Copyright 2024, prinzpiuz</copyright>
+    <lastBuildDate>Fri, 01 Jul 2022 23:37:16 +0530</lastBuildDate><atom:link href="https://prinzpiuz.in/categories/deploy/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How I Automatically Deploying This Blog?</title>
+      <link>https://prinzpiuz.in/post/how-i-automatically-deploying-this-blog/</link>
+      <pubDate>Fri, 01 Jul 2022 23:37:16 +0530</pubDate>
+
+      <guid>https://prinzpiuz.in/post/how-i-automatically-deploying-this-blog/</guid>
+      <description>This is a kinda sequel to My Blog Set up. So before explaining the current setup. I know you guys are curious about knowing about the previous setup. Before, my setup was like, I set up my blog&amp;rsquo;s build folder as a git submodule. so after completing writing my blog I manually take a build and push both repos (blog repo and build repo) to GitHub and then manually create merge requisites there and merge to master.</description>
+    </item>
+
+  </channel>
+</rss>

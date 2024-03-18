@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>open source on prinzpiuz</title>
+    <link>https://prinzpiuz.in/categories/open-source/</link>
+    <description>Recent content in open source on prinzpiuz</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; Copyright 2024, prinzpiuz</copyright>
+    <lastBuildDate>Tue, 07 Jul 2020 16:23:04 +0530</lastBuildDate><atom:link href="https://prinzpiuz.in/categories/open-source/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Open Alternative, Not Ban</title>
+      <link>https://prinzpiuz.in/post/open-alternative-not-ban/</link>
+      <pubDate>Tue, 07 Jul 2020 16:23:04 +0530</pubDate>
+
+      <guid>https://prinzpiuz.in/post/open-alternative-not-ban/</guid>
+      <description>So this blog is my personal opinion on the recent ban of apps in India, Due to the border conflicts with China. Openly say I am against this ban, but rather than ban people must aware of the consequences of using such closed-source apps. And people must aware that not only apps in this list raise security issues said by the Government, all those closed source apps out there raises different kind of security and privacy issues for us as an individual</description>
+    </item>
+
+  </channel>
+</rss>

@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <url>
+    <loc>https://prinzpiuz.in/categories/</loc>
+    <lastmod>2023-08-27T20:24:58+05:30</lastmod>
+  </url>
+
+  <url>
+    <loc>https://prinzpiuz.in/categories/cloning/</loc>
+    <lastmod>2023-08-27T20:24:58+05:30</lastmod>
+  </url>
+
+  <url>
+    <loc>https://prinzpiuz.in/categories/debian/</loc>
+    <lastmod>2023-08-27T20:24:58+05:30</lastmod>
+  </url>
+
+  <url>
+    <loc>https://prinzpiuz.in/post/how-to-clone-your-machine-to-another/</loc>
+    <lastmod>2023-08-27T20:24:58+05:30</lastmod>
+  </url>
+
+  <url>
+    <loc>https://prinzpiuz.in/categories/linux/</loc>
+    <lastmod>2023-08-27T20:24:58+05:30</lastmod>
+  </url>
+
+  <url>
+    <loc>https://prinzpiuz.in/post/</loc>
+    <lastmod>2023-08-27T20:24:58+05:30</lastmod>
+  </url>
+
+  <url>
+    <loc>https://prinzpiuz.in/</loc>
+    <lastmod>2023-08-27T20:24:58+05:30</lastmod>
+  </url>
+
+  <url>
+    <loc>https://prinzpiuz.in/categories/rsync/</loc>
+    <lastmod>2023-08-27T20:24:58+05:30</lastmod>
+  </url>
+
+  <url>
+    <loc>https://prinzpiuz.in/categories/airflow/</loc>
+    <lastmod>2023-05-28T10:49:11+05:30</lastmod>
+  </url>
+
+  <url>
+    <loc>https://prinzpiuz.in/post/how-to-extent-airflow-ui/</loc>
+    <lastmod>2023-05-28T10:49:11+05:30</lastmod>
+  </url>
+
+  <url>
+    <loc>https://prinzpiuz.in/categories/flask/</loc>
+    <lastmod>2023-05-28T10:49:11+05:30</lastmod>
+  </url>
+
+  <url>
+    <loc>https://prinzpiuz.in/categories/python/</loc>
+    <lastmod>2023-05-28T10:49:11+05:30</lastmod>
+  </url>
+
+  <url>
+    <loc>https://prinzpiuz.in/post/a-small-tweak-to-enhance-your-shell/</loc>
+    <lastmod>2023-03-18T18:50:44+05:30</lastmod>
+  </url>
+
+  <url>
+    <loc>https://prinzpiuz.in/categories/shell/</loc>
+    <lastmod>2023-03-18T18:50:44+05:30</lastmod>
+  </url>
+
+  <url>
+    <loc>https://prinzpiuz.in/categories/tweaks/</loc>
+    <lastmod>2023-03-18T18:50:44+05:30</lastmod>
+  </url>
+
+  <url>
+    <loc>https://prinzpiuz.in/categories/opensource/</loc>
+    <lastmod>2023-01-06T20:23:40+05:30</lastmod>
+  </url>
+
+  <url>
+    <loc>https://prinzpiuz.in/categories/self-hosting/</loc>
+    <lastmod>2023-01-06T20:23:40+05:30</lastmod>
+  </url>
+
+  <url>
+    <loc>https://prinzpiuz.in/categories/server/</loc>
+    <lastmod>2023-01-06T20:23:40+05:30</lastmod>
+  </url>
+
+  <url>
+    <loc>https://prinzpiuz.in/post/things-i-self-hosting/</loc>
+    <lastmod>2023-01-06T20:23:40+05:30</lastmod>
+  </url>
+
+  <url>
+    <loc>https://prinzpiuz.in/categories/deploy/</loc>
+    <lastmod>2022-07-01T23:37:16+05:30</lastmod>
+  </url>
+
+  <url>
+    <loc>https://prinzpiuz.in/post/how-i-automatically-deploying-this-blog/</loc>
+    <lastmod>2022-07-01T23:37:16+05:30</lastmod>
+  </url>
+
+  <url>
+    <loc>https://prinzpiuz.in/categories/design/</loc>
+    <lastmod>2022-06-06T10:45:15+05:30</lastmod>
+  </url>
+
+  <url>
+    <loc>https://prinzpiuz.in/post/wonder-world-of-svgs/</loc>
+    <lastmod>2022-06-06T10:45:15+05:30</lastmod>
+  </url>
+
+  <url>
+    <loc>https://prinzpiuz.in/categories/django/</loc>
+    <lastmod>2021-01-21T00:43:47+05:30</lastmod>
+  </url>
+
+  <url>
+    <loc>https://prinzpiuz.in/post/introduction-to-async-django/</loc>
+    <lastmod>2021-01-21T00:43:47+05:30</lastmod>
+  </url>
+
+  <url>
+    <loc>https://prinzpiuz.in/post/errors-and-exceptions/</loc>
+    <lastmod>2020-10-03T17:46:27+05:30</lastmod>
+  </url>
+
+  <url>
+    <loc>https://prinzpiuz.in/categories/general/</loc>
+    <lastmod>2020-07-07T16:23:04+05:30</lastmod>
+  </url>
+
+  <url>
+    <loc>https://prinzpiuz.in/post/open-alternative-not-ban/</loc>
+    <lastmod>2020-07-07T16:23:04+05:30</lastmod>
+  </url>
+
+  <url>
+    <loc>https://prinzpiuz.in/categories/open-source/</loc>
+    <lastmod>2020-07-07T16:23:04+05:30</lastmod>
+  </url>
+
+  <url>
+    <loc>https://prinzpiuz.in/categories/flutter/</loc>
+    <lastmod>2020-06-13T14:58:35+05:30</lastmod>
+  </url>
+
+  <url>
+    <loc>https://prinzpiuz.in/post/my-media-server-setup/</loc>
+    <lastmod>2020-06-13T14:58:35+05:30</lastmod>
+  </url>
+
+  <url>
+    <loc>https://prinzpiuz.in/post/python-saves-time/</loc>
+    <lastmod>2020-06-02T00:20:59+05:30</lastmod>
+  </url>
+
+  <url>
+    <loc>https://prinzpiuz.in/post/my-blog-setup/</loc>
+    <lastmod>2020-05-26T15:29:46+05:30</lastmod>
+  </url>
+
+  <url>
+    <loc>https://prinzpiuz.in/categories/set-up/</loc>
+    <lastmod>2020-05-26T15:29:46+05:30</lastmod>
+  </url>
+
+  <url>
+    <loc>https://prinzpiuz.in/projects/my-projects/</loc>
+    <lastmod>2020-05-24T01:17:05+05:30</lastmod>
+  </url>
+
+  <url>
+    <loc>https://prinzpiuz.in/projects/</loc>
+    <lastmod>2020-05-24T01:17:05+05:30</lastmod>
+  </url>
+
+  <url>
+    <loc>https://prinzpiuz.in/post/hello-world/</loc>
+    <lastmod>2020-05-24T00:59:10+05:30</lastmod>
+  </url>
+
+  <url>
+    <loc>https://prinzpiuz.in/categories/helloworld/</loc>
+    <lastmod>2020-05-24T00:59:10+05:30</lastmod>
+  </url>
+
+  <url>
+    <loc>https://prinzpiuz.in/about/</loc>
+    <lastmod>2020-05-23T00:18:33+05:30</lastmod>
+  </url>
+
+  <url>
+    <loc>https://prinzpiuz.in/tags/</loc>
+  </url>
+
+</urlset>

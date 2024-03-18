@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Cloning on prinzpiuz</title>
+    <link>https://prinzpiuz.in/categories/cloning/</link>
+    <description>Recent content in Cloning on prinzpiuz</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; Copyright 2024, prinzpiuz</copyright>
+    <lastBuildDate>Sun, 27 Aug 2023 20:24:58 +0530</lastBuildDate><atom:link href="https://prinzpiuz.in/categories/cloning/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to Clone Your Machine to Another</title>
+      <link>https://prinzpiuz.in/post/how-to-clone-your-machine-to-another/</link>
+      <pubDate>Sun, 27 Aug 2023 20:24:58 +0530</pubDate>
+
+      <guid>https://prinzpiuz.in/post/how-to-clone-your-machine-to-another/</guid>
+      <description>Context Recently my primary workstation failed due to a motherboard issue. I needed to quickly get my development environment setup on another machine. Here are the steps I followed to clone my machine using rsync. Before moving on to that, Let me explain a little about rsync, In layman&amp;rsquo;s terms rsync is a utility for efficiently transferring and synchronizing files between a computer and an external disk, it does this by sending only the differences in the data to the destination rather than resending the whole file every time there is an update.</description>
+    </item>
+
+  </channel>
+</rss>

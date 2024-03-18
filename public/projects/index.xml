@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Projects on prinzpiuz</title>
+    <link>https://prinzpiuz.in/projects/</link>
+    <description>Recent content in Projects on prinzpiuz</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; Copyright 2024, prinzpiuz</copyright>
+    <lastBuildDate>Sun, 24 May 2020 01:17:05 +0530</lastBuildDate><atom:link href="https://prinzpiuz.in/projects/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>My Projects</title>
+      <link>https://prinzpiuz.in/projects/my-projects/</link>
+      <pubDate>Sun, 24 May 2020 01:17:05 +0530</pubDate>
+
+      <guid>https://prinzpiuz.in/projects/my-projects/</guid>
+      <description>These are my hobby projects 👏 if you guys like, put a ⭐ More projects can be seen here   Railgadi BOT
+This is a telegram BOT built with python and telegram bot framework this bot provides lots of functionalites provided by NTES inside telegram
+  MSM
+This is a android app built on top of Dart and Flutter This app helps to manage our media servers like emby/jellyfin/plex/kodi&amp;hellip;etc Works on top of ssh, No further setup needed in server</description>
+    </item>
+
+  </channel>
+</rss>
