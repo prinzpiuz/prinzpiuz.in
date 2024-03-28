@@ -16454,3 +16454,8 @@ a {
     float: none;
   }
 }
+
+.audio_icon {
+  width: 4em;
+  height: 2em;
+}

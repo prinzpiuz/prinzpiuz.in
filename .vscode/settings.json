@@ -8,16 +8,24 @@
     "markdown"
   ],
   "cSpell.words": [
+    "Aadujeevitham",
     "ACPI",
     "archlinux",
     "asciinema",
+    "autoplay",
+    "cinephile",
+    "clappy",
     "dagbag",
+    "datetime",
     "dpkg",
     "Emby",
+    "focusable",
     "hosters",
+    "isset",
     "Jackett",
     "jellyfin",
     "Lidarr",
+    "markdownify",
     "mtab",
     "neofetch",
     "oming",
@@ -27,6 +35,11 @@
     "Radarr",
     "Sonarr",
     "sysconfig",
+    "Tils",
     "Ziff"
-  ]
+  ],
+  "cSpell.enableFiletypes": [
+    "django-html"
+  ],
+  "svg.preview.background": "white"
 }
