@@ -1,0 +1,196 @@
+<style>
+  #content {
+    max-width: 1200px;
+  }
+</style>
+
+<div class="projects_container">
+  <h1 class="title text-center">My Projects</h1>
+  <p class="subtitle text-center">
+    If you enjoy what you see, I'd love for you to give them a ⭐ on GitHub!<br />
+    You can find more of my work
+    <a href="https://github.com/prinzpiuz">here</a>.
+  </p>
+  <div id="projects-grid" class="projects-grid"></div>
+</div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", async () => {
+    const languageLogos = {
+      Python:
+        "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg",
+      Dart: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/dart/dart-original.svg",
+      Flutter:
+        "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flutter/flutter-original.svg",
+      "Vue.js":
+        "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vuejs/vuejs-original.svg",
+      JavaScript:
+        "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg",
+      Go: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/go/go-original.svg",
+      React:
+        "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
+      Typescript:
+        "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg",
+    };
+    // Define your projects with owner and repo names
+    const projects = [
+      {
+        name: "RailGadi BOT",
+        description:
+          "A Telegram BOT built with Python that provides lots of functionalities from NTES.",
+        languages: ["Python"],
+        sourceUrl: "https://github.com/prinzpiuz/RailwayStatusBot",
+        owner: "prinzpiuz",
+        repo: "RailwayStatusBot",
+        logoUrl: "https://placehold.co/64x64/17a2b8/ffffff?text=RGB",
+        licenseLogoUrl:
+          "https://www.gnu.org/graphics/gplv3-with-text-84x42.png",
+      },
+      {
+        name: "MSM",
+        description:
+          "An Android app built on Dart and Flutter to manage media servers like Emby/Jellyfin/Plex. <br> App can be Downloaded from <a href='https://apt.izzysoft.de/fdroid/index/apk/com.prinzpiuz.msm'  target='_blank'>IzyOnDroid</a>",
+        languages: ["Dart", "Flutter"],
+        sourceUrl: "https://github.com/prinzpiuz/MSM",
+        owner: "prinzpiuz",
+        repo: "MSM",
+        logoUrl:
+          "https://github.com/prinzpiuz/MSM/raw/main/assets/svgs/msm.svg",
+        licenseLogoUrl:
+          "https://www.gnu.org/graphics/gplv3-with-text-84x42.png",
+      },
+      {
+        name: "Rock Paper Scissor",
+        description:
+          "A server-less game app built with Vue and p2p. <br> Game can be played <a href='https://silly-fermat-36c0e6.netlify.app/#/'  target='_blank'>here</a>",
+        languages: ["Vue.js", "JavaScript"],
+        sourceUrl: "https://github.com/prinzpiuz/Stone-Paper-Scissor",
+        owner: "prinzpiuz",
+        repo: "Stone-Paper-Scissor",
+        logoUrl:
+          "https://github.com/prinzpiuz/Stone-Paper-Scissor/raw/master/src/assets/android-chrome-192x192.png",
+        licenseLogoUrl:
+          "https://www.gnu.org/graphics/gplv3-with-text-84x42.png",
+      },
+      {
+        name: "Django Update Checker & MS Teams Notifier",
+        description:
+          "A forkable GitHub action to track Django's security updates and new releases.",
+        languages: ["Python"],
+        sourceUrl: "https://github.com/prinzpiuz/django_update_checker",
+        owner: "prinzpiuz",
+        repo: "django_update_checker",
+        logoUrl: "https://placehold.co/64x64/17a2b8/ffffff?text=DUC",
+        licenseLogoUrl:
+          "https://www.gnu.org/graphics/gplv3-with-text-84x42.png",
+      },
+      {
+        name: "BloTils",
+        description: "Blog-Utils, Common Utilities For Your Blogging Platform.",
+        languages: ["Go"],
+        sourceUrl: "https://github.com/prinzpiuz/BloTils",
+        owner: "prinzpiuz",
+        repo: "BloTils",
+        logoUrl:
+          "https://github.com/prinzpiuz/BloTils/blob/staging/static/favicon/android-chrome-512x512.png?raw=true",
+        licenseLogoUrl:
+          "https://www.gnu.org/graphics/gplv3-with-text-84x42.png",
+      },
+      {
+        name: "Looi",
+        description:
+          "A Minimal, Customisable New Tab page for Firefox, Chrome, and Edge.",
+        languages: ["React", "Typescript"],
+        sourceUrl: "https://github.com/prinzpiuz/looi",
+        owner: "prinzpiuz",
+        repo: "looi",
+        logoUrl:
+          "https://github.com/prinzpiuz/looi/raw/main/src/assets/images/looi.svg",
+        licenseLogoUrl:
+          "https://www.gnu.org/graphics/gplv3-with-text-84x42.png",
+      },
+    ];
+
+    const projectsGrid = document.getElementById("projects-grid");
+
+    for (const project of projects) {
+      const card = document.createElement("div");
+      card.className = "project-card";
+
+      const languagesHtml = project.languages
+        .map((lang) => {
+          const logoUrl = languageLogos[lang];
+          if (logoUrl) {
+            return `<img src="${logoUrl}" alt="${lang} logo" class="language-logo">`;
+          } else {
+            return `<span class="language-tag">${lang}</span>`;
+          }
+        })
+        .join("");
+
+      card.innerHTML = `
+          <div>
+            <div class="card-header-logo" style="display: flex; align-items: center; margin-bottom: 1rem;">
+              ${
+                project.logoUrl
+                  ? `<img src="${project.logoUrl}" alt="${project.name} logo" class="project-logo">`
+                  : `<i class="fab fa-github" style="font-size: 2rem; color: #1f2937; margin-right: 1rem;"></i>`
+              }
+              <h3 class="font-semibold">${project.name}</h3>
+            </div>
+            <p>${project.description}</p>
+          </div>
+          <a href="${project.sourceUrl}" target="_blank" class="card-link">
+                View Source <i class="fas fa-arrow-right"></i>
+          </a>
+          <div class="project-card-footer">
+            <div class="mb-4" style="display: flex; flex-wrap: wrap;">
+              ${languagesHtml}
+            </div>
+            <div class="card-footer-items">
+              <div class="card-footer-item">
+                <i class="fas fa-star" style="color: #f59e0b;"></i>
+                <span id="stars-${project.repo}">Loading...</span>
+              </div>
+              <div class="card-footer-item">
+                <i class="fas fa-code-branch" style="color: #3b82f6;"></i>
+                <span id="forks-${project.repo}">Loading...</span>
+              </div>
+              <div class="card-footer-item">
+              ${
+                project.licenseLogoUrl
+                  ? `
+                <a href="${project.licenseUrl}" target="_blank" class="card-link">
+                  <img src="${project.licenseLogoUrl}" alt="GPLv3 License" class="license-logo">
+                </a>`
+                  : ""
+              }
+            </div>
+            </div>
+          </div>
+        `;
+      projectsGrid.appendChild(card);
+
+      // Fetch data from GitHub API and update the card
+      try {
+        const response = await fetch(
+          `https://api.github.com/repos/${project.owner}/${project.repo}`
+        );
+        if (!response.ok) {
+          throw new Error(`Failed to fetch data for ${project.name}`);
+        }
+        const data = await response.json();
+        document.getElementById(
+          `stars-${project.repo}`
+        ).textContent = `${data.stargazers_count} stars`;
+        document.getElementById(
+          `forks-${project.repo}`
+        ).textContent = `${data.forks_count} forks`;
+      } catch (error) {
+        console.error(error);
+        document.getElementById(`stars-${project.repo}`).textContent = "N/A";
+        document.getElementById(`forks-${project.repo}`).textContent = "N/A";
+      }
+    }
+  });
+</script>

@@ -1,6 +1,6 @@
 {{ define "main" }}
     <div class="pl-sm-2">
-        {{if not (in .Title "About")}}
+        {{if and (not (in .Title "About")) (not (in .RelPermalink "projects"))}}
         <div class="mb-3">
             <h3 class="mb-0">{{ .Title }}</h3>
             {{ if .Params.Subtitle }}
