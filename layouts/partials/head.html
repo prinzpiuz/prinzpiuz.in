@@ -1,7 +1,18 @@
 <head>
   <title>{{ .Title }}</title>
 
+  <link rel="canonical" href="{{ .Permalink }}" />
+
+  <link
+    rel="alternate"
+    type="application/rss+xml"
+    title="{{ .Site.Title }}"
+    href="/index.xml"
+  />
+
   <meta name="description" content="Just Some Random Engineering, DIY Stuff" />
+
+  {{ partial "schema.html" . }}
 
   <!-- Facebook Meta Tags -->
   <meta property="og:url" content="https://prinzpiuz.in/" />

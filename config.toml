@@ -6,6 +6,10 @@ enableEmoji = true
 enableRobotsTXT = true
 enableGitInfo = true
 copyright = "© Copyright 2025, prinzpiuz"
+
+[author]
+  name = "prinzpiuz"
+
 # Main menu items
 [menu]
   [[menu.main]]
@@ -30,16 +34,16 @@ copyright = "© Copyright 2025, prinzpiuz"
     identifier = "projects"
     name = "Projects"
     title = "Projects"
-    url = "/projects/my-projects/index.html"
+    url = "/projects/"
     weight = -80
 
 # Configuration Features
 [params]
-  version="2.0.8"
+  version="2.0.9"
   opengraph_io_api_key = "65b682c0-f713-473b-b75a-30e7eda27791"
   header_title = "PrinzPiuz"
   header_subtitle = "Software Engineer | Nuventure | Cochin"
-  home_image = "/images/avatar.jpeg"
+  home_image = "/images/avatar.png"
   recent_posts = 5
   mainSections = ["posts", "post", "blog"]
   [[params.social]]

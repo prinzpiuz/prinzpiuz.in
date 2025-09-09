@@ -1,6 +1,6 @@
 # Changelog
 
-## [2.0.8] - 2025-02-02
+## [2.0.9] - 2025-09-09
 
 ### ⛰️  Features
 
@@ -25,6 +25,8 @@
 - *(uses)* #major, custom command to get list commits from git log - ([5eecfe5](https://github.com/orhun/git-cliff/commit/5eecfe5f5a5d0d53d877c5267a7254a9342958d6))
 - *(uses)* Added functionality to fetch full changelog for the uses page - ([e1df9f3](https://github.com/orhun/git-cliff/commit/e1df9f33c914179f0a80a36eaba0dd83f31a09af))
 - *(uses)* Setups for /uses page - ([67ceaeb](https://github.com/orhun/git-cliff/commit/67ceaebb652c286054235cf94176a2d9203f8541))
+- New avatar and projects page (#79) - ([0c36098](https://github.com/orhun/git-cliff/commit/0c360988f42980a1f973e25803c604dee565e4a8))
+- New avatar and projects page - ([c4803d9](https://github.com/orhun/git-cliff/commit/c4803d93fbb6cfeafc9219f1eed61aaa91788c20))
 
 ### 🐛 Bug Fixes
 
@@ -61,6 +63,7 @@
 - *(content correction)* Corrections - ([9fc1931](https://github.com/orhun/git-cliff/commit/9fc19313d9d191b651187768193ff79a48883188))
 - *(content correction)* Corrections in latest post, broken link fixes (#48) - ([ae41791](https://github.com/orhun/git-cliff/commit/ae417912447ce2e8567aba1eb6bfc8f2cca1bb47))
 - *(content correction)* Corrections in latest post, broken link fixes - ([e16ed54](https://github.com/orhun/git-cliff/commit/e16ed54473ecf00e9b42f0157f476b18282e6072))
+- *(generated)* Changelog generated & version updated automatically - ([4971f9b](https://github.com/orhun/git-cliff/commit/4971f9b2fb1d0a574ca8db8b3e18f08990523f07))
 - *(generated)* Changelog generated & version updated automatically - ([4206e5e](https://github.com/orhun/git-cliff/commit/4206e5e9c46c96ec9b9cdf4dccc4afe78bc4e6a0))
 - *(generated)* Changelog generated & version updated automatically - ([f2cbaf2](https://github.com/orhun/git-cliff/commit/f2cbaf22f9e05797f4ea8f97b248510c48fa2b49))
 - *(generated)* Changelog generated & version updated automatically - ([39acf6b](https://github.com/orhun/git-cliff/commit/39acf6b685b2560274818fe638a26ff86152eb30))
