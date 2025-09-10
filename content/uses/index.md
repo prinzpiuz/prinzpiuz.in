@@ -64,16 +64,21 @@ I currently have three powerful machines:
     - Logitech MK215 Wireless Keyboard and Mouse Combo
 - **🖯 Mouse**: [Logitech Signature M650](https://www.logitech.com/en-in/products/mice/m650-signature-wireless-mouse.html)
 - **🎤 MIC**: [MAONO AU-903 Portable USB Microphone](https://www.maono.com/products/maono-pd100u-dynamic-usb-microphone?_pos=13&_fid=bb9d87ea3&_ss=c)
-- **🎧 HeadPhone**: [Sennheiser ACCENTUM Plus](https://www.sennheiser-hearing.com/en-IN/p/accentum-plus-wireless/)
+- **🔋Power Backup**: [APC Back-UPS 600VA](https://www.se.com/in/en/product/BX600C-IN/apc-backups-600va-230v-without-auto-shutdown-software-3-india-outlets/)
+- **🎧 Headphones**:
+  - [Sennheiser ACCENTUM Plus](https://www.sennheiser-hearing.com/en-IN/p/accentum-plus-wireless/)
+  - [OnePlus Bullets Z2](https://www.oneplus.in/product/oneplus-bullets-wireless-z2)
   - **Previous Ones**:
     - One Plus Bro
     - JBL Tune 215BT
-- **HeadPhone Stand**: [Hoss® Headphone Stand](https://www.amazon.in/gp/product/B0CV14GBTS/ref=ppx_od_dt_b_asin_title_s00?ie=UTF8&psc=1)
+- **Headphone Stand**: [Hoss® Headphone Stand](https://www.amazon.in/gp/product/B0CV14GBTS/ref=ppx_od_dt_b_asin_title_s00?ie=UTF8&psc=1)
 - **💾 Storage**:
   - For Backups: [Western Digital WD 1 TB](https://www.westerndigital.com/en-in/products/portable-drives/wd-my-passport-usb-3-0-hdd)
   - For [Ventoy](https://www.ventoy.net/en/index.html): [SanDisk ® Ultra Curve USB 3.2 64 GB](https://www.westerndigital.com/en-in/products/usb-flash-drives/sandisk-ultra-curve-3-2)
   - Another Backup Drive: [SanDisk USB2.0 128 GB](https://www.westerndigital.com/en-in/products/usb-flash-drives/sandisk-cruzer-blade-usb-2-0?sku=SDCZ50-128G-I35)
-- **⌚ Watch**: [Galaxy Watch4 LTE](https://www.samsung.com/in/watches/galaxy-watch/galaxy-watch4-black-lte-sm-r875fzkainu/)
+- **⌚ Watches**:
+  - Fitness: [Galaxy Watch4 LTE](https://www.samsung.com/in/watches/galaxy-watch/galaxy-watch4-black-lte-sm-r875fzkainu/)
+  - Daily: [Casio - AE-1200WH-1AV](https://www.casio.com/in/watches/casio/product.AE-1200WH-1AV/)
 - **🔌 Wireless Charger**: [eller santé® 15W Wireless Charger](https://www.amazon.in/gp/product/B08Q25F848/ref=ppx_yo_dt_b_asin_title_o03_s00?ie=UTF8&th=1)
 - **E-Book Reader**: [Kindle (10th Gen)](https://www.amazon.in/Kindle-10th-Gen/dp/B07FQ4Q7MB)
 - **Power Bank**: [Belkin 10000 mAh PD 3.0](https://www.belkin.com/pocket-power-10k-power-bank-portable-charger/P-F7U020.html)
@@ -107,18 +112,17 @@ I currently have three powerful machines:
 - **DotFile Manager**: [Chezmoi](https://www.chezmoi.io/)
 - **Note-Taking**: [Obsidian](https://obsidian.md/)
 - **👨‍💻 Code Editor**: [VS Code](https://code.visualstudio.com/)  
+    **Font**: [JetBrains Mono](https://www.jetbrains.com/lp/mono/)
     Light Weight, Minimal, Yet Powerful 🗲  
     Theme I am using is [Lights Out](https://marketplace.visualstudio.com/items?itemName=nedy.lights-out)  
     [Extensions I am using](#code_extensions)
 - **Terminal**: [Kitty](https://github.com/kovidgoyal/kitty)  
         My kitty config files can be seen [here](https://github.com/prinzpiuz/dotfiles/blob/linux/debian/private_dot_config/kitty/kitty.conf)
-  - **Shell**: [ZSH](https://zsh.sourceforge.io/)
-        with [oh-my-zsh](https://ohmyz.sh/) wrapper  
-        My zsh config files can be seen [here](https://github.com/prinzpiuz/dotfiles/blob/linux/debian/dot_zshrc)
-    - **Theme**: [agnoster](https://github.com/agnoster/agnoster-zsh-theme)
-- **Browsers**: [Chrome](https://www.google.com/chrome/), [Firefox](https://www.mozilla.org/en-US/firefox/new/)  
+  - **Shell**: [Fish](https://fishshell.com/)
+        My fish config files can be seen [here](https://github.com/prinzpiuz/dotfiles/tree/linux/debian12/private_dot_config/private_fish)
+- **Browsers**: [Firefox](https://www.mozilla.org/en-US/firefox/new/) (Primary), [Chrome](https://www.google.com/chrome/),
     [Browser Extensions I am Using](#browser_extensions)
-- **Backups**: [Rsync](https://github.com/RsyncProject/rsync)
+- **Backups**: [Restic](https://restic.net/)
 - **API Client**: [Hoppscotch](https://github.com/hoppscotch/hoppscotch)  
         Open Source, Free, Lightweight, Fast, Minimal  
 - **Databases**: [PostgreSQL](https://www.postgresql.org/), [MySQL](https://www.mysql.com/), [Sqlite](https://www.sqlite.org/)
@@ -134,7 +138,8 @@ I currently have three powerful machines:
 
 - **Phones**: [Galaxy S20 FE 5G](https://www.samsung.com/in/smartphones/galaxy-s/galaxy-s20-fe-5g-cloud-mint-128gb-sm-g781bzggins/)  
     With [Before Launcher](https://play.google.com/store/apps/details?id=com.beforesoft.launcher&hl=en_IN&gl=US), A super minimalist launcher.  
-    With 90% of notifications disabled  
+    With 90% of notifications disabled
+  - Case: [Spigen Rugged Armor](https://www.spigen.com/products/galaxy-s20-series-rugged-armor?_pos=1&_fid=d021a7bf8&_ss=c&variant=41936113303599)  
   - **Previous Ones**:
     - OnePlus 8
     - Moto G3
@@ -158,12 +163,26 @@ I currently have three powerful machines:
     - Jellyfin: Jellyfin Android Client
     - MSM: Media Server Manager (My Project)
     - Obsidian: Note-Taking
+    - Lissen: audiobookshelf
 
 {{< /collapsible >}}
 
-{{< collapsible 6 "Other Services 🌐" >}}
+{{< collapsible 6 "AI Tools" >}}
+
+- **Generative AI**
+  - [Perplexity](https://www.perplexity.ai/)
+  - [Gemini](https://gemini.google.com/)
+  - [Manus](https://manus.im/app)
+- **Code Generation**
+  - [Windsurf](https://marketplace.visualstudio.com/items?itemName=Codeium.codeium)
+  - [Copilot](https://copilot.microsoft.com/)
+
+{{< /collapsible >}}
+
+{{< collapsible 7 "Other Services 🌐" >}}
 
 - **Email**: [Gmail](https://mail.google.com/)
+- **Automation** [N8N](https://n8n.io/)
 - **File Sharing**: [gDrive](https://drive.google.com/)
 - **Code Hosting**: [GitHub](https://github.com/prinzpiuz)(Mostly), [GitLab](https://gitlab.com/prinzpiuz)
 - **Social Media**:
@@ -172,9 +191,12 @@ I currently have three powerful machines:
   - [LinkedIn](https://www.linkedin.com/in/prince-thaliath-35583a167/)  
   - [Pixelfed](https://portfolio.pixelfed.social/prinzpiuz)
   - [Reddit](https://www.reddit.com/user/prinzpiuz/)
-- **Hosting**: [Netlify](https://www.netlify.com/), [GitHub Pages](https://pages.github.com/)
+- **Hosting**:
+  - VPS: [Hetzner](https://www.hetzner.com/)
+  - Static: [GitHub Pages](https://pages.github.com/), [Netlify](https://www.netlify.com/)
 - **Domains**: [GoDaddy](https://www.godaddy.com/en-in)
 - **Investments 📈**: [Zerodha](https://zerodha.com/)
+- **Finance**: [Plain Text Accounting (PTA)](https://plaintextaccounting.org/)
 - **VPN**:
   - **[Tailscale](https://tailscale.com/)** for mesh connectivity
   - **[MullVad](https://mullvad.net/en)** Free from mass surveillance and censorship
@@ -192,6 +214,7 @@ I currently have three powerful machines:
   - [Coursera](https://www.coursera.org/)
   - [Edex](https://www.edx.org/)
   - YouTube
+- **Music & Podcast**: YT Music
 
 {{< /collapsible >}}
 
@@ -208,12 +231,8 @@ I currently have three powerful machines:
 - {{< simple_more "code_extensions" "**VS Code Extensions I am Using**" >}}
   - Better Comments
   - Codesnap
-  - Project Manager
   - Dart Import Sorter
-  - Vscode Django
-  - Django HTML
   - Vscode Toggle Quotes
-  - Turbo Console Log
   - Path Intellisense
   - Js Codeformer
   - Dart Code
@@ -250,13 +269,9 @@ I currently have three powerful machines:
   - Jupyter Keymap
   - Jupyter Renderers
   - Remote Containers
-  - Remote Ssh
-  - Remote Ssh Edit
+  - Remote SSH
   - Remote Explorer
   - Sqltools
-  - Sqltools Driver MySQL
-  - Sqltools Driver Pg
-  - Sqltools Driver Sqlite
   - Lights Out
   - Autodocstring
   - Vetur
@@ -266,10 +281,9 @@ I currently have three powerful machines:
   - Sqlite Viewer
   - Vscode YAML
   - Markdown Preview Enhanced
-  - Cody Ai
+  - WindSurf
   - Code Spell Checker
   - Even Better TOML
-  - Shellcheck
   - Errorlens
   - Vscode Ltex
   - Vscode Gradle
@@ -281,7 +295,6 @@ I currently have three powerful machines:
 - {{< simple_more "browser_extensions" "**Browser Extensions I am Using**" >}}
 
   - Bitwarden Password Manager
-  - Clippings.io for Amazon Kindle Highlights
   - Cookie AutoDelete
   - Enhancer for YouTube™
   - Google Translate
@@ -291,9 +304,8 @@ I currently have three powerful machines:
   - Olam English Malayalam Dictionary
   - Raindrop.io
   - React Developer Tools
-  - Remote Deluge
   - Sonarr/Radarr/Lidarr autosearch
-  - SquarePage
+  - Looi
   - Super Simple Highlighter
   - uBlock Origin
   - Vimium
