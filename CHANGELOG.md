@@ -1,6 +1,6 @@
 # Changelog
 
-## [2.0.10] - 2025-09-10
+## [2.0.11] - 2025-09-11
 
 ### ⛰️  Features
 
@@ -63,6 +63,7 @@
 - *(content correction)* Corrections - ([9fc1931](https://github.com/orhun/git-cliff/commit/9fc19313d9d191b651187768193ff79a48883188))
 - *(content correction)* Corrections in latest post, broken link fixes (#48) - ([ae41791](https://github.com/orhun/git-cliff/commit/ae417912447ce2e8567aba1eb6bfc8f2cca1bb47))
 - *(content correction)* Corrections in latest post, broken link fixes - ([e16ed54](https://github.com/orhun/git-cliff/commit/e16ed54473ecf00e9b42f0157f476b18282e6072))
+- *(generated)* Changelog generated & version updated automatically - ([d111569](https://github.com/orhun/git-cliff/commit/d11156909d134c96af8b1bf7a71e4ab8083475be))
 - *(generated)* Changelog generated & version updated automatically - ([b9e51aa](https://github.com/orhun/git-cliff/commit/b9e51aa19125928dd93c76530f43bc1e32699f8c))
 - *(generated)* Changelog generated & version updated automatically - ([4971f9b](https://github.com/orhun/git-cliff/commit/4971f9b2fb1d0a574ca8db8b3e18f08990523f07))
 - *(generated)* Changelog generated & version updated automatically - ([4206e5e](https://github.com/orhun/git-cliff/commit/4206e5e9c46c96ec9b9cdf4dccc4afe78bc4e6a0))
