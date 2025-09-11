@@ -91,6 +91,7 @@ I currently have three powerful machines:
   - [Gizga Essentials Professional Cleaning Kit](https://www.amazon.in/Essentials-Gz-Ck-102-Professional-Micro-Fiber-Antibacterial/dp/B01IBSMA0A?th=1)
   - [Lapster 5-in-1 Multi-Function Cleaning Keyboard Cleaning kit](https://www.amazon.in/Lapster-Multi-Function-Cleaning-Keyboard-Earphones/dp/B0BBW16VH9/)
 - **⚒ Tools**: [Bosch 46-Piece Screwdriver](https://www.bosch-diy.com/ae/en/p/screwdriver-bit-set-46-pieces-2763386)
+- **MultiMeter**: [Fluke 101](https://www.fluke.com/en-in/product/electrical-testing/digital-multimeters/fluke-101)
 {{< /collapsible >}}
 
 {{< collapsible 3 "Developer Tools 👨‍💻" >}}

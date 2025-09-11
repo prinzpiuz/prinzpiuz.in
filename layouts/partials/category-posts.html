@@ -3,9 +3,13 @@
     <div class="col-12">
       <div class="pb-3">
         {{ range .Site.RegularPages.GroupByDate "2006" }}
+        {{ if not (in .Key "0001") }}
         <h5>
-          <span class="badge category text-capitalize"> {{ .Key }}</span>
+          <span class="badge category text-capitalize">
+            {{ .Key }}
+          </span>
         </h5>
+        {{ end }}
         <ul>
           {{ range .Pages }}
             {{ if not (in .Permalink "reviews") }}
