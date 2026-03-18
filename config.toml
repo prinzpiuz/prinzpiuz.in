@@ -36,6 +36,12 @@ copyright = "© Copyright 2025, prinzpiuz"
     title = "Projects"
     url = "/projects/"
     weight = -80
+  [[menu.main]]
+    identifier = "homelab"
+    name = "Homelab"
+    title = "Homelab"
+    url = "/homelab/"
+    weight = -70
 
 # Configuration Features
 [params]
