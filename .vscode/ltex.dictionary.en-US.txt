@@ -147,3 +147,5 @@ Manus
 Lissen
 audiobookshelf
 Spigen
+KiloCode
+ChatGpt
