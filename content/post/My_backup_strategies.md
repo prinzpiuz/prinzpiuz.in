@@ -6,6 +6,7 @@ categories: [backup, restic, backup-strategies, backup-strategies-for-linux]
 bloTils-like: false
 audio: false
 modified_date: false
+bloTils: true
 ---
 This is my first blog post for 2025, and I'm glad I published it in January. This post covers my backup setup, including the tools I tried, what I'm currently using, and my strategies.  
 

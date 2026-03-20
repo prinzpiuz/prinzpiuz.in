@@ -3,6 +3,7 @@ title: "My Media Server Set-up"
 date: 2020-06-13T14:58:35+05:30
 draft: false
 categories: ["server", "linux", "flutter"]
+bloTils: true
 ---
 
 {{< figure src="/images/media_server/media_server.jpg" height=300 width=300 class="figure_center" >}}

@@ -14,10 +14,12 @@
           {{ range .Pages }}
             {{ if not (in .Permalink "reviews") }}
             {{if not (in .Permalink "projects")}}
+            {{if not (in .Permalink "homelab")}}
             {{if not (in .Title "About")}}
               <li>
                 {{ .Date.Format "Jan" }}  <a href="{{ .RelPermalink }}">{{ .Title }}</a>  {{ partial "reading-time.html" . }}
               </li>
+            {{ end }}
             {{ end }}
             {{ end }}
             {{ end }}

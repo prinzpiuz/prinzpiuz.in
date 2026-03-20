@@ -5,7 +5,10 @@
     <b>Changelog</b></br>
     {{ with site.Params.git.last_commit }}
         {{ range split .Subject "," }}
-            {{ . }}</br>
+            {{ $msg := trim . " " }}
+            {{ if not (findRE "(feat|fix|chore|docs|refactor|test|style)(\\(|:)" $msg) }}
+                {{ $msg }}</br>
+            {{ end }}
         {{ end }}
     {{ end }}
 {{ end }}

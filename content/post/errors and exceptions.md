@@ -3,6 +3,7 @@ title: "Errors and Exceptions In Python"
 date: 2020-10-03T17:46:27+05:30
 draft: false
 categories: ["python"]
+bloTils: true
 ---
 
 This blog is about How to manage Exceptions in python, this is more like notes I took while reading [Dusty Phillips](https://dusty.phillips.codes/)'s [Python 3 Object-oriented Programming](https://www.packtpub.com/product/python-3-object-oriented-programming-third-edition/9781789615852),

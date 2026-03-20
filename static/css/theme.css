@@ -16443,18 +16443,6 @@ a {
 }
 
 
-#not_by_ai {
-  @media (min-width: 1366px) {
-    position: fixed;
-    left: 50px;
-    bottom: 16px;
-  }
-
-  @media (max-width: 600px) {
-    float: none;
-  }
-}
-
 #review_image {
   float: left;
   margin-right: 10px;

@@ -1,6 +1,6 @@
 {{ define "main" }}
     <div class="pl-sm-2">
-        {{if and (not (in .Title "About")) (not (in .RelPermalink "projects"))}}
+        {{if and (not (in .Title "About")) (not (in .RelPermalink "projects")) (not (in .RelPermalink "homelab"))}}
         <div class="mb-3">
             <h3 class="mb-0">{{ .Title }}</h3>
             {{ if .Params.Subtitle }}
@@ -8,8 +8,8 @@
             {{ end }}
             <small class="text-muted">Published {{ .Date.Format "January 2, 2006"  }}</small>
             {{ partial "reading-time.html" . }}
-            {{ if .Params.clappy }}
-                {{ partial "clappy_count.html" . }}
+            {{ if .Params.bloTils }}
+                {{ partial "blotils_count.html" . }}
             {{ end }}
             {{ if .Params.modified_date }}
                 </br><small class="text-muted">This page was last modified on {{ .Lastmod | time.Format ":date_medium" }}</small>
@@ -20,8 +20,8 @@
             {{ .Content }}
             {{ partial "changelog.html" . }}
         </article>
-        {{ if .Params.clappy }}
-        {{ partial "clappy.html" . }}
+        {{ if .Params.bloTils }}
+        {{ partial "blotils.html" . }}
         {{ end }}
     </div>
 {{ end }}

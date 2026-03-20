@@ -3,6 +3,7 @@ title: "My Blog Set up"
 date: 2020-05-26T15:29:46+05:30
 draft: false
 categories: ["set-up"]
+bloTils: true
 ---
 
 I was planning to set up a blog from my college days onwards. it's been 5 years since I'm out of college. since I'm a [miser](https://olam.in/Dictionary/en_ml/miser) person, I was always looking for the cheapest hosting service :sunglasses: also, I don't want the headaches of hosting like
