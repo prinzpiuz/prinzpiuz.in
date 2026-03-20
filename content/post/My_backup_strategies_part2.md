@@ -6,6 +6,7 @@ categories: [backup, restic, backup-strategies, backup-strategies-for-linux]
 bloTils-like: false
 audio: false
 modified_date: false
+bloTils: true
 ---
 
 This blog post continues the discussion on my backup strategies. If you haven't read the previous post, please check it out [here](/post/my_backup_strategies/).  

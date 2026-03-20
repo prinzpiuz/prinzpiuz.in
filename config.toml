@@ -36,10 +36,16 @@ copyright = "© Copyright 2025, prinzpiuz"
     title = "Projects"
     url = "/projects/"
     weight = -80
+  [[menu.main]]
+    identifier = "homelab"
+    name = "Homelab"
+    title = "Homelab"
+    url = "/homelab/"
+    weight = -70
 
 # Configuration Features
 [params]
-  version="2.0.11"
+  version="2.0.12"
   opengraph_io_api_key = "65b682c0-f713-473b-b75a-30e7eda27791"
   header_title = "PrinzPiuz"
   header_subtitle = "Software Engineer | Nuventure | Cochin"

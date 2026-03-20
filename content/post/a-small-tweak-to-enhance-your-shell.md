@@ -4,6 +4,7 @@ date: 2023-03-18T18:50:44+05:30
 asciinema: true
 draft: false
 categories: ["Tweaks", "Shell", "Python"]
+bloTils: true
 ---
 
 This is a short blog about, How a small enhancement in my `.zshrc` file helped me to do some repetitive steps automatically.

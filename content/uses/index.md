@@ -13,7 +13,9 @@ This page is inspired from [@wesbos'](https://wesbos.com/), [uses.tech](https://
 This section was planned from the beginning of this blog.  
 Now it's finally happening.  
 This post lists all the tools and equipment I use day in and day out.  
-Some tools/tech I am using may not be ideal for everyone, But they are somehow working for me. Please don't take this as any sort of recommendation.  
+Some tools/tech I am using may not be ideal for everyone,  
+But they are somehow working for me.  
+**Note:** Please don't take this as any sort of recommendation.  
 
 ***
 {{< collapsible_layout >}}
@@ -114,7 +116,7 @@ I currently have three powerful machines:
 - **Note-Taking**: [Obsidian](https://obsidian.md/)
 - **👨‍💻 Code Editor**: [VS Code](https://code.visualstudio.com/)  
     **Font**: [JetBrains Mono](https://www.jetbrains.com/lp/mono/)
-    Light Weight, Minimal, Yet Powerful 🗲  
+    Light Weight, Minimal, Yet Powerful  
     Theme I am using is [Lights Out](https://marketplace.visualstudio.com/items?itemName=nedy.lights-out)  
     [Extensions I am using](#code_extensions)
 - **Terminal**: [Kitty](https://github.com/kovidgoyal/kitty)  
@@ -171,12 +173,12 @@ I currently have three powerful machines:
 {{< collapsible 6 "AI Tools" >}}
 
 - **Generative AI**
-  - [Perplexity](https://www.perplexity.ai/)
+  - [Claude](https://claude.ai/) (Pro Plan)
   - [Gemini](https://gemini.google.com/)
-  - [Manus](https://manus.im/app)
+  - [ChatGpt](https://chatgpt.com/)
 - **Code Generation**
-  - [Windsurf](https://marketplace.visualstudio.com/items?itemName=Codeium.codeium)
-  - [Copilot](https://copilot.microsoft.com/)
+  - [Kilo Code](https://kilo.ai/)
+  - [Claude Code](https://claude.com/product/claude-code)
 
 {{< /collapsible >}}
 
@@ -282,7 +284,7 @@ I currently have three powerful machines:
   - Sqlite Viewer
   - Vscode YAML
   - Markdown Preview Enhanced
-  - WindSurf
+  - KiloCode
   - Code Spell Checker
   - Even Better TOML
   - Errorlens

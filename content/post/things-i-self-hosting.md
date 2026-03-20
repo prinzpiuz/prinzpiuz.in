@@ -3,6 +3,7 @@ title: "Things I Self-Hosting 🖳"
 date: 2023-01-06T20:23:40+05:30
 draft: false
 categories: ["server", "self-Hosting", "openSource"]
+bloTils: true
 ---
 _Disclaimer: This blog is not in any way promoting piracy._
 

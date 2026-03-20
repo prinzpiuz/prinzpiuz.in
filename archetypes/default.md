@@ -3,7 +3,7 @@ title: "{{ replace .Name "-" " " | title }}"
 date: {{ .Date }}
 draft: true
 categories: []
-bloTils-like: false
+bloTils: true
 audio: false
 modified_date: false
 ---

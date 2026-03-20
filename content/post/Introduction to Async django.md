@@ -3,6 +3,7 @@ title: "Introduction to Async Django"
 date: 2021-01-21T00:43:47+05:30
 draft: false
 categories: ["django", "python"]
+bloTils: true
 ---
 
 This is a written version of the talk I presented to my colleagues. This is a basic introduction to asynchronous programming in django.
