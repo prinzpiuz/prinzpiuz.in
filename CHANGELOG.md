@@ -1,6 +1,6 @@
 # Changelog
 
-## [2.0.11] - 2025-09-11
+## [2.0.12] - 2026-03-20
 
 ### ⛰️  Features
 
@@ -25,6 +25,9 @@
 - *(uses)* #major, custom command to get list commits from git log - ([5eecfe5](https://github.com/orhun/git-cliff/commit/5eecfe5f5a5d0d53d877c5267a7254a9342958d6))
 - *(uses)* Added functionality to fetch full changelog for the uses page - ([e1df9f3](https://github.com/orhun/git-cliff/commit/e1df9f33c914179f0a80a36eaba0dd83f31a09af))
 - *(uses)* Setups for /uses page - ([67ceaeb](https://github.com/orhun/git-cliff/commit/67ceaebb652c286054235cf94176a2d9203f8541))
+- Integrating BloTils (#85) - ([2b90b80](https://github.com/orhun/git-cliff/commit/2b90b80c21ad2605295177f59d93b7c75a37f26c))
+- BloTils added - ([49577ab](https://github.com/orhun/git-cliff/commit/49577abbc93fc1eb82b585b9fcf51b229c8d18da))
+- New page for homelab - ([0bc867e](https://github.com/orhun/git-cliff/commit/0bc867e0e90ab38f262025bef0fa68f2c4c0df12))
 - New avatar and projects page (#79) - ([0c36098](https://github.com/orhun/git-cliff/commit/0c360988f42980a1f973e25803c604dee565e4a8))
 - New avatar and projects page - ([c4803d9](https://github.com/orhun/git-cliff/commit/c4803d93fbb6cfeafc9219f1eed61aaa91788c20))
 
@@ -36,6 +39,8 @@
 - *(github actions)* Fix for the typo in action file (#55) - ([dc211d3](https://github.com/orhun/git-cliff/commit/dc211d334d97fc489ab6b2d39d8158518c1a639c))
 - *(github actions)* Fix for the typo in action file - ([eb9470b](https://github.com/orhun/git-cliff/commit/eb9470b59a0d7c0957cf29a88d217dc1a6988b94))
 - *(public)* Re-adding deleted public folder - ([1426686](https://github.com/orhun/git-cliff/commit/1426686adbb77a447d5d6594ba79ad7affe62af7))
+- Filtering conventional commit msg in uses changelog - ([a189662](https://github.com/orhun/git-cliff/commit/a189662abb5ab38a5d36478815be9dd67d6cb708))
+- Removed Not BY AI tag - ([bb0913f](https://github.com/orhun/git-cliff/commit/bb0913f25f9ff08b1fd5e965412bc2bcf677b284))
 - Spelling mistakes corrected in python saves my time post - ([aa24932](https://github.com/orhun/git-cliff/commit/aa24932d48bb3d2aaf4941de06d6705474845001))
 - Spelling and grammer mistakes in Open alternative, not ban fixed - ([2171b69](https://github.com/orhun/git-cliff/commit/2171b699178d56306cf2374fc67cf28f921059db))
 
@@ -63,6 +68,7 @@
 - *(content correction)* Corrections - ([9fc1931](https://github.com/orhun/git-cliff/commit/9fc19313d9d191b651187768193ff79a48883188))
 - *(content correction)* Corrections in latest post, broken link fixes (#48) - ([ae41791](https://github.com/orhun/git-cliff/commit/ae417912447ce2e8567aba1eb6bfc8f2cca1bb47))
 - *(content correction)* Corrections in latest post, broken link fixes - ([e16ed54](https://github.com/orhun/git-cliff/commit/e16ed54473ecf00e9b42f0157f476b18282e6072))
+- *(generated)* Changelog generated & version updated automatically - ([7543a7b](https://github.com/orhun/git-cliff/commit/7543a7b77dd7e6ce0992945bb9596d47953711d7))
 - *(generated)* Changelog generated & version updated automatically - ([d111569](https://github.com/orhun/git-cliff/commit/d11156909d134c96af8b1bf7a71e4ab8083475be))
 - *(generated)* Changelog generated & version updated automatically - ([b9e51aa](https://github.com/orhun/git-cliff/commit/b9e51aa19125928dd93c76530f43bc1e32699f8c))
 - *(generated)* Changelog generated & version updated automatically - ([4971f9b](https://github.com/orhun/git-cliff/commit/4971f9b2fb1d0a574ca8db8b3e18f08990523f07))
