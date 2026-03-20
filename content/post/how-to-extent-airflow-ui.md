@@ -3,6 +3,7 @@ title: "DYK? You Can Actually Extend Airflow UI 😯"
 date: 2023-05-28T10:49:11+05:30
 draft: false
 categories: ["Python", "Airflow", "Flask"]
+bloTils: true
 ---
 
 **This** is a small blog about some recent hurdles I faced in airflow and how I solved it.

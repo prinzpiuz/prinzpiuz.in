@@ -3,6 +3,7 @@ title: "Python Saves My Time"
 date: 2020-06-02T00:20:59+05:30
 draft: false
 categories: ["python", "linux"]
+bloTils: true
 ---
 
 > _"Repetitive task should be automated"_ - somebody, somewhere :sunglasses:

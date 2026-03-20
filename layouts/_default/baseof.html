@@ -14,13 +14,20 @@
       />
       <script src="{{ .Site.BaseURL }}js/asciinema-player.js"></script>
     {{ end }}
-    {{ if .Params.clappy }}
+    {{ if .Params.bloTils }}
       <link
       rel="stylesheet"
       type="text/css"
-      href="{{ .Site.BaseURL }}css/clappy.css"
+      href="{{ .Site.BaseURL }}css/blotils.css"
       />
-      <script src="{{ .Site.BaseURL }}js/clappy.js"></script>
+      <script
+        src="https://cdn.jsdelivr.net/gh/prinzpiuz/BloTils@js-v1.0.1/dist/BloTils.min.js"
+        integrity="sha384-LALymwPBn/ggGNNFqVChJQiIHLwelRpvHX8Sx2382VyX0ZcOUUgjVhRRejXE0kpl"
+        crossorigin="anonymous"
+        data-blotils_url="https://blotils.prinzpiuz.in"
+        data-blotils_like_btn="blotils_like_button">
+      </script>
+      <script src="{{ .Site.BaseURL }}js/blotils.js"></script>
     {{ end }}
     {{ if .Params.audio }}
       <link

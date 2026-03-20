@@ -3,6 +3,7 @@ title: "Wonder World of SVGs"
 date: 2022-06-06T10:45:15+05:30
 draft: false
 categories: ["Design"]
+bloTils: true
 ---
 
 ##### Little SVG history

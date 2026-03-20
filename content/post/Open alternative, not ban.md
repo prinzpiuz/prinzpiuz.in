@@ -3,6 +3,7 @@ title: "Open Alternative, Not Ban"
 date: 2020-07-07T16:23:04+05:30
 draft: false
 categories: ["general", "open source"]
+bloTils: true
 ---
 
 So this blog is my personal opinion on the recent [ban](https://www.aljazeera.com/news/2020/06/india-bans-59-chinese-apps-border-dispute-200629180545547.html) of apps in India, Due to the border conflicts with China.

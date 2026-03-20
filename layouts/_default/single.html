@@ -8,8 +8,8 @@
             {{ end }}
             <small class="text-muted">Published {{ .Date.Format "January 2, 2006"  }}</small>
             {{ partial "reading-time.html" . }}
-            {{ if .Params.clappy }}
-                {{ partial "clappy_count.html" . }}
+            {{ if .Params.bloTils }}
+                {{ partial "blotils_count.html" . }}
             {{ end }}
             {{ if .Params.modified_date }}
                 </br><small class="text-muted">This page was last modified on {{ .Lastmod | time.Format ":date_medium" }}</small>
@@ -20,8 +20,8 @@
             {{ .Content }}
             {{ partial "changelog.html" . }}
         </article>
-        {{ if .Params.clappy }}
-        {{ partial "clappy.html" . }}
+        {{ if .Params.bloTils }}
+        {{ partial "blotils.html" . }}
         {{ end }}
     </div>
 {{ end }}
