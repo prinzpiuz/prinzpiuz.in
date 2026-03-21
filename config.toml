@@ -7,10 +7,6 @@ enableRobotsTXT = true
 enableGitInfo = true
 copyright = "© Copyright 2025, prinzpiuz"
 
-[author]
-  name = "prinzpiuz"
-
-# Main menu items
 [menu]
   [[menu.main]]
     identifier = "about"
@@ -43,15 +39,18 @@ copyright = "© Copyright 2025, prinzpiuz"
     url = "/homelab/"
     weight = -70
 
-# Configuration Features
 [params]
-  version="2.0.12"
+  version="2.0.13"
   opengraph_io_api_key = "65b682c0-f713-473b-b75a-30e7eda27791"
   header_title = "PrinzPiuz"
   header_subtitle = "Software Engineer | Nuventure | Cochin"
   home_image = "/images/avatar.png"
   recent_posts = 5
   mainSections = ["posts", "post", "blog"]
+
+  [params.author]
+    name = "prinzpiuz"
+
   [[params.social]]
     fa_icon = "fab fa-github fa-1x"
     href = "https://github.com/prinzpiuz"
@@ -68,3 +67,7 @@ copyright = "© Copyright 2025, prinzpiuz"
     fa_icon = "fas fa-rss"
     href = "/index.xml"
     name = "RSS Feed"
+
+[security]
+  [security.http]
+    urls = ['https://opengraph\.io/.*']
