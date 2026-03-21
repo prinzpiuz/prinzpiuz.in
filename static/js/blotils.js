@@ -1,5 +1,5 @@
 const blotils = document.getElementById('blotils');
-const like_button = document.getElementById('blotils_like_button');
+const like_button = document.getElementById('blotils_like_btn');
 const blotils_icon_unfilled = document.getElementById('blotils_icon_unfilled');
 const blotils_icon_filled = document.getElementById('blotils_icon_filled');
 const blotils_icon_explosion = document.getElementById(
@@ -9,35 +9,32 @@ const blotils_icon_container = document.getElementById(
     'blotils_icon_container',
 );
 const blotils_count = document.getElementById('blotils_count_main');
-const ANIMATION_DURATION = 700;
+const ANIMATION_DURATION = 1000;
 
 window.addEventListener('DOMContentLoaded', async () => {
-    setTimeout(async () => {
-        await set_likes_count();
-    }, 5000);
+    blotils_count.innerText = window.blotils.count + 1;
 });
 
-set_likes_count = async () => {
-    let blotils_data = await window.blotils.get_likes();
-    blotils_count.innerText = blotils_data.count;
+const set_likes_count = () => {
+    blotils_count.innerText = window.blotils.count + 1;
 };
 
-fill_heart = () => {
+const fill_heart = () => {
     blotils_icon_unfilled.style.display = 'none';
     blotils_icon_filled.style.display = 'block';
 };
 
-empty_heart = () => {
+const empty_heart = () => {
     blotils_icon_unfilled.style.display = 'block';
     blotils_icon_filled.style.display = 'none';
 };
 
-show_animation = () => {
+const show_animation = () => {
     blotils_icon_container.style.display = 'none';
     blotils_icon_explosion.style.display = 'block';
 };
 
-after_animation = () => {
+const after_animation = () => {
     blotils_icon_explosion.style.display = 'none';
     blotils_icon_filled.style.display = 'block';
     blotils_icon_container.style.display = 'block';
@@ -45,15 +42,15 @@ after_animation = () => {
     remove_all_listener();
 };
 
-remove_all_listener = () => {
+const remove_all_listener = () => {
     let new_element = blotils.cloneNode(true);
     blotils.parentNode.replaceChild(new_element, blotils);
 };
 
-click_events = async () => {
+const click_events = () => {
     show_animation();
     setTimeout(after_animation, ANIMATION_DURATION);
-    await set_likes_count();
+    set_likes_count();
 };
 
 like_button.addEventListener('mouseover', fill_heart);
