@@ -14,15 +14,15 @@ jobs:
           fetch-depth: "0"
       - name: Bump version and push tag
         id: autoversion
-        uses: anothrNick/github-tag-action@1.64.0
-        env:
-          GITHUB_TOKEN: ${{ secrets.PERSONAL_TOKEN }}
-          WITH_V: false
-          DRY_RUN: false
-          INITIAL_VERSION: 1.0.0
-          DEFAULT_BUMP: patch
+        uses: ietf-tools/semver-action@v1
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          branch: staging
+          skipInvalidTags: true
+          noVersionBumpBehavior: patch
     outputs:
-      new_tag: ${{ steps.autoversion.outputs.new_tag }}
+      new_tag: ${{ steps.autoversion.outputs.nextStrict }}
+
   commit_changelog_and_version:
     needs: tag
     runs-on: ubuntu-latest
@@ -37,9 +37,10 @@ jobs:
         id: git-cliff
         with:
           config: cliff.toml
-          args: --latest -t ${{ needs.tag.outputs.new_tag }}
+          args: --sort newest --tag ${{ needs.tag.outputs.new_tag }}
         env:
           OUTPUT: CHANGES.md
+
       - name: Copy changelog to workspace
         run: echo "${{ steps.git-cliff.outputs.content }}" > CHANGELOG.md
       - name: Update blog version in config.toml

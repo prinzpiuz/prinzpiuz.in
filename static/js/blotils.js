@@ -8,16 +8,14 @@ const blotils_icon_explosion = document.getElementById(
 const blotils_icon_container = document.getElementById(
     'blotils_icon_container',
 );
-const blotils_count = document.getElementById('blotils_count_main');
+const blotils_count = document.getElementById('blotils_count');
 const ANIMATION_DURATION = 1000;
-
-window.addEventListener('DOMContentLoaded', async () => {
-    blotils_count.innerText = window.blotils.count + 1;
-});
 
 const set_likes_count = () => {
     blotils_count.innerText = window.blotils.count + 1;
 };
+
+window.addEventListener('DOMContentLoaded', set_likes_count());
 
 const fill_heart = () => {
     blotils_icon_unfilled.style.display = 'none';
