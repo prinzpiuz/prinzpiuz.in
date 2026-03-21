@@ -1,6 +1,6 @@
 # Changelog
 
-## [2.0.13] - 2026-03-21
+## [2.0.14] - 2026-03-21
 
 ### ⛰️  Features
 
@@ -39,6 +39,8 @@
 - *(github actions)* Fix for the typo in action file (#55) - ([dc211d3](https://github.com/orhun/git-cliff/commit/dc211d334d97fc489ab6b2d39d8158518c1a639c))
 - *(github actions)* Fix for the typo in action file - ([eb9470b](https://github.com/orhun/git-cliff/commit/eb9470b59a0d7c0957cf29a88d217dc1a6988b94))
 - *(public)* Re-adding deleted public folder - ([1426686](https://github.com/orhun/git-cliff/commit/1426686adbb77a447d5d6594ba79ad7affe62af7))
+- Bug with likes count fixed (#89) - ([0513b8d](https://github.com/orhun/git-cliff/commit/0513b8d987486b04c3e54a338334a6259f90a610))
+- Bug with likes count fixed - ([4faa228](https://github.com/orhun/git-cliff/commit/4faa22851c4f619f97824b5991e1b1868245bab9))
 - Filtering conventional commit msg in uses changelog - ([a189662](https://github.com/orhun/git-cliff/commit/a189662abb5ab38a5d36478815be9dd67d6cb708))
 - Removed Not BY AI tag - ([bb0913f](https://github.com/orhun/git-cliff/commit/bb0913f25f9ff08b1fd5e965412bc2bcf677b284))
 - Spelling mistakes corrected in python saves my time post - ([aa24932](https://github.com/orhun/git-cliff/commit/aa24932d48bb3d2aaf4941de06d6705474845001))
@@ -68,6 +70,7 @@
 - *(content correction)* Corrections - ([9fc1931](https://github.com/orhun/git-cliff/commit/9fc19313d9d191b651187768193ff79a48883188))
 - *(content correction)* Corrections in latest post, broken link fixes (#48) - ([ae41791](https://github.com/orhun/git-cliff/commit/ae417912447ce2e8567aba1eb6bfc8f2cca1bb47))
 - *(content correction)* Corrections in latest post, broken link fixes - ([e16ed54](https://github.com/orhun/git-cliff/commit/e16ed54473ecf00e9b42f0157f476b18282e6072))
+- *(generated)* Changelog generated & version updated automatically - ([1a35e28](https://github.com/orhun/git-cliff/commit/1a35e2807b25494a61150c70ceb5e989d38f42be))
 - *(generated)* Changelog generated & version updated automatically - ([7f9939a](https://github.com/orhun/git-cliff/commit/7f9939a05c4645f174de637d37e0071ff5578966))
 - *(generated)* Changelog generated & version updated automatically - ([7543a7b](https://github.com/orhun/git-cliff/commit/7543a7b77dd7e6ce0992945bb9596d47953711d7))
 - *(generated)* Changelog generated & version updated automatically - ([d111569](https://github.com/orhun/git-cliff/commit/d11156909d134c96af8b1bf7a71e4ab8083475be))
