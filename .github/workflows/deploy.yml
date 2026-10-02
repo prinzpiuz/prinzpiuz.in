@@ -23,9 +23,12 @@ jobs:
     concurrency:
       group: build-${{ github.workflow }}-${{ github.ref }}
       cancel-in-progress: true
-    env:
-      HUGO_CACHEDIR: ${{ runner.temp }}/hugo_cache
     steps:
+      # The runner context is not available in job-level env, so the cache
+      # directory is set here and exported for all later steps.
+      - name: Set Hugo cache directory
+        run: echo "HUGO_CACHEDIR=${RUNNER_TEMP}/hugo_cache" >> "$GITHUB_ENV"
+
       - name: Checkout
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
