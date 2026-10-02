@@ -4,37 +4,97 @@ on:
   push:
     branches:
       - release
+  workflow_dispatch: # allows a manual re-deploy from the Actions tab
+
+# Default for every job: read-only. Jobs that need more ask for it explicitly.
+permissions:
+  contents: read
+
+env:
+  # Falls back to the version you build with locally if the repo variable is unset.
+  HUGO_VERSION: ${{ vars.HUGO_VERSION || '0.129.0' }}
+
 jobs:
-  deploy:
+  build:
+    name: Build
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
+    timeout-minutes: 10
+    # A newer push to the same branch cancels an older build that is still running.
     concurrency:
-      group: ${{ github.workflow }}-${{ github.ref }}
+      group: build-${{ github.workflow }}-${{ github.ref }}
+      cancel-in-progress: true
     steps:
-      - uses: actions/checkout@v3
+      # The runner context is not available in job-level env, so the cache
+      # directory is set here and exported for all later steps.
+      - name: Set Hugo cache directory
+        run: echo "HUGO_CACHEDIR=${RUNNER_TEMP}/hugo_cache" >> "$GITHUB_ENV"
+
+      - name: Checkout
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
-          submodules: true # Fetch Hugo themes (true OR recursive)
-          fetch-depth: 0 # Fetch all history for .GitInfo and .Lastmod
+          fetch-depth: 0 # full history: needed by enableGitInfo and by env.sh (git log --follow)
+          persist-credentials: false # do not leave the token in .git/config
+          # No "submodules: true": the only submodule is the old "public" output repo,
+          # which this workflow no longer uses.
 
       - name: Setup Hugo
-        uses: peaceiris/actions-hugo@v2
+        uses: peaceiris/actions-hugo@2752ce1d29631191ea3f27c23495fa06139a5b78 # v3.2.1
         with:
-          hugo-version: "${{ vars.HUGO_VERSION }}"
+          hugo-version: ${{ env.HUGO_VERSION }}
+          extended: true
 
-      #this step to get all the commit subjects of uses/index.md specific file
-      - name: Setup Hugo Last Commit And Build
-        run: source env.sh && hugo
+      - name: Configure Pages
+        id: pages
+        uses: actions/configure-pages@45bfe0192ca1faeb007ade9deae92b16b8254a0d # v6.0.0
 
-      - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
-        # If you're changing the branch from main,
-        # also change the `main` in `refs/heads/main`
-        # below accordingly.
-        if: ${{ github.ref == 'refs/heads/release' }}
+      # Hugo's cache directory holds the opengraph.io responses fetched by the
+      # og-summary shortcode (resources.GetRemote). Restoring it avoids repeating
+      # those HTTP calls on every build.
+      # run_id makes the key unique so the cache is re-saved after each build;
+      # restore-keys picks up the most recent previous one.
+      - name: Restore Hugo cache
+        uses: actions/cache@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v6.1.0
         with:
-          personal_token: ${{ secrets.PERSONAL_TOKEN }}
-          external_repository: prinzpiuz/prinzpiuz.github.io
-          publish_dir: ./public
-          publish_branch: master
-          commit_message: ${{ github.event.head_commit.message }}
+          path: |
+            ${{ env.HUGO_CACHEDIR }}
+            resources/_gen
+          key: hugo-${{ runner.os }}-${{ env.HUGO_VERSION }}-${{ github.run_id }}
+          restore-keys: |
+            hugo-${{ runner.os }}-${{ env.HUGO_VERSION }}-
+
+      - name: Build
+        env:
+          HUGO_ENVIRONMENT: production
+          BASE_URL: ${{ steps.pages.outputs.base_url }}
+          # Optional, see notes: move the opengraph.io key out of config.toml.
+          # HUGOxPARAMSxOPENGRAPH_IO_API_KEY: ${{ secrets.OPENGRAPH_IO_API_KEY }}
+        run: |
+          # env.sh exports the commit subjects of content/uses/index.md for the changelog partial
+          source env.sh
+          hugo --gc --minify --baseURL "${BASE_URL}/"
+
+      - name: Upload site artifact
+        uses: actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9 # v5.0.0
+        with:
+          path: ./public
+
+  deploy:
+    name: Deploy
+    needs: build
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    # Only this job can publish, and it has no access to the repository contents.
+    permissions:
+      pages: write # create the Pages deployment
+      id-token: write # prove to Pages that the request comes from this workflow (OIDC)
+    # Never interrupt a deployment half-way; a newer one waits its turn instead.
+    concurrency:
+      group: pages
+      cancel-in-progress: false
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@368f82528645a54fb793d4d04e342629a3f51346 # v5.0.1

@@ -5,16 +5,30 @@ on:
     branches:
       - staging
 
+# Default for every job: read-only. The job that commits asks for write access.
+permissions:
+  contents: read
+
+# Two runs at once could calculate the same version, so they run one after another.
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: false
+
 jobs:
   tag:
+    name: Calculate next version
     runs-on: ubuntu-latest
+    timeout-minutes: 5
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
-          fetch-depth: "0"
-      - name: Bump version and push tag
+          fetch-depth: 0
+          persist-credentials: false
+      # This action only CALCULATES the next version from the commits since the
+      # last tag. It does not create a tag; that happens in the next job.
+      - name: Calculate next version
         id: autoversion
-        uses: ietf-tools/semver-action@v1
+        uses: ietf-tools/semver-action@c90370b2958652d71c06a3484129a4d423a6d8a8 # v1.11.0
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           branch: staging
@@ -24,33 +38,49 @@ jobs:
       new_tag: ${{ steps.autoversion.outputs.nextStrict }}
 
   commit_changelog_and_version:
+    name: Generate changelog, update version and tag
     needs: tag
     runs-on: ubuntu-latest
-    name: Generate changelog and update version
+    timeout-minutes: 10
+    permissions:
+      contents: write # commit CHANGELOG.md / config.toml and push the tag
+    env:
+      NEW_TAG: ${{ needs.tag.outputs.new_tag }}
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
           fetch-depth: 0
+
+      # git-cliff writes CHANGELOG.md directly, so commit messages are never
+      # pasted into a shell command.
       - name: Generate a changelog
-        uses: orhun/git-cliff-action@main
-        id: git-cliff
+        uses: orhun/git-cliff-action@a9a95522b26fe6403f7bb24031f21fb573d0f5ff # v4.9.1
         with:
           config: cliff.toml
           args: --sort newest --tag ${{ needs.tag.outputs.new_tag }}
         env:
-          OUTPUT: CHANGES.md
+          OUTPUT: CHANGELOG.md
 
-      - name: Copy changelog to workspace
-        run: echo "${{ steps.git-cliff.outputs.content }}" > CHANGELOG.md
+      # Replaces only a line that starts with "version=", keeping its indentation.
       - name: Update blog version in config.toml
         run: |
-          sed -i '/version./c\  version="${{ needs.tag.outputs.new_tag }}"' config.toml
+          sed -i -E "s/^([[:space:]]*)version[[:space:]]*=.*/\1version=\"${NEW_TAG}\"/" config.toml
+          grep -n "version=\"${NEW_TAG}\"" config.toml
+
       - name: Commit changes
-        if: ${{ success() }}
-        uses: EndBug/add-and-commit@v9
+        uses: EndBug/add-and-commit@a94899bca583c204427a224a7af87c02f9b325d5 # v9.1.4
         with:
           add: '["CHANGELOG.md", "config.toml"]'
           pull: "--rebase --autostash ."
           message: "chore(generated): changelog generated & version updated automatically"
           default_author: github_actions
+
+      # The missing piece: without a new tag, the next run starts from the same
+      # old tag and calculates the same version again.
+      # The tag points at the commit made above (or at the pushed commit if
+      # there was nothing to commit).
+      - name: Create and push tag
+        run: |
+          git tag "$NEW_TAG"
+          git push origin "$NEW_TAG"
