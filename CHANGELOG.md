@@ -1,4 +1,5 @@
 ## What's Changed in 2.0.16
+* chore(generated): changelog generated & version updated automatically by @github-actions[bot]
 * chore(submodule): submodule removed by @prinzpiuz
 * chore(submodule): submodule removed
 
