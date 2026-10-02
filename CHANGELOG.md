@@ -1,8 +1,14 @@
+## What's Changed in 2.0.16
+* chore(submodule): submodule removed by @prinzpiuz
+* chore(submodule): submodule removed
+
+**Full Changelog**: https://github.com/prinzpiuz/prinzpiuz.in/compare/2.0.15...2.0.16
+
 ## What's Changed in 2.0.15
+* chore(generated): changelog generated & version updated automatically by @github-actions[bot]
 * fix(deploy): invalid varible in action file by @prinzpiuz
 * fix(changelog): tags not generating fixed
 * fix(deploy): invalid varible in action file
-* chore(generated): changelog generated & version updated automatically by @github-actions[bot]
 * fix(deploy): fix to deploy pipline by @prinzpiuz
 * fix(deploy): fix to deploy pipline
 * fix: made pep-703 public avalialble
