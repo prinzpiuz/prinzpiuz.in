@@ -1,6 +1,8 @@
 ## What's Changed in 2.0.15
-* fix: made pep-703 public avalialble
+* fix(deploy): fix to deploy pipline by @prinzpiuz
+* fix(deploy): fix to deploy pipline
 * chore(generated): changelog generated & version updated automatically by @github-actions[bot]
+* fix: made pep-703 public avalialble
 
 **Full Changelog**: https://github.com/prinzpiuz/prinzpiuz.in/compare/2.0.14...2.0.15
 
