@@ -1,4 +1,5 @@
 ## What's Changed in 2.0.15
+* fix: made pep-703 public avalialble
 * chore(generated): changelog generated & version updated automatically by @github-actions[bot]
 
 **Full Changelog**: https://github.com/prinzpiuz/prinzpiuz.in/compare/2.0.14...2.0.15
@@ -6,11 +7,11 @@
 ## What's Changed in 2.0.14
 * fix: bug with likes count fixed by @prinzpiuz
 * chore(generated): changelog generated & version updated automatically by @github-actions[bot]
+* fix: bug with likes count fixed
 
 **Full Changelog**: https://github.com/prinzpiuz/prinzpiuz.in/compare/2.0.13...2.0.14
 
 ## What's Changed in 2.0.13
-* fix: bug with likes count fixed
 * chore(generated): changelog generated & version updated automatically by @github-actions[bot]
 
 **Full Changelog**: https://github.com/prinzpiuz/prinzpiuz.in/compare/2.0.12...2.0.13

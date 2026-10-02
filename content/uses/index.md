@@ -60,7 +60,9 @@ I currently have three powerful machines:
 
 {{< collapsible 2 "Peripherals 🧰" >}}
 
-- **📺 Monitor**: [LG Electronics Full HD 27"](https://www.lg.com/in/business/computers/monitors/ips-monitors/27ml600s-w/)
+- **📺 Monitor**:
+  - Home [LG 4K UHD UltraFine™ IPS](https://www.lg.com/in/monitors/uhd-4k-5k/27us550-w/)  
+  - Office: [LG Full HD 27"](https://www.lg.com/in/business/computers/monitors/ips-monitors/27ml600s-w/)
 - **⌨️ Keyboard**: [Logitech G413](https://www.logitechg.com/en-us/products/gaming-keyboards/g413-tkl-se-gaming-keyboard.920-010442.html)  
   - **Previous Ones**:
     - Logitech MK215 Wireless Keyboard and Mouse Combo
@@ -84,6 +86,8 @@ I currently have three powerful machines:
 - **🔌 Wireless Charger**: [eller santé® 15W Wireless Charger](https://www.amazon.in/gp/product/B08Q25F848/ref=ppx_yo_dt_b_asin_title_o03_s00?ie=UTF8&th=1)
 - **E-Book Reader**: [Kindle (10th Gen)](https://www.amazon.in/Kindle-10th-Gen/dp/B07FQ4Q7MB)
 - **Power Bank**: [Belkin 10000 mAh PD 3.0](https://www.belkin.com/pocket-power-10k-power-bank-portable-charger/P-F7U020.html)
+- **Docking Station**: [UGREEN Revodok 1061](https://www.ugreen.com/en-ae/products/ae-60515)
+- **HDMI Selector**: [UGREEN HDMI Switch](https://www.ugreenindia.com/products/ugreen-2-in-1-out-bi-directional-hdmi-switcher-4k-60hz-hdmi-splitter-support-3d-for-blu-ray-player-roku-tv-stick-nintendo-switch-xbox-ps4-hdtv-monitor-projector-etc-50966)
 - **USB Selector**: [UGREEN USB Switch Selector](https://www.ugreen.com/products/ugreen-usb-3-0-4-port-switch)
 - **Laptop Stand**: [Techzere Aluminium Vertical Stand](https://www.amazon.in/dp/B07MH1DPFL?ref=ppx_yo2ov_dt_b_fed_asin_title&th=1)
 - **⑁ Chair**: [Innowin Jazz High Back Office Chair](https://www.innowinfurniture.com/products/jazz-high-back-recliner-office-chair)
@@ -170,7 +174,7 @@ I currently have three powerful machines:
 
 {{< /collapsible >}}
 
-{{< collapsible 6 "AI Tools" >}}
+{{< collapsible 6 "AI Tools 🧠" >}}
 
 - **Generative AI**
   - [Claude](https://claude.ai/) (Pro Plan)
@@ -218,6 +222,24 @@ I currently have three powerful machines:
   - [Edex](https://www.edx.org/)
   - YouTube
 - **Music & Podcast**: YT Music
+
+{{< /collapsible >}}
+
+
+{{< collapsible 8 "Brewing Setup ☕" >}}
+
+I am currently using the pour-over  method.
+- [HARIO V60 Immersion Dripper Switch](https://global.hario.com/product/coffee/dripper/SSD.html)
+- [Hario | V60-01 Paper Filter | Size 01](https://www.amazon.in/dp/B001U7CVEA)
+- [TIMEMORE Chestnut C2S Manual Coffee Grinder](https://www.amazon.in/dp/B0CY1SM2R8)
+- [ThermoPro TP-02S Instant Thermometer](https://www.amazon.in/dp/B01LET2BFC)
+- [Hoffen Digital Coffee Weighing Scale](https://www.amazon.in/dp/B09T3HCH6K)
+- [Sipologie Clarity Glass Carafe for Pour Over Coffee](https://www.amazon.in/dp/B0DL5WX2GM)
+- Coffee Beans I Have Tried:
+  - Blue Tokai Vienna Roast - Dark Roast  ❤️
+  - Blue Tokai Attikan Estate - Medium Dark Roast
+  - Blue Tokai Silver Oak Cafe Blend - Medium Roast
+  - Blue Tokai Basankhan Estate - Dark Roast
 
 {{< /collapsible >}}
 
